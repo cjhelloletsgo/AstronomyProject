@@ -2,11 +2,12 @@ C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\bin\Debug\Astrono
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.exe
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.pdb
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.xml
-C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
-C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Form1.resources
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Resources.resources
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbproj.GenerateResource.cache
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbproj.CoreCompileInputs.cache
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.exe
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.xml
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
+C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Form2.resources
+C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.StartingForm.resources
+C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Form3.resources
