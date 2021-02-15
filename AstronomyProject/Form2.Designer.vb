@@ -32,8 +32,10 @@ Partial Class Form2
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Wrong = New System.Windows.Forms.Label()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.FireworksGif = New System.Windows.Forms.PictureBox()
         CType(Me.EarthRotatingGif, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FireworksGif, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToStartingForm
@@ -96,6 +98,16 @@ Partial Class Form2
         Me.Wrong.TabIndex = 9
         Me.Wrong.Text = "For Shame"
         '
+        'FireworksGif
+        '
+        Me.FireworksGif.Image = CType(resources.GetObject("FireworksGif.Image"), System.Drawing.Image)
+        Me.FireworksGif.Location = New System.Drawing.Point(3, -3)
+        Me.FireworksGif.Name = "FireworksGif"
+        Me.FireworksGif.Size = New System.Drawing.Size(1088, 715)
+        Me.FireworksGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.FireworksGif.TabIndex = 10
+        Me.FireworksGif.TabStop = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -107,10 +119,12 @@ Partial Class Form2
         Me.Controls.Add(Me.RevolutionLabel)
         Me.Controls.Add(Me.EarthRotatingGif)
         Me.Controls.Add(Me.ToStartingForm)
+        Me.Controls.Add(Me.FireworksGif)
         Me.Name = "Form2"
         Me.Text = "Form2"
         CType(Me.EarthRotatingGif, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FireworksGif, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -124,4 +138,5 @@ Partial Class Form2
     Friend WithEvents Button2 As Button
     Friend WithEvents Wrong As Label
     Friend WithEvents BindingSource1 As BindingSource
+    Friend WithEvents FireworksGif As PictureBox
 End Class
