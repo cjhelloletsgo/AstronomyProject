@@ -27,6 +27,7 @@ Partial Class StartingForm
         Me.ToForm2 = New System.Windows.Forms.Button()
         Me.ToForm3 = New System.Windows.Forms.Button()
         Me.AstronoMeLabel = New System.Windows.Forms.Label()
+        Me.ToForm4Button = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -68,11 +69,21 @@ Partial Class StartingForm
         Me.AstronoMeLabel.TabIndex = 3
         Me.AstronoMeLabel.Text = "AstronoMe"
         '
+        'ToForm4Button
+        '
+        Me.ToForm4Button.Location = New System.Drawing.Point(483, 691)
+        Me.ToForm4Button.Name = "ToForm4Button"
+        Me.ToForm4Button.Size = New System.Drawing.Size(133, 45)
+        Me.ToForm4Button.TabIndex = 4
+        Me.ToForm4Button.Text = "ToForm4"
+        Me.ToForm4Button.UseVisualStyleBackColor = True
+        '
         'StartingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1308, 783)
+        Me.Controls.Add(Me.ToForm4Button)
         Me.Controls.Add(Me.AstronoMeLabel)
         Me.Controls.Add(Me.ToForm3)
         Me.Controls.Add(Me.ToForm2)
@@ -89,4 +100,5 @@ Partial Class StartingForm
     Friend WithEvents ToForm2 As Button
     Friend WithEvents ToForm3 As Button
     Friend WithEvents AstronoMeLabel As Label
+    Friend WithEvents ToForm4Button As Button
 End Class
