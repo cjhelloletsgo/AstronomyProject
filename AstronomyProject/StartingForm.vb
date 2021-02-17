@@ -12,4 +12,9 @@
         Form3.Show()
         Me.Hide()
     End Sub
+
+    Private Sub ToForm4Button_Click(sender As Object, e As EventArgs) Handles ToForm4Button.Click
+        Form4.Show()
+        Me.Hide()
+    End Sub
 End Class
