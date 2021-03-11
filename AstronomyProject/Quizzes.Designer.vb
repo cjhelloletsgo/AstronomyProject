@@ -23,6 +23,7 @@ Partial Class Quizzes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.HomeButton = New System.Windows.Forms.Button()
+        Me.ShootingStarsButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'HomeButton
@@ -35,11 +36,21 @@ Partial Class Quizzes
         Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = True
         '
+        'ShootingStarsButton
+        '
+        Me.ShootingStarsButton.Location = New System.Drawing.Point(288, 118)
+        Me.ShootingStarsButton.Name = "ShootingStarsButton"
+        Me.ShootingStarsButton.Size = New System.Drawing.Size(121, 36)
+        Me.ShootingStarsButton.TabIndex = 1
+        Me.ShootingStarsButton.Text = "Shooting Stars"
+        Me.ShootingStarsButton.UseVisualStyleBackColor = True
+        '
         'Quizzes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ShootingStarsButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Name = "Quizzes"
         Me.Text = "Quizzes"
@@ -48,4 +59,5 @@ Partial Class Quizzes
     End Sub
 
     Friend WithEvents HomeButton As Button
+    Friend WithEvents ShootingStarsButton As Button
 End Class
