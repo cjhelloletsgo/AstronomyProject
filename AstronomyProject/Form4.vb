@@ -9,7 +9,7 @@
         If PictureBox1.Location.Y < -60 Then
             Me.Dispose()
             MsgBox("Game Over")
-            StartingForm.Show()
+            Home.Show()
         End If
     End Sub
 
@@ -20,7 +20,7 @@
     End Sub
 
     Private Sub ToStartingForm_Click(sender As Object, e As EventArgs) Handles ToStartingForm.Click
-        StartingForm.Show()
+        Home.Show()
         Me.Hide()
     End Sub
 End Class
