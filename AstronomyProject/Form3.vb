@@ -1,6 +1,6 @@
 ﻿Public Class Form3
     Private Sub ToStartingForm_Click(sender As Object, e As EventArgs) Handles ToStartingForm.Click
-        StartingForm.Show()
+        Home.Show()
         Me.Hide()
     End Sub
 
