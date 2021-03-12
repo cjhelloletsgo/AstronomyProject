@@ -1,6 +1,9 @@
 ﻿Public Class Home
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        QuizzesButton.FlatStyle = FlatStyle.Flat
+        QuizzesButton.FlatAppearance.BorderSize = 0
+        LessonsButton.FlatStyle = FlatStyle.Flat
+        LessonsButton.FlatAppearance.BorderSize = 0
     End Sub
     Private Sub QuizzesButton_Click(sender As Object, e As EventArgs) Handles QuizzesButton.Click
         Quizzes.Show()

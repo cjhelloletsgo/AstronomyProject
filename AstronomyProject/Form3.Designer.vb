@@ -24,7 +24,7 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
-        Me.ToStartingForm = New System.Windows.Forms.Button()
+        Me.HomeButton = New System.Windows.Forms.Button()
         Me.RevolutionLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.RevolutionButton = New System.Windows.Forms.Button()
@@ -36,22 +36,23 @@ Partial Class Form3
         CType(Me.FireworksGif, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ToStartingForm
+        'HomeButton
         '
-        Me.ToStartingForm.Location = New System.Drawing.Point(346, 612)
-        Me.ToStartingForm.Name = "ToStartingForm"
-        Me.ToStartingForm.Size = New System.Drawing.Size(203, 47)
-        Me.ToStartingForm.TabIndex = 1
-        Me.ToStartingForm.Text = "ToStartingForm"
-        Me.ToStartingForm.UseVisualStyleBackColor = True
+        Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.HomeButton.Location = New System.Drawing.Point(912, 599)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(160, 43)
+        Me.HomeButton.TabIndex = 1
+        Me.HomeButton.Text = "Home"
+        Me.HomeButton.UseVisualStyleBackColor = True
         '
         'RevolutionLabel
         '
         Me.RevolutionLabel.AutoSize = True
-        Me.RevolutionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.RevolutionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
         Me.RevolutionLabel.Location = New System.Drawing.Point(379, 75)
         Me.RevolutionLabel.Name = "RevolutionLabel"
-        Me.RevolutionLabel.Size = New System.Drawing.Size(179, 39)
+        Me.RevolutionLabel.Size = New System.Drawing.Size(158, 36)
         Me.RevolutionLabel.TabIndex = 2
         Me.RevolutionLabel.Text = "Revolution"
         '
@@ -67,15 +68,17 @@ Partial Class Form3
         '
         'RevolutionButton
         '
+        Me.RevolutionButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.RevolutionButton.Location = New System.Drawing.Point(282, 141)
         Me.RevolutionButton.Name = "RevolutionButton"
-        Me.RevolutionButton.Size = New System.Drawing.Size(91, 29)
+        Me.RevolutionButton.Size = New System.Drawing.Size(137, 29)
         Me.RevolutionButton.TabIndex = 4
         Me.RevolutionButton.Text = "Revolution"
         Me.RevolutionButton.UseVisualStyleBackColor = True
         '
         'RotationButton
         '
+        Me.RotationButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.RotationButton.Location = New System.Drawing.Point(482, 141)
         Me.RotationButton.Name = "RotationButton"
         Me.RotationButton.Size = New System.Drawing.Size(102, 29)
@@ -116,7 +119,7 @@ Partial Class Form3
         Me.Controls.Add(Me.RevolutionButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RevolutionLabel)
-        Me.Controls.Add(Me.ToStartingForm)
+        Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.FireworksGif)
         Me.Name = "Form3"
         Me.Text = "Form3"
@@ -127,7 +130,7 @@ Partial Class Form3
 
     End Sub
 
-    Friend WithEvents ToStartingForm As Button
+    Friend WithEvents HomeButton As Button
     Friend WithEvents RevolutionLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents RevolutionButton As Button

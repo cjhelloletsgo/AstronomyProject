@@ -8,4 +8,9 @@
         ShootingStars.Show()
         Me.Hide()
     End Sub
+
+    Private Sub MultipleChoiceButton_Click(sender As Object, e As EventArgs) Handles MultipleChoiceButton.Click
+        MultipleChoice.Show()
+        Me.Hide()
+    End Sub
 End Class

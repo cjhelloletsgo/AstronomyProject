@@ -48,6 +48,7 @@ Partial Class ShootingStars
         '
         'HomeButton
         '
+        Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.HomeButton.Location = New System.Drawing.Point(815, 571)
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(203, 47)
@@ -57,12 +58,13 @@ Partial Class ShootingStars
         '
         'ScoreLabel
         '
-        Me.ScoreLabel.AutoSize = True
-        Me.ScoreLabel.Location = New System.Drawing.Point(731, 85)
+        Me.ScoreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ScoreLabel.Location = New System.Drawing.Point(688, 153)
         Me.ScoreLabel.Name = "ScoreLabel"
-        Me.ScoreLabel.Size = New System.Drawing.Size(45, 17)
+        Me.ScoreLabel.Size = New System.Drawing.Size(146, 30)
         Me.ScoreLabel.TabIndex = 3
         Me.ScoreLabel.Text = "Score"
+        Me.ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Timer1
         '
@@ -85,9 +87,10 @@ Partial Class ShootingStars
         '
         'StartButton
         '
+        Me.StartButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.StartButton.Location = New System.Drawing.Point(494, 318)
         Me.StartButton.Name = "StartButton"
-        Me.StartButton.Size = New System.Drawing.Size(75, 23)
+        Me.StartButton.Size = New System.Drawing.Size(111, 46)
         Me.StartButton.TabIndex = 5
         Me.StartButton.Text = "Start"
         Me.StartButton.UseVisualStyleBackColor = True
@@ -107,7 +110,6 @@ Partial Class ShootingStars
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
