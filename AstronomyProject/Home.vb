@@ -1,5 +1,6 @@
 ﻿Public Class Home
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Computer.Audio.Play("C:\Users\Colton\Desktop\space1.wav")
         QuizzesButton.FlatStyle = FlatStyle.Flat
         QuizzesButton.FlatAppearance.BorderSize = 0
         LessonsButton.FlatStyle = FlatStyle.Flat

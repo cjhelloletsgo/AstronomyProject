@@ -52,6 +52,9 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Button1.Enabled = False
+        Button2.Enabled = False
+        My.Computer.Audio.Play("C:\Users\Colton\Downloads\Hitmarker.wav")
         Timer1.Enabled = True
         Timer1.Interval = 750
         Me.BackColor = Color.Black
@@ -61,6 +64,9 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Button1.Enabled = False
+        Button2.Enabled = False
+        My.Computer.Audio.Play("C:\Users\Colton\Downloads\Hitmarker.wav")
         Timer2.Enabled = True
         Timer2.Interval = 1000
         Timer2Length = 0
