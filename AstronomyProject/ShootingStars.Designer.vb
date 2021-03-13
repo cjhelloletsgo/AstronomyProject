@@ -103,7 +103,7 @@ Partial Class ShootingStars
         'Explosion
         '
         Me.Explosion.Image = CType(resources.GetObject("Explosion.Image"), System.Drawing.Image)
-        Me.Explosion.Location = New System.Drawing.Point(-1, -58)
+        Me.Explosion.Location = New System.Drawing.Point(542, 1)
         Me.Explosion.Name = "Explosion"
         Me.Explosion.Size = New System.Drawing.Size(535, 442)
         Me.Explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -113,7 +113,7 @@ Partial Class ShootingStars
         'GoodPlanet
         '
         Me.GoodPlanet.Image = CType(resources.GetObject("GoodPlanet.Image"), System.Drawing.Image)
-        Me.GoodPlanet.Location = New System.Drawing.Point(40, 12)
+        Me.GoodPlanet.Location = New System.Drawing.Point(583, 71)
         Me.GoodPlanet.Name = "GoodPlanet"
         Me.GoodPlanet.Size = New System.Drawing.Size(284, 268)
         Me.GoodPlanet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage

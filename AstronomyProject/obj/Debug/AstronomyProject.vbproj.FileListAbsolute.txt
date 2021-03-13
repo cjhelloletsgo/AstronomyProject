@@ -15,3 +15,4 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\Astrono
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.MultipleChoice.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Home.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
+C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.test.resources
