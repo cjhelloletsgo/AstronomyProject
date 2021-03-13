@@ -44,7 +44,7 @@ Partial Class ShootingStars
         '
         Me.Rocket.BackColor = System.Drawing.Color.Transparent
         Me.Rocket.Image = CType(resources.GetObject("Rocket.Image"), System.Drawing.Image)
-        Me.Rocket.Location = New System.Drawing.Point(168, 534)
+        Me.Rocket.Location = New System.Drawing.Point(27, 519)
         Me.Rocket.Name = "Rocket"
         Me.Rocket.Size = New System.Drawing.Size(68, 136)
         Me.Rocket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -113,10 +113,10 @@ Partial Class ShootingStars
         'GoodPlanet
         '
         Me.GoodPlanet.Image = CType(resources.GetObject("GoodPlanet.Image"), System.Drawing.Image)
-        Me.GoodPlanet.Location = New System.Drawing.Point(583, 71)
+        Me.GoodPlanet.Location = New System.Drawing.Point(597, 190)
         Me.GoodPlanet.Name = "GoodPlanet"
-        Me.GoodPlanet.Size = New System.Drawing.Size(284, 268)
-        Me.GoodPlanet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.GoodPlanet.Size = New System.Drawing.Size(164, 170)
+        Me.GoodPlanet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.GoodPlanet.TabIndex = 7
         Me.GoodPlanet.TabStop = False
         '

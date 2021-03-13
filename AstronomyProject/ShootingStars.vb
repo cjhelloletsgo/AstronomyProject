@@ -28,21 +28,21 @@
         Rocket.Top -= 3
         i += 1
         'Rocket.Left = Math.Sin(i) + x
-        Rocket.Left = i
-        Rocket.Top = -15 * Math.Sqrt(i) + 500
+        Rocket.Left = x + 2 * i
+        Rocket.Top = -15 * Math.Sqrt(i) + y
         'Add in rotation here
 
-        GoodPlanet.Left = a + Math.Cos(i) * 25
-        GoodPlanet.Top = b + Math.Sin(i) * 25
-        Explosion.Left = a + Math.Cos(i) * 25
-        Explosion.Top = b + Math.Sin(i) * 25
+        GoodPlanet.Left = a + Math.Cos(i / 5) * 50
+        GoodPlanet.Top = b + Math.Sin(i / 5) * 50
+        Explosion.Left = a + Math.Cos(i / 5) * 50
+        Explosion.Top = b + Math.Sin(i / 5) * 50
 
         'x := originX + cos(angle)*radius;
         'y := originY + sin(angle)*radius;
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If Rocket.Location.Y < GoodPlanet.Location.Y + GoodPlanet.Height - 0 Then
+        If Rocket.Location.Y < GoodPlanet.Location.Y + GoodPlanet.Height - 0 And Rocket.Location.X > GoodPlanet.Location.X Then
             GoodPlanet.Visible = False
             Explosion.Visible = True
             Rocket.Visible = False
@@ -57,6 +57,7 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Rocket.Click
         score += 1
+        i = 1
         Rocket.Location = New Point(x, y)
         ScoreLabel.Text = score
     End Sub

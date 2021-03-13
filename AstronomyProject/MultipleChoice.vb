@@ -47,7 +47,8 @@
             End If
             count += 1
         Else
-            Timer1.Enabled = False
+            Form3.Show()
+            Me.Dispose()
         End If
     End Sub
 
@@ -77,7 +78,8 @@
             FireworksGif.Visible = True
             Timer2Length += 1
         Else
-            FireworksGif.Visible = False
+            Form3.Show()
+            Me.Dispose()
         End If
     End Sub
 End Class
