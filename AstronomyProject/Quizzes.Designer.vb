@@ -55,7 +55,7 @@ Partial Class Quizzes
         '
         Me.QuizzesLabel.AutoSize = True
         Me.QuizzesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.QuizzesLabel.Location = New System.Drawing.Point(331, 22)
+        Me.QuizzesLabel.Location = New System.Drawing.Point(465, 22)
         Me.QuizzesLabel.Name = "QuizzesLabel"
         Me.QuizzesLabel.Size = New System.Drawing.Size(122, 36)
         Me.QuizzesLabel.TabIndex = 2
@@ -74,9 +74,9 @@ Partial Class Quizzes
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(77, 43)
+        Me.PictureBox1.Location = New System.Drawing.Point(-100, -46)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(834, 653)
+        Me.PictureBox1.Size = New System.Drawing.Size(1247, 915)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False

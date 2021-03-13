@@ -5,10 +5,13 @@
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If PictureBox1.Location.Y < -60 Then
-            Me.Dispose()
-            Quizzes.Show()
-            MsgBox("Game Over")
+        If PictureBox1.Location.Y < GoodPlanet.Location.Y + GoodPlanet.Height - 20 Then
+            GoodPlanet.Visible = False
+            BurningPlanet.Visible = True
+            PictureBox1.Visible = False
+            'Me.Dispose()
+            'Quizzes.Show()
+            'MsgBox("Game Over")
         End If
     End Sub
 
@@ -28,6 +31,7 @@
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = False
         Timer2.Enabled = False
+        BurningPlanet.Visible = False
     End Sub
 
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
