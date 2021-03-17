@@ -5,6 +5,7 @@
     Dim Word2 As String
     Dim Word3 As String
     Dim Timer2Length As Integer
+    Dim Savelocation As String = Home.Savelocation
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Wrong.Visible = False
         FireworksGif.Visible = False
@@ -55,7 +56,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Button1.Enabled = False
         Button2.Enabled = False
-        My.Computer.Audio.Play("C:\Users\Colton\Downloads\Hitmarker.wav")
+        My.Computer.Audio.Play(Savelocation + "Hitmarker.wav")
         Timer1.Enabled = True
         Timer1.Interval = 750
         Me.BackColor = Color.Black
@@ -67,7 +68,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Button1.Enabled = False
         Button2.Enabled = False
-        My.Computer.Audio.Play("C:\Users\Colton\Downloads\Hitmarker.wav")
+        My.Computer.Audio.Play(Savelocation + "Hitmarker.wav")
         Timer2.Enabled = True
         Timer2.Interval = 1000
         Timer2Length = 0

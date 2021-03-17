@@ -6,6 +6,7 @@
     Dim j As Integer
     Dim a As Integer
     Dim b As Integer
+    Dim Savelocation = Home.Savelocation
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = False
         Timer2.Enabled = False
@@ -46,7 +47,7 @@
             GoodPlanet.Visible = False
             Explosion.Visible = True
             Rocket.Visible = False
-            My.Computer.Audio.Play("C:\Users\Colton\Downloads\explosion-01.wav")
+            My.Computer.Audio.Play(Savelocation + "explosion-01.wav")
             Timer1.Enabled = False
             Timer2.Enabled = False
             'Me.Dispose()
