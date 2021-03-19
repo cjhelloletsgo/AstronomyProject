@@ -29,13 +29,11 @@ Partial Class ShootingStars
         Me.ScoreLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.StartButton = New System.Windows.Forms.Button()
         Me.Explosion = New System.Windows.Forms.PictureBox()
         Me.GoodPlanet = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,26 +42,30 @@ Partial Class ShootingStars
         '
         Me.Rocket.BackColor = System.Drawing.Color.Transparent
         Me.Rocket.Image = CType(resources.GetObject("Rocket.Image"), System.Drawing.Image)
-        Me.Rocket.Location = New System.Drawing.Point(27, 519)
+        Me.Rocket.Location = New System.Drawing.Point(12, 528)
         Me.Rocket.Name = "Rocket"
-        Me.Rocket.Size = New System.Drawing.Size(68, 136)
+        Me.Rocket.Size = New System.Drawing.Size(63, 127)
         Me.Rocket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Rocket.TabIndex = 1
         Me.Rocket.TabStop = False
         '
         'HomeButton
         '
+        Me.HomeButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.HomeButton.ForeColor = System.Drawing.Color.White
         Me.HomeButton.Location = New System.Drawing.Point(860, 571)
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(158, 47)
         Me.HomeButton.TabIndex = 2
         Me.HomeButton.Text = "Home"
-        Me.HomeButton.UseVisualStyleBackColor = True
+        Me.HomeButton.UseVisualStyleBackColor = False
         '
         'ScoreLabel
         '
+        Me.ScoreLabel.BackColor = System.Drawing.Color.DarkSlateGray
         Me.ScoreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ScoreLabel.ForeColor = System.Drawing.Color.White
         Me.ScoreLabel.Location = New System.Drawing.Point(666, 499)
         Me.ScoreLabel.Name = "ScoreLabel"
         Me.ScoreLabel.Size = New System.Drawing.Size(158, 47)
@@ -80,32 +82,24 @@ Partial Class ShootingStars
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 1
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(-202, -36)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1486, 715)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
         'StartButton
         '
+        Me.StartButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.StartButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.StartButton.ForeColor = System.Drawing.Color.White
         Me.StartButton.Location = New System.Drawing.Point(666, 571)
         Me.StartButton.Name = "StartButton"
         Me.StartButton.Size = New System.Drawing.Size(158, 47)
         Me.StartButton.TabIndex = 5
         Me.StartButton.Text = "Start"
-        Me.StartButton.UseVisualStyleBackColor = True
+        Me.StartButton.UseVisualStyleBackColor = False
         '
         'Explosion
         '
         Me.Explosion.Image = CType(resources.GetObject("Explosion.Image"), System.Drawing.Image)
-        Me.Explosion.Location = New System.Drawing.Point(542, 1)
+        Me.Explosion.Location = New System.Drawing.Point(802, 69)
         Me.Explosion.Name = "Explosion"
-        Me.Explosion.Size = New System.Drawing.Size(535, 442)
+        Me.Explosion.Size = New System.Drawing.Size(255, 192)
         Me.Explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Explosion.TabIndex = 6
         Me.Explosion.TabStop = False
@@ -113,7 +107,7 @@ Partial Class ShootingStars
         'GoodPlanet
         '
         Me.GoodPlanet.Image = CType(resources.GetObject("GoodPlanet.Image"), System.Drawing.Image)
-        Me.GoodPlanet.Location = New System.Drawing.Point(597, 190)
+        Me.GoodPlanet.Location = New System.Drawing.Point(828, 59)
         Me.GoodPlanet.Name = "GoodPlanet"
         Me.GoodPlanet.Size = New System.Drawing.Size(164, 170)
         Me.GoodPlanet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -122,31 +116,32 @@ Partial Class ShootingStars
         '
         'BackButton
         '
+        Me.BackButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BackButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.BackButton.ForeColor = System.Drawing.Color.White
         Me.BackButton.Location = New System.Drawing.Point(860, 499)
         Me.BackButton.Name = "BackButton"
         Me.BackButton.Size = New System.Drawing.Size(158, 47)
         Me.BackButton.TabIndex = 8
         Me.BackButton.Text = "Back"
-        Me.BackButton.UseVisualStyleBackColor = True
+        Me.BackButton.UseVisualStyleBackColor = False
         '
         'ShootingStars
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1080, 667)
+        Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.BackButton)
-        Me.Controls.Add(Me.Rocket)
         Me.Controls.Add(Me.GoodPlanet)
         Me.Controls.Add(Me.Explosion)
         Me.Controls.Add(Me.StartButton)
-        Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.HomeButton)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Rocket)
         Me.Name = "ShootingStars"
         Me.Text = "Form4"
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -158,7 +153,6 @@ Partial Class ShootingStars
     Friend WithEvents ScoreLabel As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents StartButton As Button
     Friend WithEvents Explosion As PictureBox
     Friend WithEvents GoodPlanet As PictureBox

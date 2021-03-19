@@ -19,6 +19,12 @@
         j = 1
         Rocket.Enabled = False
         My.Computer.Audio.Stop()
+        StartButton.FlatStyle = FlatStyle.Flat
+        StartButton.FlatAppearance.BorderSize = 0
+        BackButton.FlatStyle = FlatStyle.Flat
+        BackButton.FlatAppearance.BorderSize = 0
+        HomeButton.FlatStyle = FlatStyle.Flat
+        HomeButton.FlatAppearance.BorderSize = 0
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         Timer1.Enabled = True
@@ -40,20 +46,19 @@
         Explosion.Left = a + Math.Cos(i / 5) * 50
         Explosion.Top = b + Math.Sin(i / 5) * 50
 
-        'x := originX + cos(angle)*radius;
-        'y := originY + sin(angle)*radius;
+        'x = originX + cos(angle)*radius;
+        'y = originY + sin(angle)*radius;
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If Rocket.Location.Y < GoodPlanet.Location.Y + GoodPlanet.Height - 0 And Rocket.Location.X > GoodPlanet.Location.X Then
+        If Rocket.Location.Y < GoodPlanet.Location.Y + GoodPlanet.Height - 0 And
+            Rocket.Location.X + Rocket.Width > GoodPlanet.Location.X Then
             GoodPlanet.Visible = False
             Explosion.Visible = True
             Rocket.Visible = False
             My.Computer.Audio.Play(Savelocation + "explosion-01.wav")
             Timer1.Enabled = False
             Timer2.Enabled = False
-            'Me.Dispose()
-            'Quizzes.Show()
             'MsgBox("Game Over")
         End If
     End Sub
