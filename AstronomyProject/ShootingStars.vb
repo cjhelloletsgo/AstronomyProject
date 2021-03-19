@@ -7,6 +7,7 @@
     Dim a As Integer
     Dim b As Integer
     Dim Savelocation = Home.Savelocation
+    Dim launch = False
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = False
         Timer2.Enabled = False
@@ -25,6 +26,7 @@
         BackButton.FlatAppearance.BorderSize = 0
         HomeButton.FlatStyle = FlatStyle.Flat
         HomeButton.FlatAppearance.BorderSize = 0
+        launch = False
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         Timer1.Enabled = True
@@ -33,14 +35,16 @@
         StartButton.Enabled = False
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Rocket.Top -= 3
+
         i += 1
         j += 1
-        'Rocket.Left = Math.Sin(i) + x
-        Rocket.Left = x + 2 * j
-        Rocket.Top = -15 * Math.Sqrt(j) + y
-        'Add in rotation here
-
+        If launch = False Then
+            Rocket.Left = x + 2 * j
+            Rocket.Top = -15 * Math.Sqrt(j) + y
+            'Add in rotation here
+        Else
+            Rocket.Top -= 3
+        End If
         GoodPlanet.Left = a + Math.Cos(i / 5) * 50
         GoodPlanet.Top = b + Math.Sin(i / 5) * 50
         Explosion.Left = a + Math.Cos(i / 5) * 50
@@ -65,8 +69,10 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Rocket.Click
         score += 1
-        j = 1
-        Rocket.Location = New Point(x, y)
+        launch = True
+        'Return to start
+        'j = 1
+        'Rocket.Location = New Point(x, y)
         ScoreLabel.Text = score
     End Sub
 
@@ -78,5 +84,12 @@
     Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
         Me.Dispose()
         Quizzes.Show()
+    End Sub
+
+    Private Sub CorrectAnswerButton_Click(sender As Object, e As EventArgs) Handles CorrectAnswerButton.Click
+        If j > 10 Then
+            j = j - 10
+        Else j = 0
+        End If
     End Sub
 End Class

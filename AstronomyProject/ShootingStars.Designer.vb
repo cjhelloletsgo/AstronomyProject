@@ -33,6 +33,8 @@ Partial Class ShootingStars
         Me.Explosion = New System.Windows.Forms.PictureBox()
         Me.GoodPlanet = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.CorrectAnswerButton = New System.Windows.Forms.Button()
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,12 +128,22 @@ Partial Class ShootingStars
         Me.BackButton.Text = "Back"
         Me.BackButton.UseVisualStyleBackColor = False
         '
+        'CorrectAnswerButton
+        '
+        Me.CorrectAnswerButton.Location = New System.Drawing.Point(440, 374)
+        Me.CorrectAnswerButton.Name = "CorrectAnswerButton"
+        Me.CorrectAnswerButton.Size = New System.Drawing.Size(75, 23)
+        Me.CorrectAnswerButton.TabIndex = 9
+        Me.CorrectAnswerButton.Text = "CorrectAnswer"
+        Me.CorrectAnswerButton.UseVisualStyleBackColor = True
+        '
         'ShootingStars
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1080, 667)
+        Me.Controls.Add(Me.CorrectAnswerButton)
         Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.GoodPlanet)
@@ -157,4 +169,6 @@ Partial Class ShootingStars
     Friend WithEvents Explosion As PictureBox
     Friend WithEvents GoodPlanet As PictureBox
     Friend WithEvents BackButton As Button
+    Friend WithEvents Timer3 As Timer
+    Friend WithEvents CorrectAnswerButton As Button
 End Class
