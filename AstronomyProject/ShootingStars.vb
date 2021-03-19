@@ -16,6 +16,7 @@
         a = GoodPlanet.Location.X()
         b = GoodPlanet.Location.Y()
         i = 1
+        j = 1
         Rocket.Enabled = False
         My.Computer.Audio.Stop()
     End Sub
@@ -28,9 +29,10 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Rocket.Top -= 3
         i += 1
+        j += 1
         'Rocket.Left = Math.Sin(i) + x
-        Rocket.Left = x + 2 * i
-        Rocket.Top = -15 * Math.Sqrt(i) + y
+        Rocket.Left = x + 2 * j
+        Rocket.Top = -15 * Math.Sqrt(j) + y
         'Add in rotation here
 
         GoodPlanet.Left = a + Math.Cos(i / 5) * 50
@@ -58,7 +60,7 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Rocket.Click
         score += 1
-        i = 1
+        j = 1
         Rocket.Location = New Point(x, y)
         ScoreLabel.Text = score
     End Sub
