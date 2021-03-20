@@ -11,6 +11,7 @@
     Dim maxnum As Integer
     Dim correctAns As Char
     Dim clickedButton As Char
+    Dim correctAnsSelected As Boolean
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = False
         Timer2.Enabled = False
@@ -84,7 +85,6 @@
         GoodPlanet.Top = b + Math.Sin(i / 5) * 50
         Explosion.Left = a + Math.Cos(i / 5) * 50
         Explosion.Top = b + Math.Sin(i / 5) * 50
-
         'x = originX + cos(angle)*radius;
         'y = originY + sin(angle)*radius;
     End Sub
@@ -132,7 +132,9 @@
         clickedButton = "A"
         If correctAns = clickedButton Then
             Label1.Text = "Right"
+            correctAnsSelected = True
         Else Label1.Text = "Wrong"
+            correctAnsSelected = False
         End If
     End Sub
 
@@ -140,7 +142,9 @@
         clickedButton = "B"
         If correctAns = clickedButton Then
             Label1.Text = "Right"
+            correctAnsSelected = True
         Else Label1.Text = "Wrong"
+            correctAnsSelected = False
         End If
     End Sub
 
@@ -148,7 +152,9 @@
         clickedButton = "C"
         If correctAns = clickedButton Then
             Label1.Text = "Right"
+            correctAnsSelected = True
         Else Label1.Text = "Wrong"
+            correctAnsSelected = False
         End If
     End Sub
 
@@ -156,7 +162,9 @@
         clickedButton = "D"
         If correctAns = clickedButton Then
             Label1.Text = "Right"
+            correctAnsSelected = True
         Else Label1.Text = "Wrong"
+            correctAnsSelected = False
         End If
     End Sub
 End Class
