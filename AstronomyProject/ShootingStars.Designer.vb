@@ -35,6 +35,12 @@ Partial Class ShootingStars
         Me.BackButton = New System.Windows.Forms.Button()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.CorrectAnswerButton = New System.Windows.Forms.Button()
+        Me.ButtonA = New System.Windows.Forms.Button()
+        Me.ButtonB = New System.Windows.Forms.Button()
+        Me.ButtonC = New System.Windows.Forms.Button()
+        Me.ButtonD = New System.Windows.Forms.Button()
+        Me.QuestionLabel = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,12 +136,82 @@ Partial Class ShootingStars
         '
         'CorrectAnswerButton
         '
-        Me.CorrectAnswerButton.Location = New System.Drawing.Point(440, 374)
+        Me.CorrectAnswerButton.Location = New System.Drawing.Point(493, 571)
         Me.CorrectAnswerButton.Name = "CorrectAnswerButton"
         Me.CorrectAnswerButton.Size = New System.Drawing.Size(75, 23)
         Me.CorrectAnswerButton.TabIndex = 9
         Me.CorrectAnswerButton.Text = "CorrectAnswer"
         Me.CorrectAnswerButton.UseVisualStyleBackColor = True
+        '
+        'ButtonA
+        '
+        Me.ButtonA.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.ButtonA.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ButtonA.ForeColor = System.Drawing.Color.White
+        Me.ButtonA.Location = New System.Drawing.Point(48, 156)
+        Me.ButtonA.Name = "ButtonA"
+        Me.ButtonA.Size = New System.Drawing.Size(158, 47)
+        Me.ButtonA.TabIndex = 10
+        Me.ButtonA.Text = "A"
+        Me.ButtonA.UseVisualStyleBackColor = False
+        '
+        'ButtonB
+        '
+        Me.ButtonB.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.ButtonB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ButtonB.ForeColor = System.Drawing.Color.White
+        Me.ButtonB.Location = New System.Drawing.Point(242, 156)
+        Me.ButtonB.Name = "ButtonB"
+        Me.ButtonB.Size = New System.Drawing.Size(158, 47)
+        Me.ButtonB.TabIndex = 11
+        Me.ButtonB.Text = "B"
+        Me.ButtonB.UseVisualStyleBackColor = False
+        '
+        'ButtonC
+        '
+        Me.ButtonC.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.ButtonC.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ButtonC.ForeColor = System.Drawing.Color.White
+        Me.ButtonC.Location = New System.Drawing.Point(48, 228)
+        Me.ButtonC.Name = "ButtonC"
+        Me.ButtonC.Size = New System.Drawing.Size(158, 47)
+        Me.ButtonC.TabIndex = 12
+        Me.ButtonC.Text = "C"
+        Me.ButtonC.UseVisualStyleBackColor = False
+        '
+        'ButtonD
+        '
+        Me.ButtonD.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.ButtonD.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.ButtonD.ForeColor = System.Drawing.Color.White
+        Me.ButtonD.Location = New System.Drawing.Point(242, 228)
+        Me.ButtonD.Name = "ButtonD"
+        Me.ButtonD.Size = New System.Drawing.Size(158, 47)
+        Me.ButtonD.TabIndex = 13
+        Me.ButtonD.Text = "D"
+        Me.ButtonD.UseVisualStyleBackColor = False
+        '
+        'QuestionLabel
+        '
+        Me.QuestionLabel.AutoSize = True
+        Me.QuestionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.QuestionLabel.ForeColor = System.Drawing.Color.White
+        Me.QuestionLabel.Location = New System.Drawing.Point(43, 81)
+        Me.QuestionLabel.Name = "QuestionLabel"
+        Me.QuestionLabel.Size = New System.Drawing.Size(190, 25)
+        Me.QuestionLabel.TabIndex = 14
+        Me.QuestionLabel.Text = "Question Goes Here"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(501, 280)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 25)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Label1"
         '
         'ShootingStars
         '
@@ -143,6 +219,12 @@ Partial Class ShootingStars
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1080, 667)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.QuestionLabel)
+        Me.Controls.Add(Me.ButtonD)
+        Me.Controls.Add(Me.ButtonC)
+        Me.Controls.Add(Me.ButtonB)
+        Me.Controls.Add(Me.ButtonA)
         Me.Controls.Add(Me.CorrectAnswerButton)
         Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.BackButton)
@@ -157,6 +239,7 @@ Partial Class ShootingStars
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -171,4 +254,10 @@ Partial Class ShootingStars
     Friend WithEvents BackButton As Button
     Friend WithEvents Timer3 As Timer
     Friend WithEvents CorrectAnswerButton As Button
+    Friend WithEvents ButtonA As Button
+    Friend WithEvents ButtonB As Button
+    Friend WithEvents ButtonC As Button
+    Friend WithEvents ButtonD As Button
+    Friend WithEvents QuestionLabel As Label
+    Friend WithEvents Label1 As Label
 End Class
