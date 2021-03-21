@@ -30,6 +30,7 @@ Public Class Login
                     'Label2.Text = myds.Tables("MyStudents").Rows(index).Item(1)
                     Me.Hide()
                     Home.Show()
+                    mycon.Close()
                 End If
             End If
         Next
