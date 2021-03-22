@@ -3,6 +3,8 @@
 Public Class Login
     Dim maxnum As Integer
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
+        Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
+        MsgBox(information.FullName)
         Dim mycon As New OleDb.OleDbConnection
         Dim myds As New DataSet
         Try
@@ -38,7 +40,7 @@ Public Class Login
         Dim myda As New OleDb.OleDbDataAdapter
         Dim sql As String
         sql = "Select * From Students"
-        myda = New OleDb.OleDbDataAdapter(Sql, mycon)
+        myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "MyStudents")
         maxnum = myds.Tables("MyStudents").Rows.Count
 
