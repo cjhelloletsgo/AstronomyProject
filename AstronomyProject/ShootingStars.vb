@@ -101,7 +101,7 @@
         runGame()
     End Sub
     Private Sub endGame()
-        If index / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
+        If score / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
             launch = True
         End If
         MsgBox("game over")
