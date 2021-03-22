@@ -43,10 +43,36 @@
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         Dim mycon As New OleDb.OleDbConnection
         Dim myds As New DataSet
-        mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+        'K:\CSCI460\001-43055\Students\cjmclaughlin2\Database1.mdb
+        Try
+            mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
                                       Data Source = C:\Users\Colton\Documents\Database1.mdb;
                                       Persist Security Info=False;"
-        mycon.Open()
+            mycon.Open()
+        Catch
+            Try
+                mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = K:\CSCI460\001-43055\Students\cjmclaughlin2\Database1.mdb;
+                                      Persist Security Info=False;"
+                mycon.Open()
+            Catch
+                Try
+                    mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = K:\CSCI460\001-43055\Students\bree\Database1.mdb;
+                                      Persist Security Info=False;"
+                    mycon.Open()
+                Catch
+                    Try
+                        mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = K:\CSCI460\001-43055\Students\max\Database1.mdb;
+                                      Persist Security Info=False;"
+                        mycon.Open()
+                    Catch ex As Exception
+                        MessageBox.Show("Error - " & ex.Message & vbNewLine & "can not connect to database")
+                    End Try
+                End Try
+            End Try
+        End Try
 
         Dim myda As New OleDb.OleDbDataAdapter
         Dim sql As String
@@ -120,19 +146,17 @@
         Me.Dispose()
         Quizzes.Show()
     End Sub
-
-    Private Sub CorrectAnswerButton_Click(sender As Object, e As EventArgs) Handles CorrectAnswerButton.Click
-        If j > 10 Then
-            j = j - 10
-        Else j = 0
-        End If
-    End Sub
-
     Private Sub ButtonA_Click(sender As Object, e As EventArgs) Handles ButtonA.Click
         clickedButton = "A"
         If correctAns = clickedButton Then
             Label1.Text = "Right"
             correctAnsSelected = True
+            If j > 10 Then
+                j = j - 10
+            Else j = 0
+            End If
+            score += 1
+            ScoreLabel.Text = score
         Else Label1.Text = "Wrong"
             correctAnsSelected = False
         End If
@@ -143,6 +167,12 @@
         If correctAns = clickedButton Then
             Label1.Text = "Right"
             correctAnsSelected = True
+            If j > 10 Then
+                j = j - 10
+            Else j = 0
+            End If
+            score += 1
+            ScoreLabel.Text = score
         Else Label1.Text = "Wrong"
             correctAnsSelected = False
         End If
@@ -153,6 +183,12 @@
         If correctAns = clickedButton Then
             Label1.Text = "Right"
             correctAnsSelected = True
+            If j > 10 Then
+                j = j - 10
+            Else j = 0
+            End If
+            score += 1
+            ScoreLabel.Text = score
         Else Label1.Text = "Wrong"
             correctAnsSelected = False
         End If
@@ -163,6 +199,12 @@
         If correctAns = clickedButton Then
             Label1.Text = "Right"
             correctAnsSelected = True
+            If j > 10 Then
+                j = j - 10
+            Else j = 0
+            End If
+            score += 1
+            ScoreLabel.Text = score
         Else Label1.Text = "Wrong"
             correctAnsSelected = False
         End If

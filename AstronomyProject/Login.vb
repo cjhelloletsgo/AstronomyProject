@@ -5,11 +5,36 @@ Public Class Login
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         Dim mycon As New OleDb.OleDbConnection
         Dim myds As New DataSet
-        mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+        Try
+            mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
                                       Data Source = C:\Users\Colton\Documents\Database1.mdb;
                                       Persist Security Info=False;"
-        mycon.Open()
-
+            mycon.Open()
+        Catch
+            Try
+                mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = K:\CSCI460\001-43055\Students\cjmclaughlin2\Database1.mdb;
+                                      Persist Security Info=False;"
+                mycon.Open()
+            Catch
+                Try
+                    mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = K:\CSCI460\001-43055\Students\bree\Database1.mdb;
+                                      Persist Security Info=False;"
+                    mycon.Open()
+                Catch
+                    Try
+                        mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = K:\CSCI460\001-43055\Students\max\Database1.mdb;
+                                      Persist Security Info=False;"
+                        mycon.Open()
+                    Catch ex As Exception
+                        MessageBox.Show("Error - " & ex.Message & vbNewLine & "can not connect to database")
+                    End Try
+                End Try
+            End Try
+        End Try
+        'MsgBox("A Connection is now open!")
         Dim myda As New OleDb.OleDbDataAdapter
         Dim sql As String
         sql = "Select * From Students"
