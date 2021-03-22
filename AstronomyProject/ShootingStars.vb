@@ -62,6 +62,11 @@
         ButtonD.FlatStyle = FlatStyle.Flat
         ButtonD.FlatAppearance.BorderSize = 0
         launch = False
+
+        ButtonA.Enabled = False
+        ButtonB.Enabled = False
+        ButtonC.Enabled = False
+        ButtonD.Enabled = False
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
@@ -88,10 +93,17 @@
         Timer2.Enabled = True
         Rocket.Enabled = True
         StartButton.Enabled = False
+        ButtonA.Enabled = True
+        ButtonB.Enabled = True
+        ButtonC.Enabled = True
+        ButtonD.Enabled = True
         index = 0
         runGame()
     End Sub
     Private Sub endGame()
+        If index / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
+            launch = True
+        End If
         MsgBox("game over")
     End Sub
     Private Sub runGame()
