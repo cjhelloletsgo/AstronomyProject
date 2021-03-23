@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lessons\Lesson1.Designer.vb">
+      <DependentUpon>Lesson1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -97,10 +103,10 @@
     <Compile Include="ShootingStars.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons.Designer.vb">
+    <Compile Include="Lessons\Lessons.Designer.vb">
       <DependentUpon>Lessons.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons.vb">
+    <Compile Include="Lessons\Lessons.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -151,7 +157,7 @@
     <EmbeddedResource Include="ShootingStars.resx">
       <DependentUpon>ShootingStars.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons.resx">
+    <EmbeddedResource Include="Lessons\Lessons.resx">
       <DependentUpon>Lessons.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
