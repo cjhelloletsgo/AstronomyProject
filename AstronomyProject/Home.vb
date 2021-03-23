@@ -48,7 +48,7 @@
             Dim usernameAttempt As String
             passwordAttempt = passwordTextbox.Text
             usernameAttempt = usernameTextbox.Text
-
+            MsgBox(datalocation)
             For index = 0 To maxnum - 1
                 If usernameAttempt = myds.Tables("MyStudents").Rows(index).Item(0) Then
                     If passwordAttempt = myds.Tables("MyStudents").Rows(index).Item(1) Then
@@ -62,6 +62,7 @@
                         LessonsButton.Enabled = True
                         mycon.Close()
                     Else
+                        MsgBox(datalocation)
                         MsgBox("Login Failed, please try again")
                     End If
                 End If
