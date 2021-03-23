@@ -3,14 +3,12 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\bin\Debug\Astrono
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.exe
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.pdb
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.xml
-C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Login.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.MultipleChoice.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Form3.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.ShootingStars.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Lessons.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Resources.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Quizzes.resources
-C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.test.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbproj.GenerateResource.cache
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbproj.CoreCompileInputs.cache
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.exe
