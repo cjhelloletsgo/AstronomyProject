@@ -12,6 +12,29 @@
     Dim correctAns As Char
     Dim clickedButton As Char
     Dim correctAnsSelected As Boolean
+    Dim index As Integer
+    Dim myds As New DataSet
+
+    Private Sub handleSelection()
+        ButtonA.Enabled = False
+        ButtonB.Enabled = False
+        ButtonC.Enabled = False
+        ButtonD.Enabled = False
+        If correctAns = clickedButton Then
+            Label1.Text = "Right"
+            correctAnsSelected = True
+            If j > 10 Then
+                j = j - 10
+            Else j = 0
+            End If
+            score += 1
+            ScoreLabel.Text = score
+        Else Label1.Text = "Wrong"
+            correctAnsSelected = False
+        End If
+        index += 1
+        runGame()
+    End Sub
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = False
         Timer2.Enabled = False
@@ -39,14 +62,26 @@
         ButtonD.FlatStyle = FlatStyle.Flat
         ButtonD.FlatAppearance.BorderSize = 0
         launch = False
+
+        ButtonA.Enabled = False
+        ButtonB.Enabled = False
+        ButtonC.Enabled = False
+        ButtonD.Enabled = False
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
+        Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
+        Savelocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
         Dim mycon As New OleDb.OleDbConnection
-        Dim myds As New DataSet
-        mycon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0; 
-                                      Data Source = C:\Users\Colton\Documents\Database1.mdb;
+
+
+        Try
+            mycon.ConnectionString = $"Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = {Savelocation};
                                       Persist Security Info=False;"
-        mycon.Open()
+            mycon.Open()
+        Catch ex As Exception
+            MessageBox.Show("Error - " & ex.Message & vbNewLine & "can not connect to database")
+        End Try
 
         Dim myda As New OleDb.OleDbDataAdapter
         Dim sql As String
@@ -58,20 +93,36 @@
         Timer2.Enabled = True
         Rocket.Enabled = True
         StartButton.Enabled = False
-
-
-        QuestionLabel.Text = myds.Tables("MyQuestions").Rows(0).Item(0)
-        ButtonA.Text = myds.Tables("MyQuestions").Rows(0).Item(1)
-        ButtonB.Text = myds.Tables("MyQuestions").Rows(0).Item(2)
-        ButtonC.Text = myds.Tables("MyQuestions").Rows(0).Item(3)
-        ButtonD.Text = myds.Tables("MyQuestions").Rows(0).Item(4)
-        correctAns = myds.Tables("MyQuestions").Rows(0).Item(5)
-
-
-
+        ButtonA.Enabled = True
+        ButtonB.Enabled = True
+        ButtonC.Enabled = True
+        ButtonD.Enabled = True
+        index = 0
+        runGame()
+    End Sub
+    Private Sub endGame()
+        If score / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
+            launch = True
+        End If
+        MsgBox("game over")
+    End Sub
+    Private Sub runGame()
+        If index >= myds.Tables("MyQuestions").Rows.Count Then
+            endGame()
+        Else
+            QuestionLabel.Text = myds.Tables("MyQuestions").Rows(index).Item(0)
+            ButtonA.Text = myds.Tables("MyQuestions").Rows(index).Item(1)
+            ButtonB.Text = myds.Tables("MyQuestions").Rows(index).Item(2)
+            ButtonC.Text = myds.Tables("MyQuestions").Rows(index).Item(3)
+            ButtonD.Text = myds.Tables("MyQuestions").Rows(index).Item(4)
+            correctAns = myds.Tables("MyQuestions").Rows(index).Item(5)
+            ButtonA.Enabled = True
+            ButtonB.Enabled = True
+            ButtonC.Enabled = True
+            ButtonD.Enabled = True
+        End If
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-
         i += 1
         j += 1
         If launch = False Then
@@ -120,51 +171,23 @@
         Me.Dispose()
         Quizzes.Show()
     End Sub
-
-    Private Sub CorrectAnswerButton_Click(sender As Object, e As EventArgs) Handles CorrectAnswerButton.Click
-        If j > 10 Then
-            j = j - 10
-        Else j = 0
-        End If
-    End Sub
-
     Private Sub ButtonA_Click(sender As Object, e As EventArgs) Handles ButtonA.Click
         clickedButton = "A"
-        If correctAns = clickedButton Then
-            Label1.Text = "Right"
-            correctAnsSelected = True
-        Else Label1.Text = "Wrong"
-            correctAnsSelected = False
-        End If
+        handleSelection()
     End Sub
 
     Private Sub ButtonB_Click(sender As Object, e As EventArgs) Handles ButtonB.Click
         clickedButton = "B"
-        If correctAns = clickedButton Then
-            Label1.Text = "Right"
-            correctAnsSelected = True
-        Else Label1.Text = "Wrong"
-            correctAnsSelected = False
-        End If
+        handleSelection()
     End Sub
 
     Private Sub ButtonC_Click(sender As Object, e As EventArgs) Handles ButtonC.Click
         clickedButton = "C"
-        If correctAns = clickedButton Then
-            Label1.Text = "Right"
-            correctAnsSelected = True
-        Else Label1.Text = "Wrong"
-            correctAnsSelected = False
-        End If
+        handleSelection()
     End Sub
 
     Private Sub ButtonD_Click(sender As Object, e As EventArgs) Handles ButtonD.Click
         clickedButton = "D"
-        If correctAns = clickedButton Then
-            Label1.Text = "Right"
-            correctAnsSelected = True
-        Else Label1.Text = "Wrong"
-            correctAnsSelected = False
-        End If
+        handleSelection()
     End Sub
 End Class

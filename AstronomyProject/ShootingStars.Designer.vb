@@ -34,7 +34,6 @@ Partial Class ShootingStars
         Me.GoodPlanet = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.CorrectAnswerButton = New System.Windows.Forms.Button()
         Me.ButtonA = New System.Windows.Forms.Button()
         Me.ButtonB = New System.Windows.Forms.Button()
         Me.ButtonC = New System.Windows.Forms.Button()
@@ -134,15 +133,6 @@ Partial Class ShootingStars
         Me.BackButton.Text = "Back"
         Me.BackButton.UseVisualStyleBackColor = False
         '
-        'CorrectAnswerButton
-        '
-        Me.CorrectAnswerButton.Location = New System.Drawing.Point(493, 571)
-        Me.CorrectAnswerButton.Name = "CorrectAnswerButton"
-        Me.CorrectAnswerButton.Size = New System.Drawing.Size(75, 23)
-        Me.CorrectAnswerButton.TabIndex = 9
-        Me.CorrectAnswerButton.Text = "CorrectAnswer"
-        Me.CorrectAnswerButton.UseVisualStyleBackColor = True
-        '
         'ButtonA
         '
         Me.ButtonA.BackColor = System.Drawing.Color.DarkSlateGray
@@ -207,7 +197,7 @@ Partial Class ShootingStars
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(501, 280)
+        Me.Label1.Location = New System.Drawing.Point(43, 304)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 25)
         Me.Label1.TabIndex = 15
@@ -225,7 +215,6 @@ Partial Class ShootingStars
         Me.Controls.Add(Me.ButtonC)
         Me.Controls.Add(Me.ButtonB)
         Me.Controls.Add(Me.ButtonA)
-        Me.Controls.Add(Me.CorrectAnswerButton)
         Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.GoodPlanet)
@@ -253,7 +242,6 @@ Partial Class ShootingStars
     Friend WithEvents GoodPlanet As PictureBox
     Friend WithEvents BackButton As Button
     Friend WithEvents Timer3 As Timer
-    Friend WithEvents CorrectAnswerButton As Button
     Friend WithEvents ButtonA As Button
     Friend WithEvents ButtonB As Button
     Friend WithEvents ButtonC As Button
