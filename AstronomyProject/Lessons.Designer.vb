@@ -32,9 +32,10 @@ Partial Class Lessons
         'HomeButton
         '
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.HomeButton.Location = New System.Drawing.Point(665, 406)
+        Me.HomeButton.Location = New System.Drawing.Point(499, 330)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(123, 32)
+        Me.HomeButton.Size = New System.Drawing.Size(92, 32)
         Me.HomeButton.TabIndex = 0
         Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = True
@@ -43,18 +44,20 @@ Partial Class Lessons
         '
         Me.LessonsLabel.AutoSize = True
         Me.LessonsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.LessonsLabel.Location = New System.Drawing.Point(337, 9)
+        Me.LessonsLabel.Location = New System.Drawing.Point(307, 9)
+        Me.LessonsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LessonsLabel.Name = "LessonsLabel"
-        Me.LessonsLabel.Size = New System.Drawing.Size(127, 36)
+        Me.LessonsLabel.Size = New System.Drawing.Size(103, 29)
         Me.LessonsLabel.TabIndex = 1
         Me.LessonsLabel.Text = "Lessons"
         '
         'Lesson1Button
         '
         Me.Lesson1Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Lesson1Button.Location = New System.Drawing.Point(142, 182)
+        Me.Lesson1Button.Location = New System.Drawing.Point(106, 148)
+        Me.Lesson1Button.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Lesson1Button.Name = "Lesson1Button"
-        Me.Lesson1Button.Size = New System.Drawing.Size(123, 32)
+        Me.Lesson1Button.Size = New System.Drawing.Size(92, 26)
         Me.Lesson1Button.TabIndex = 2
         Me.Lesson1Button.Text = "Lesson 1"
         Me.Lesson1Button.UseVisualStyleBackColor = True
@@ -62,9 +65,10 @@ Partial Class Lessons
         'Lesson2Button
         '
         Me.Lesson2Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Lesson2Button.Location = New System.Drawing.Point(339, 182)
+        Me.Lesson2Button.Location = New System.Drawing.Point(254, 148)
+        Me.Lesson2Button.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Lesson2Button.Name = "Lesson2Button"
-        Me.Lesson2Button.Size = New System.Drawing.Size(123, 32)
+        Me.Lesson2Button.Size = New System.Drawing.Size(92, 26)
         Me.Lesson2Button.TabIndex = 3
         Me.Lesson2Button.Text = "Lesson 2"
         Me.Lesson2Button.UseVisualStyleBackColor = True
@@ -72,23 +76,25 @@ Partial Class Lessons
         'Lesson3Button
         '
         Me.Lesson3Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Lesson3Button.Location = New System.Drawing.Point(536, 182)
+        Me.Lesson3Button.Location = New System.Drawing.Point(402, 148)
+        Me.Lesson3Button.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Lesson3Button.Name = "Lesson3Button"
-        Me.Lesson3Button.Size = New System.Drawing.Size(123, 32)
+        Me.Lesson3Button.Size = New System.Drawing.Size(92, 26)
         Me.Lesson3Button.TabIndex = 4
         Me.Lesson3Button.Text = "Lesson 3"
         Me.Lesson3Button.UseVisualStyleBackColor = True
         '
         'Lessons
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(810, 598)
         Me.Controls.Add(Me.Lesson3Button)
         Me.Controls.Add(Me.Lesson2Button)
         Me.Controls.Add(Me.Lesson1Button)
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.HomeButton)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Lessons"
         Me.Text = "Lessons"
         Me.ResumeLayout(False)
