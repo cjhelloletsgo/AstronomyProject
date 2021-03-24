@@ -152,16 +152,6 @@
             'MsgBox("Game Over")
         End If
     End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Rocket.Click
-        score += 1
-        launch = True
-        'Return to start
-        'j = 1
-        'Rocket.Location = New Point(x, y)
-        ScoreLabel.Text = score
-    End Sub
-
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
         Home.Show()
         My.Computer.Audio.Stop()

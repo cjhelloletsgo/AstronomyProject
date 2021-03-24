@@ -2,6 +2,8 @@
     Dim datalocation As String
     Dim maxnum As Integer
     Public savelocation As String
+    Public userScore As Double
+    Public currentuser As String
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim information = My.Computer.FileSystem.GetFileInfo("AstronomyProject\sounds\space1.wav")
         savelocation = information.FullName.Substring(0, information.FullName.Length - 61) + "sounds\"
@@ -60,13 +62,13 @@
                         LessonsButton.Visible = True
                         QuizzesButton.Enabled = True
                         LessonsButton.Enabled = True
+                        currentuser = myds.Tables("MyStudents").Rows(index).Item(0)
                         mycon.Close()
                     Else
                         MsgBox("Login Failed, please try again")
                     End If
                 End If
             Next
-
         Catch ex As Exception
             MessageBox.Show("Error - " & ex.Message & vbNewLine & "can not connect to database")
         End Try

@@ -27,7 +27,6 @@ Partial Class Home
         Me.AstronoMeLabel = New System.Windows.Forms.Label()
         Me.QuizzesButton = New System.Windows.Forms.Button()
         Me.LessonsButton = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.passwordTextbox = New System.Windows.Forms.TextBox()
@@ -86,15 +85,6 @@ Partial Class Home
         Me.LessonsButton.Text = "Lessons"
         Me.LessonsButton.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(888, 571)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(163, 81)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Skip login"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -152,7 +142,6 @@ Partial Class Home
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1080, 736)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.passwordTextbox)
@@ -175,7 +164,6 @@ Partial Class Home
     Friend WithEvents AstronoMeLabel As Label
     Friend WithEvents QuizzesButton As Button
     Friend WithEvents LessonsButton As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents passwordTextbox As TextBox
