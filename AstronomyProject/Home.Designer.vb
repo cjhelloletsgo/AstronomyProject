@@ -65,10 +65,10 @@ Partial Class Home
         Me.QuizzesButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.QuizzesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.QuizzesButton.ForeColor = System.Drawing.Color.White
-        Me.QuizzesButton.Location = New System.Drawing.Point(335, 620)
+        Me.QuizzesButton.Location = New System.Drawing.Point(294, 621)
         Me.QuizzesButton.Margin = New System.Windows.Forms.Padding(0)
         Me.QuizzesButton.Name = "QuizzesButton"
-        Me.QuizzesButton.Size = New System.Drawing.Size(123, 32)
+        Me.QuizzesButton.Size = New System.Drawing.Size(205, 36)
         Me.QuizzesButton.TabIndex = 6
         Me.QuizzesButton.Text = "Quizzes"
         Me.QuizzesButton.UseVisualStyleBackColor = False
@@ -78,51 +78,51 @@ Partial Class Home
         Me.LessonsButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LessonsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.LessonsButton.ForeColor = System.Drawing.Color.White
-        Me.LessonsButton.Location = New System.Drawing.Point(622, 620)
+        Me.LessonsButton.Location = New System.Drawing.Point(581, 621)
         Me.LessonsButton.Name = "LessonsButton"
-        Me.LessonsButton.Size = New System.Drawing.Size(123, 32)
+        Me.LessonsButton.Size = New System.Drawing.Size(205, 36)
         Me.LessonsButton.TabIndex = 7
         Me.LessonsButton.Text = "Lessons"
         Me.LessonsButton.UseVisualStyleBackColor = False
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(626, 270)
+        Me.Label5.Location = New System.Drawing.Point(573, 271)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(98, 25)
+        Me.Label5.Size = New System.Drawing.Size(205, 36)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Password"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(356, 270)
+        Me.Label4.Location = New System.Drawing.Point(303, 271)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 25)
+        Me.Label4.Size = New System.Drawing.Size(205, 36)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Username"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'passwordTextbox
         '
         Me.passwordTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.passwordTextbox.Location = New System.Drawing.Point(625, 337)
+        Me.passwordTextbox.Location = New System.Drawing.Point(573, 327)
         Me.passwordTextbox.Name = "passwordTextbox"
-        Me.passwordTextbox.Size = New System.Drawing.Size(100, 30)
+        Me.passwordTextbox.Size = New System.Drawing.Size(205, 30)
         Me.passwordTextbox.TabIndex = 11
         '
         'usernameTextbox
         '
         Me.usernameTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.usernameTextbox.Location = New System.Drawing.Point(355, 337)
+        Me.usernameTextbox.Location = New System.Drawing.Point(303, 327)
         Me.usernameTextbox.Name = "usernameTextbox"
-        Me.usernameTextbox.Size = New System.Drawing.Size(100, 30)
+        Me.usernameTextbox.Size = New System.Drawing.Size(205, 30)
         Me.usernameTextbox.TabIndex = 10
         '
         'LoginButton
@@ -130,7 +130,7 @@ Partial Class Home
         Me.LoginButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.LoginButton.ForeColor = System.Drawing.Color.White
-        Me.LoginButton.Location = New System.Drawing.Point(466, 495)
+        Me.LoginButton.Location = New System.Drawing.Point(466, 394)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(149, 40)
         Me.LoginButton.TabIndex = 9
