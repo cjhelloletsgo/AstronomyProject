@@ -73,4 +73,9 @@
             MessageBox.Show("Error - " & ex.Message & vbNewLine & "can not connect to database")
         End Try
     End Sub
+
+    Private Sub skip_Click(sender As Object, e As EventArgs) Handles skip.Click
+        Me.Hide()
+        ShootingStars.Show()
+    End Sub
 End Class

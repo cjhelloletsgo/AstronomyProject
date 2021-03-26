@@ -6,7 +6,8 @@
     Dim j As Integer
     Dim a As Integer
     Dim b As Integer
-    Dim Savelocation = Home.Savelocation
+    Dim Savelocation = Home.savelocation
+    Dim datalocation As String
     Dim launch = False
     Dim maxnum As Integer
     Dim correctAns As Char
@@ -24,7 +25,7 @@
             Label1.Text = "Right"
             correctAnsSelected = True
             If j > 10 Then
-                j = j - 10
+                j = j - 30
             Else j = 0
             End If
             score += 1
@@ -36,6 +37,8 @@
         runGame()
     End Sub
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
+
         Timer1.Enabled = False
         Timer2.Enabled = False
         Explosion.Visible = False
@@ -62,6 +65,7 @@
         ButtonD.FlatStyle = FlatStyle.Flat
         ButtonD.FlatAppearance.BorderSize = 0
         launch = False
+        QuestionLabel.Visible = False
 
         ButtonA.Enabled = False
         ButtonB.Enabled = False
@@ -69,14 +73,15 @@
         ButtonD.Enabled = False
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
+        StartButton.Visible = False
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
-        Savelocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
+        datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
         Dim mycon As New OleDb.OleDbConnection
 
 
         Try
             mycon.ConnectionString = $"Provider=Microsoft.ACE.OLEDB.12.0; 
-                                      Data Source = {Savelocation};
+                                      Data Source = {datalocation};
                                       Persist Security Info=False;"
             mycon.Open()
         Catch ex As Exception
@@ -107,6 +112,7 @@
         MsgBox("game over")
     End Sub
     Private Sub runGame()
+        QuestionLabel.Visible = True
         If index >= myds.Tables("MyQuestions").Rows.Count Then
             endGame()
         Else
@@ -126,16 +132,17 @@
         i += 1
         j += 1
         If launch = False Then
-            Rocket.Left = x + 2 * j
+            Rocket.Left = x + 2 * j / 2
             Rocket.Top = -15 * Math.Sqrt(j) + y
             'Add in rotation here
         Else
             Rocket.Top -= 3
         End If
-        GoodPlanet.Left = a + Math.Cos(i / 5) * 50
-        GoodPlanet.Top = b + Math.Sin(i / 5) * 50
-        Explosion.Left = a + Math.Cos(i / 5) * 50
-        Explosion.Top = b + Math.Sin(i / 5) * 50
+        'divisor Controls speed
+        GoodPlanet.Left = a + Math.Cos(i / 12) * 50
+        GoodPlanet.Top = b + Math.Sin(i / 12) * 50
+        Explosion.Left = a + Math.Cos(i / 12) * 50
+        Explosion.Top = b + Math.Sin(i / 12) * 50
         'x = originX + cos(angle)*radius;
         'y = originY + sin(angle)*radius;
     End Sub
