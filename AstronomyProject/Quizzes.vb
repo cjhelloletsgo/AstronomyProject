@@ -13,4 +13,8 @@
         MultipleChoice.Show()
         Me.Dispose()
     End Sub
+
+    Private Sub Quizzes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
 End Class

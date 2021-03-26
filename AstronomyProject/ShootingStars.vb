@@ -24,12 +24,12 @@
         If correctAns = clickedButton Then
             Label1.Text = "Right"
             correctAnsSelected = True
-            If j > 10 Then
+            If j > 30 Then
                 j = j - 30
             Else j = 0
             End If
             score += 1
-            ScoreLabel.Text = score
+            ScoreLabel.Text = $"score: {score}"
         Else Label1.Text = "Wrong"
             correctAnsSelected = False
         End If
@@ -38,7 +38,7 @@
     End Sub
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
-
+        Me.PerformAutoScale()
         Timer1.Enabled = False
         Timer2.Enabled = False
         Explosion.Visible = False
@@ -64,6 +64,8 @@
         ButtonC.FlatAppearance.BorderSize = 0
         ButtonD.FlatStyle = FlatStyle.Flat
         ButtonD.FlatAppearance.BorderSize = 0
+        quitButton.FlatStyle = FlatStyle.Flat
+        quitButton.FlatAppearance.BorderSize = 0
         launch = False
         QuestionLabel.Visible = False
 
@@ -186,5 +188,9 @@
     Private Sub ButtonD_Click(sender As Object, e As EventArgs) Handles ButtonD.Click
         clickedButton = "D"
         handleSelection()
+    End Sub
+
+    Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
+        Application.Exit()
     End Sub
 End Class

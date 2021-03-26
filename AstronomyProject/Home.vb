@@ -5,6 +5,7 @@
     Public userScore As Double
     Public currentuser As String
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         Dim information = My.Computer.FileSystem.GetFileInfo("AstronomyProject\sounds\space1.wav")
         savelocation = information.FullName.Substring(0, information.FullName.Length - 61) + "sounds\"
         My.Computer.Audio.Play(savelocation + "space1.wav")

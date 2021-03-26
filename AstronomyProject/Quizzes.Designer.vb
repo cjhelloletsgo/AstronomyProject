@@ -34,10 +34,10 @@ Partial Class Quizzes
         'HomeButton
         '
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.HomeButton.Location = New System.Drawing.Point(694, 508)
-        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HomeButton.Location = New System.Drawing.Point(925, 625)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(80, 37)
+        Me.HomeButton.Size = New System.Drawing.Size(107, 46)
         Me.HomeButton.TabIndex = 0
         Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = True
@@ -45,10 +45,10 @@ Partial Class Quizzes
         'ShootingStarsButton
         '
         Me.ShootingStarsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.ShootingStarsButton.Location = New System.Drawing.Point(455, 379)
-        Me.ShootingStarsButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ShootingStarsButton.Location = New System.Drawing.Point(607, 466)
+        Me.ShootingStarsButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ShootingStarsButton.Name = "ShootingStarsButton"
-        Me.ShootingStarsButton.Size = New System.Drawing.Size(139, 31)
+        Me.ShootingStarsButton.Size = New System.Drawing.Size(185, 38)
         Me.ShootingStarsButton.TabIndex = 1
         Me.ShootingStarsButton.Text = "Shooting Stars"
         Me.ShootingStarsButton.UseVisualStyleBackColor = True
@@ -57,20 +57,19 @@ Partial Class Quizzes
         '
         Me.QuizzesLabel.AutoSize = True
         Me.QuizzesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.QuizzesLabel.Location = New System.Drawing.Point(349, 18)
-        Me.QuizzesLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.QuizzesLabel.Location = New System.Drawing.Point(465, 22)
         Me.QuizzesLabel.Name = "QuizzesLabel"
-        Me.QuizzesLabel.Size = New System.Drawing.Size(99, 29)
+        Me.QuizzesLabel.Size = New System.Drawing.Size(122, 36)
         Me.QuizzesLabel.TabIndex = 2
         Me.QuizzesLabel.Text = "Quizzes"
         '
         'MultipleChoiceButton
         '
         Me.MultipleChoiceButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.MultipleChoiceButton.Location = New System.Drawing.Point(202, 379)
-        Me.MultipleChoiceButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MultipleChoiceButton.Location = New System.Drawing.Point(269, 466)
+        Me.MultipleChoiceButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MultipleChoiceButton.Name = "MultipleChoiceButton"
-        Me.MultipleChoiceButton.Size = New System.Drawing.Size(128, 31)
+        Me.MultipleChoiceButton.Size = New System.Drawing.Size(171, 38)
         Me.MultipleChoiceButton.TabIndex = 3
         Me.MultipleChoiceButton.Text = "Multiple Choice"
         Me.MultipleChoiceButton.UseVisualStyleBackColor = True
@@ -78,25 +77,25 @@ Partial Class Quizzes
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-75, -37)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(-73, -5)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(935, 743)
+        Me.PictureBox1.Size = New System.Drawing.Size(1247, 914)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'Quizzes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(810, 598)
+        Me.ClientSize = New System.Drawing.Size(1080, 736)
         Me.Controls.Add(Me.MultipleChoiceButton)
         Me.Controls.Add(Me.QuizzesLabel)
         Me.Controls.Add(Me.ShootingStarsButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Quizzes"
         Me.Text = "Quizzes"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
