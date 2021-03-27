@@ -147,7 +147,7 @@ Partial Class ShootingStars
         Me.ButtonA.BackColor = System.Drawing.Color.DarkSlateGray
         Me.ButtonA.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ButtonA.ForeColor = System.Drawing.Color.White
-        Me.ButtonA.Location = New System.Drawing.Point(372, 484)
+        Me.ButtonA.Location = New System.Drawing.Point(372, 477)
         Me.ButtonA.Name = "ButtonA"
         Me.ButtonA.Size = New System.Drawing.Size(475, 95)
         Me.ButtonA.TabIndex = 10
@@ -160,7 +160,7 @@ Partial Class ShootingStars
         Me.ButtonB.BackColor = System.Drawing.Color.DarkSlateGray
         Me.ButtonB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ButtonB.ForeColor = System.Drawing.Color.White
-        Me.ButtonB.Location = New System.Drawing.Point(372, 585)
+        Me.ButtonB.Location = New System.Drawing.Point(372, 578)
         Me.ButtonB.Name = "ButtonB"
         Me.ButtonB.Size = New System.Drawing.Size(475, 95)
         Me.ButtonB.TabIndex = 11
@@ -173,7 +173,7 @@ Partial Class ShootingStars
         Me.ButtonC.BackColor = System.Drawing.Color.DarkSlateGray
         Me.ButtonC.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ButtonC.ForeColor = System.Drawing.Color.White
-        Me.ButtonC.Location = New System.Drawing.Point(864, 484)
+        Me.ButtonC.Location = New System.Drawing.Point(864, 477)
         Me.ButtonC.Name = "ButtonC"
         Me.ButtonC.Size = New System.Drawing.Size(475, 95)
         Me.ButtonC.TabIndex = 12
@@ -186,7 +186,7 @@ Partial Class ShootingStars
         Me.ButtonD.BackColor = System.Drawing.Color.DarkSlateGray
         Me.ButtonD.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ButtonD.ForeColor = System.Drawing.Color.White
-        Me.ButtonD.Location = New System.Drawing.Point(864, 585)
+        Me.ButtonD.Location = New System.Drawing.Point(864, 578)
         Me.ButtonD.Name = "ButtonD"
         Me.ButtonD.Size = New System.Drawing.Size(475, 95)
         Me.ButtonD.TabIndex = 13
@@ -198,7 +198,7 @@ Partial Class ShootingStars
         Me.QuestionLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.QuestionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.QuestionLabel.ForeColor = System.Drawing.Color.White
-        Me.QuestionLabel.Location = New System.Drawing.Point(367, 390)
+        Me.QuestionLabel.Location = New System.Drawing.Point(367, 405)
         Me.QuestionLabel.Name = "QuestionLabel"
         Me.QuestionLabel.Size = New System.Drawing.Size(975, 69)
         Me.QuestionLabel.TabIndex = 14

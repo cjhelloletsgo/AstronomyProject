@@ -39,9 +39,9 @@ Partial Class Home
         Me.AstronoMeLabel.BackColor = System.Drawing.Color.DarkSlateGray
         Me.AstronoMeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.0!)
         Me.AstronoMeLabel.ForeColor = System.Drawing.Color.White
-        Me.AstronoMeLabel.Location = New System.Drawing.Point(588, 60)
+        Me.AstronoMeLabel.Location = New System.Drawing.Point(571, 60)
         Me.AstronoMeLabel.Name = "AstronoMeLabel"
-        Me.AstronoMeLabel.Size = New System.Drawing.Size(241, 52)
+        Me.AstronoMeLabel.Size = New System.Drawing.Size(275, 52)
         Me.AstronoMeLabel.TabIndex = 3
         Me.AstronoMeLabel.Text = "AstronoMe"
         Me.AstronoMeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

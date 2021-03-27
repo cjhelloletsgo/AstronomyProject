@@ -65,6 +65,7 @@
                     If passwordAttempt = myds.Tables("MyStudents").Rows(index).Item(1) Then
                         Label4.Visible = False
                         Label5.Visible = False
+                        LoginButton.Visible = False
                         usernameTextbox.Visible = False
                         passwordTextbox.Visible = False
                         QuizzesButton.Visible = True

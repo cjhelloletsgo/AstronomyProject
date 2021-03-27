@@ -31,7 +31,7 @@ Partial Class Quizzes
         'HomeButton
         '
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.HomeButton.Location = New System.Drawing.Point(925, 625)
+        Me.HomeButton.Location = New System.Drawing.Point(961, 679)
         Me.HomeButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(107, 46)
@@ -42,7 +42,7 @@ Partial Class Quizzes
         'ShootingStarsButton
         '
         Me.ShootingStarsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.ShootingStarsButton.Location = New System.Drawing.Point(607, 466)
+        Me.ShootingStarsButton.Location = New System.Drawing.Point(617, 466)
         Me.ShootingStarsButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ShootingStarsButton.Name = "ShootingStarsButton"
         Me.ShootingStarsButton.Size = New System.Drawing.Size(185, 38)
@@ -52,21 +52,22 @@ Partial Class Quizzes
         '
         'QuizzesLabel
         '
-        Me.QuizzesLabel.AutoSize = True
-        Me.QuizzesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!)
-        Me.QuizzesLabel.Location = New System.Drawing.Point(465, 22)
+        Me.QuizzesLabel.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.QuizzesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.0!)
+        Me.QuizzesLabel.Location = New System.Drawing.Point(412, 28)
         Me.QuizzesLabel.Name = "QuizzesLabel"
-        Me.QuizzesLabel.Size = New System.Drawing.Size(122, 36)
+        Me.QuizzesLabel.Size = New System.Drawing.Size(257, 52)
         Me.QuizzesLabel.TabIndex = 2
         Me.QuizzesLabel.Text = "Quizzes"
+        Me.QuizzesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MultipleChoiceButton
         '
         Me.MultipleChoiceButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.MultipleChoiceButton.Location = New System.Drawing.Point(269, 466)
+        Me.MultipleChoiceButton.Location = New System.Drawing.Point(279, 466)
         Me.MultipleChoiceButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MultipleChoiceButton.Name = "MultipleChoiceButton"
-        Me.MultipleChoiceButton.Size = New System.Drawing.Size(171, 38)
+        Me.MultipleChoiceButton.Size = New System.Drawing.Size(185, 38)
         Me.MultipleChoiceButton.TabIndex = 3
         Me.MultipleChoiceButton.Text = "Multiple Choice"
         Me.MultipleChoiceButton.UseVisualStyleBackColor = True
@@ -84,7 +85,6 @@ Partial Class Quizzes
         Me.Name = "Quizzes"
         Me.Text = "Quizzes"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

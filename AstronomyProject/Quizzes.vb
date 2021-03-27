@@ -19,7 +19,7 @@
         rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
     End Sub
-    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub Quizzes_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         rs.ResizeAllControls(Me)
     End Sub
 End Class
