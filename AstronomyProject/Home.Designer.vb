@@ -75,14 +75,13 @@ Partial Class Home
         '
         'Label5
         '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(573, 271)
+        Me.Label5.Location = New System.Drawing.Point(741, 271)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(542, 36)
+        Me.Label5.Size = New System.Drawing.Size(205, 36)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Password"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -92,7 +91,7 @@ Partial Class Home
         Me.Label4.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(303, 271)
+        Me.Label4.Location = New System.Drawing.Point(471, 271)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(205, 36)
         Me.Label4.TabIndex = 12
@@ -103,7 +102,7 @@ Partial Class Home
         '
         Me.passwordTextbox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.passwordTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.passwordTextbox.Location = New System.Drawing.Point(910, 327)
+        Me.passwordTextbox.Location = New System.Drawing.Point(741, 327)
         Me.passwordTextbox.Name = "passwordTextbox"
         Me.passwordTextbox.Size = New System.Drawing.Size(205, 30)
         Me.passwordTextbox.TabIndex = 11
@@ -111,7 +110,7 @@ Partial Class Home
         'usernameTextbox
         '
         Me.usernameTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.usernameTextbox.Location = New System.Drawing.Point(303, 327)
+        Me.usernameTextbox.Location = New System.Drawing.Point(471, 327)
         Me.usernameTextbox.Name = "usernameTextbox"
         Me.usernameTextbox.Size = New System.Drawing.Size(205, 30)
         Me.usernameTextbox.TabIndex = 10

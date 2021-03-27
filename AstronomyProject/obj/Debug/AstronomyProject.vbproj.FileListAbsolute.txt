@@ -14,7 +14,6 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\Astrono
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.exe
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.xml
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
-C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.exe.config
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.exe
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.pdb
@@ -32,4 +31,3 @@ C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.exe
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.xml
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
-C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Test.resources

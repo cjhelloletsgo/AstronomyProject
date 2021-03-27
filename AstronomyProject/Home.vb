@@ -4,7 +4,14 @@
     Public savelocation As String
     Public userScore As Double
     Public currentuser As String
+    Dim rs As New Resizer
+
+
+    Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        rs.ResizeAllControls(Me)
+    End Sub
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
         Dim information = My.Computer.FileSystem.GetFileInfo("AstronomyProject\sounds\space1.wav")
         savelocation = information.FullName.Substring(0, information.FullName.Length - 61) + "sounds\"

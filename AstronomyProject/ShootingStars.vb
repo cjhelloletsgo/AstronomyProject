@@ -15,7 +15,7 @@
     Dim correctAnsSelected As Boolean
     Dim index As Integer
     Dim myds As New DataSet
-
+    Dim rs As New Resizer
     Private Sub handleSelection()
         ButtonA.Enabled = False
         ButtonB.Enabled = False
@@ -37,8 +37,8 @@
         runGame()
     End Sub
     Private Sub ShootingStars_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
-        Me.PerformAutoScale()
         Timer1.Enabled = False
         Timer2.Enabled = False
         Explosion.Visible = False
@@ -73,6 +73,9 @@
         ButtonB.Enabled = False
         ButtonC.Enabled = False
         ButtonD.Enabled = False
+    End Sub
+    Private Sub ShootingStars_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        rs.ResizeAllControls(Me)
     End Sub
     Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         StartButton.Visible = False
