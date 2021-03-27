@@ -37,7 +37,6 @@ Partial Class Home
         'AstronoMeLabel
         '
         Me.AstronoMeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.AstronoMeLabel.AutoSize = True
         Me.AstronoMeLabel.BackColor = System.Drawing.Color.DarkSlateGray
         Me.AstronoMeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.0!)
         Me.AstronoMeLabel.ForeColor = System.Drawing.Color.White
