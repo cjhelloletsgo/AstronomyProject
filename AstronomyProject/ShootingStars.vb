@@ -95,14 +95,15 @@
 
         Dim myda As New OleDb.OleDbDataAdapter
         Dim sql As String
-
+        sql = ""
         If Quizzes.chapter = 1 Then
             sql = "Select * From lesson1Questions"
         ElseIf Quizzes.chapter = 2 Then
             sql = "Select * From lesson2Questions"
+        ElseIf Quizzes.chapter = 3 Then
+            sql = "Select * From lesson3Questions"
         End If
 
-        sql = "Select * From Questions"
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "MyQuestions")
         maxnum = myds.Tables("MyQuestions").Rows.Count

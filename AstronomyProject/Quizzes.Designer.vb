@@ -27,6 +27,7 @@ Partial Class Quizzes
         Me.QuizzesLabel = New System.Windows.Forms.Label()
         Me.MultipleChoiceButton = New System.Windows.Forms.Button()
         Me.Chapter2 = New System.Windows.Forms.Button()
+        Me.Chapter3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'HomeButton
@@ -84,11 +85,23 @@ Partial Class Quizzes
         Me.Chapter2.Text = "Chapter 2"
         Me.Chapter2.UseVisualStyleBackColor = True
         '
+        'Chapter3
+        '
+        Me.Chapter3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Chapter3.Location = New System.Drawing.Point(617, 563)
+        Me.Chapter3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Chapter3.Name = "Chapter3"
+        Me.Chapter3.Size = New System.Drawing.Size(185, 38)
+        Me.Chapter3.TabIndex = 5
+        Me.Chapter3.Text = "Chapter 3"
+        Me.Chapter3.UseVisualStyleBackColor = True
+        '
         'Quizzes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1080, 736)
+        Me.Controls.Add(Me.Chapter3)
         Me.Controls.Add(Me.Chapter2)
         Me.Controls.Add(Me.MultipleChoiceButton)
         Me.Controls.Add(Me.QuizzesLabel)
@@ -106,4 +119,5 @@ Partial Class Quizzes
     Friend WithEvents QuizzesLabel As Label
     Friend WithEvents MultipleChoiceButton As Button
     Friend WithEvents Chapter2 As Button
+    Friend WithEvents Chapter3 As Button
 End Class

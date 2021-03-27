@@ -20,11 +20,17 @@
     Private Sub ShootingStarsButton_Click(sender As Object, e As EventArgs) Handles ShootingStarsButton.Click
         chapter = 1
         ShootingStars.Show()
-        Me.Dispose()
+        Me.Hide()
     End Sub
     Private Sub Chapter2_Click(sender As Object, e As EventArgs) Handles Chapter2.Click
         chapter = 2
         ShootingStars.Show()
-        Me.Dispose()
+        Me.Hide()
+    End Sub
+
+    Private Sub Chapter3_Click(sender As Object, e As EventArgs) Handles Chapter3.Click
+        chapter = 3
+        ShootingStars.Show()
+        Me.Hide()
     End Sub
 End Class
