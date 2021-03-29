@@ -12,7 +12,6 @@
     Dim maxnum As Integer
     Dim correctAns As Char
     Dim clickedButton As Char
-    Dim correctAnsSelected As Boolean
     Dim index As Integer
     Dim myds As New DataSet
     Dim rs As New Resizer
@@ -23,7 +22,6 @@
         ButtonD.Enabled = False
         If correctAns = clickedButton Then
             Label1.Text = "Right"
-            correctAnsSelected = True
             If j > 30 Then
                 j = j - 30
             Else j = 0
@@ -31,7 +29,6 @@
             score += 1
             ScoreLabel.Text = $"score: {score}"
         Else Label1.Text = "Wrong"
-            correctAnsSelected = False
         End If
         index += 1
         runGame()
@@ -68,6 +65,7 @@
         quitButton.FlatAppearance.BorderSize = 0
         launch = False
         QuestionLabel.Visible = False
+        fireworksPictureBox.Visible = False
 
         ButtonA.Enabled = False
         ButtonB.Enabled = False
@@ -82,7 +80,6 @@
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
         datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
         Dim mycon As New OleDb.OleDbConnection
-
 
         Try
             mycon.ConnectionString = $"Provider=Microsoft.ACE.OLEDB.12.0; 
@@ -121,6 +118,7 @@
     Private Sub endGame()
         If score / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
             launch = True
+            fireworksPictureBox.Visible = True
         End If
         MsgBox("game over")
     End Sub

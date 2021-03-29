@@ -33,4 +33,8 @@
         ShootingStars.Show()
         Me.Hide()
     End Sub
+
+    Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
+        Application.Exit()
+    End Sub
 End Class

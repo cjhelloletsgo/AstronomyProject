@@ -12,4 +12,8 @@
     Private Sub Quizzes_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         rs.ResizeAllControls(Me)
     End Sub
+
+    Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
+        Application.Exit()
+    End Sub
 End Class

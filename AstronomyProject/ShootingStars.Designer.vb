@@ -40,9 +40,11 @@ Partial Class ShootingStars
         Me.QuestionLabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.quitButton = New System.Windows.Forms.Button()
+        Me.fireworksPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.fireworksPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Rocket
@@ -229,6 +231,16 @@ Partial Class ShootingStars
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '
+        'fireworksPictureBox
+        '
+        Me.fireworksPictureBox.Image = CType(resources.GetObject("fireworksPictureBox.Image"), System.Drawing.Image)
+        Me.fireworksPictureBox.Location = New System.Drawing.Point(177, 33)
+        Me.fireworksPictureBox.Name = "fireworksPictureBox"
+        Me.fireworksPictureBox.Size = New System.Drawing.Size(131, 140)
+        Me.fireworksPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.fireworksPictureBox.TabIndex = 17
+        Me.fireworksPictureBox.TabStop = False
+        '
         'ShootingStars
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
@@ -237,6 +249,7 @@ Partial Class ShootingStars
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1351, 683)
+        Me.Controls.Add(Me.fireworksPictureBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.QuestionLabel)
         Me.Controls.Add(Me.ButtonD)
@@ -255,6 +268,7 @@ Partial Class ShootingStars
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.fireworksPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -276,4 +290,5 @@ Partial Class ShootingStars
     Friend WithEvents QuestionLabel As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents quitButton As Button
+    Friend WithEvents fireworksPictureBox As PictureBox
 End Class

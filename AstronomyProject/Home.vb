@@ -5,7 +5,8 @@
     Public userScore As Double
     Public currentuser As String
     Dim rs As New Resizer
-
+    Dim passwordAttempt As String
+    Dim usernameAttempt As String
 
     Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         rs.ResizeAllControls(Me)
@@ -55,8 +56,7 @@
             myda.Fill(myds, "MyStudents")
             maxnum = myds.Tables("MyStudents").Rows.Count
 
-            Dim passwordAttempt As String
-            Dim usernameAttempt As String
+
             passwordAttempt = passwordTextbox.Text
             usernameAttempt = usernameTextbox.Text
 
@@ -86,6 +86,12 @@
 
     Private Sub skip_Click(sender As Object, e As EventArgs) Handles skip.Click
         Me.Hide()
-        ShootingStars.Show()
+        usernameAttempt = "colton"
+        passwordAttempt = "1234"
+        Quizzes.Show()
+    End Sub
+
+    Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
+        Application.Exit()
     End Sub
 End Class
