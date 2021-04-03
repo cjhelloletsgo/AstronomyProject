@@ -140,6 +140,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Lessons\Lesson1.resx">
+      <DependentUpon>Lesson1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultipleChoice.resx">
       <DependentUpon>MultipleChoice.vb</DependentUpon>
     </EmbeddedResource>
