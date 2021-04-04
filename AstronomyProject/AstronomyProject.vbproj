@@ -79,6 +79,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Games\SnakeForm.Designer.vb">
+      <DependentUpon>SnakeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Games\SnakeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\Player.vb" />
+    <Compile Include="Games\Snake.vb" />
     <Compile Include="Lessons\Lesson1.Designer.vb">
       <DependentUpon>Lesson1.vb</DependentUpon>
     </Compile>

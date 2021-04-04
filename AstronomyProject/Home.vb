@@ -38,6 +38,12 @@
         Me.Hide()
     End Sub
 
+    Private Sub GamesButton_Click(sender As Object, e As EventArgs) Handles GamesButton.Click
+        SnakeForm.Show()
+        Me.Hide()
+    End Sub
+
+
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
         datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
