@@ -160,6 +160,9 @@
     <EmbeddedResource Include="Lessons\Lesson1\pg1Lesson1.resx">
       <DependentUpon>pg1Lesson1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lessons\Lesson1\pg2Lesson1.resx">
+      <DependentUpon>pg2Lesson1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultipleChoice.resx">
       <DependentUpon>MultipleChoice.vb</DependentUpon>
     </EmbeddedResource>
