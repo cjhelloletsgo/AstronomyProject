@@ -94,7 +94,7 @@
         Me.Hide()
         usernameAttempt = "colton"
         passwordAttempt = "1234"
-        Quizzes.Show()
+        Lessons.Show()
     End Sub
 
     Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
