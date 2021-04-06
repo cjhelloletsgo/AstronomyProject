@@ -148,6 +148,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Games\SnakeForm.resx">
+      <DependentUpon>SnakeForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lessons\Lesson1.resx">
       <DependentUpon>Lesson1.vb</DependentUpon>
     </EmbeddedResource>
