@@ -35,3 +35,4 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\Astrono
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.SnakeForm.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg1Lesson1.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg2Lesson1.resources
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg3Lesson1.resources
