@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ShootingStars
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ShootingStars
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ShootingStars))
@@ -41,7 +41,6 @@ Partial Class ShootingStars
         Me.Label1 = New System.Windows.Forms.Label()
         Me.quitButton = New System.Windows.Forms.Button()
         Me.fireworksPictureBox = New System.Windows.Forms.PictureBox()
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.Rocket, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GoodPlanet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -257,9 +256,6 @@ Partial Class ShootingStars
         Me.fireworksPictureBox.TabIndex = 17
         Me.fireworksPictureBox.TabStop = False
         '
-        'Timer3
-        '
-        '
         'ShootingStars
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
@@ -311,5 +307,4 @@ Partial Class ShootingStars
     Friend WithEvents Label1 As Label
     Friend WithEvents quitButton As Button
     Friend WithEvents fireworksPictureBox As PictureBox
-    Friend WithEvents Timer3 As Timer
 End Class
