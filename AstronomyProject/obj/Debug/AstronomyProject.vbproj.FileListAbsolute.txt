@@ -36,3 +36,4 @@ C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg1Lesson1.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg2Lesson1.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg3Lesson1.resources
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg1_5Lesson1.resources
