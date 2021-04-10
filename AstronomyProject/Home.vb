@@ -19,14 +19,18 @@
         My.Computer.Audio.Play(savelocation + "space1.wav")
         QuizzesButton.Visible = False
         LessonsButton.Visible = False
+        GamesButton.Visible = False
         QuizzesButton.FlatStyle = FlatStyle.Flat
         QuizzesButton.FlatAppearance.BorderSize = 0
         LessonsButton.FlatStyle = FlatStyle.Flat
         LessonsButton.FlatAppearance.BorderSize = 0
         LoginButton.FlatStyle = FlatStyle.Flat
         LoginButton.FlatAppearance.BorderSize = 0
+        GamesButton.FlatStyle = FlatStyle.Flat
+        GamesButton.FlatAppearance.BorderSize = 0
         QuizzesButton.Enabled = False
         LessonsButton.Enabled = False
+        GamesButton.Enabled = False
     End Sub
 
     Private Sub QuizzesButton_Click(sender As Object, e As EventArgs) Handles QuizzesButton.Click
@@ -76,8 +80,10 @@
                         passwordTextbox.Visible = False
                         QuizzesButton.Visible = True
                         LessonsButton.Visible = True
+                        GamesButton.Visible = True
                         QuizzesButton.Enabled = True
                         LessonsButton.Enabled = True
+                        GamesButton.Enabled = True
                         currentuser = myds.Tables("MyStudents").Rows(index).Item(0)
                         mycon.Close()
                     Else
