@@ -79,36 +79,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Games\SnakeForm.Designer.vb">
+    <Compile Include="SnakeForm.Designer.vb">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Games\SnakeForm.vb">
+    <Compile Include="SnakeForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Games\Player.vb" />
-    <Compile Include="Games\Snake.vb" />
-    <Compile Include="Lessons\Lesson1\pg1,5Lesson1.Designer.vb">
+    <Compile Include="Player.vb" />
+    <Compile Include="Snake.vb" />
+    <Compile Include="pg1,5Lesson1.Designer.vb">
       <DependentUpon>pg1,5Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg1,5Lesson1.vb">
+    <Compile Include="pg1,5Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg1Lesson1.Designer.vb">
+    <Compile Include="pg1Lesson1.Designer.vb">
       <DependentUpon>pg1Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg1Lesson1.vb">
+    <Compile Include="pg1Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg2Lesson1.Designer.vb">
+    <Compile Include="pg2Lesson1.Designer.vb">
       <DependentUpon>pg2Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg2Lesson1.vb">
+    <Compile Include="pg2Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg3Lesson1.Designer.vb">
+    <Compile Include="pg3Lesson1.Designer.vb">
       <DependentUpon>pg3Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg3Lesson1.vb">
+    <Compile Include="pg3Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MultipleChoice.Designer.vb">
@@ -130,10 +130,10 @@
     <Compile Include="ShootingStars.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons\Lessons.Designer.vb">
+    <Compile Include="Lessons.Designer.vb">
       <DependentUpon>Lessons.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons\Lessons.vb">
+    <Compile Include="Lessons.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -166,19 +166,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Games\SnakeForm.resx">
+    <EmbeddedResource Include="SnakeForm.resx">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons\Lesson1\pg1,5Lesson1.resx">
+    <EmbeddedResource Include="pg1,5Lesson1.resx">
       <DependentUpon>pg1,5Lesson1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons\Lesson1\pg1Lesson1.resx">
+    <EmbeddedResource Include="pg1Lesson1.resx">
       <DependentUpon>pg1Lesson1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons\Lesson1\pg2Lesson1.resx">
+    <EmbeddedResource Include="pg2Lesson1.resx">
       <DependentUpon>pg2Lesson1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons\Lesson1\pg3Lesson1.resx">
+    <EmbeddedResource Include="pg3Lesson1.resx">
       <DependentUpon>pg3Lesson1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultipleChoice.resx">
@@ -190,7 +190,7 @@
     <EmbeddedResource Include="ShootingStars.resx">
       <DependentUpon>ShootingStars.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons\Lessons.resx">
+    <EmbeddedResource Include="Lessons.resx">
       <DependentUpon>Lessons.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
