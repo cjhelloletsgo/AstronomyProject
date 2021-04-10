@@ -38,6 +38,7 @@
         Me.WindowState = FormWindowState.Maximized
         Timer1.Enabled = False
         Timer2.Enabled = False
+        Timer3.Enabled = False
         Explosion.Visible = False
         x = Rocket.Location.X()
         y = Rocket.Location.Y()
@@ -119,6 +120,7 @@
         If score / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
             launch = True
             fireworksPictureBox.Visible = True
+            Timer3.Enabled = True
         End If
         MsgBox("game over")
     End Sub
@@ -201,5 +203,18 @@
 
     Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
         Application.Exit()
+    End Sub
+    Dim wait As Integer
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        'wait += 1
+        'If wait > 100 Then
+        '    SnakeForm.Show()
+        '    Me.Hide()
+        'End If
+        If Rocket.Top + Rocket.Height < Me.Top Then
+            SnakeForm.Show()
+            Me.Hide()
+        End If
+
     End Sub
 End Class
