@@ -79,6 +79,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lessons\Lesson1\pg4Lesson1.Designer.vb">
+      <DependentUpon>pg4Lesson1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson1\pg4Lesson1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lessons\Lesson1\pg5Lesson1.Designer.vb">
+      <DependentUpon>pg5Lesson1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson1\pg5Lesson1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SnakeForm.Designer.vb">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </Compile>
@@ -87,28 +99,28 @@
     </Compile>
     <Compile Include="Player.vb" />
     <Compile Include="Snake.vb" />
-    <Compile Include="pg1,5Lesson1.Designer.vb">
+    <Compile Include="Lessons\Lesson1\pg1,5Lesson1.Designer.vb">
       <DependentUpon>pg1,5Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="pg1,5Lesson1.vb">
+    <Compile Include="Lessons\Lesson1\pg1,5Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pg1Lesson1.Designer.vb">
+    <Compile Include="Lessons\Lesson1\pg1Lesson1.Designer.vb">
       <DependentUpon>pg1Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="pg1Lesson1.vb">
+    <Compile Include="Lessons\Lesson1\pg1Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pg2Lesson1.Designer.vb">
+    <Compile Include="Lessons\Lesson1\pg2Lesson1.Designer.vb">
       <DependentUpon>pg2Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="pg2Lesson1.vb">
+    <Compile Include="Lessons\Lesson1\pg2Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pg3Lesson1.Designer.vb">
+    <Compile Include="Lessons\Lesson1\pg3Lesson1.Designer.vb">
       <DependentUpon>pg3Lesson1.vb</DependentUpon>
     </Compile>
-    <Compile Include="pg3Lesson1.vb">
+    <Compile Include="Lessons\Lesson1\pg3Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MultipleChoice.Designer.vb">
@@ -130,10 +142,10 @@
     <Compile Include="ShootingStars.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons.Designer.vb">
+    <Compile Include="Lessons\Lessons.Designer.vb">
       <DependentUpon>Lessons.vb</DependentUpon>
     </Compile>
-    <Compile Include="Lessons.vb">
+    <Compile Include="Lessons\Lessons.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -166,19 +178,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Lessons\Lesson1\pg4Lesson1.resx">
+      <DependentUpon>pg4Lesson1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SnakeForm.resx">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pg1,5Lesson1.resx">
+    <EmbeddedResource Include="Lessons\Lesson1\pg1,5Lesson1.resx">
       <DependentUpon>pg1,5Lesson1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pg1Lesson1.resx">
+    <EmbeddedResource Include="Lessons\Lesson1\pg1Lesson1.resx">
       <DependentUpon>pg1Lesson1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pg2Lesson1.resx">
+    <EmbeddedResource Include="Lessons\Lesson1\pg2Lesson1.resx">
       <DependentUpon>pg2Lesson1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pg3Lesson1.resx">
+    <EmbeddedResource Include="Lessons\Lesson1\pg3Lesson1.resx">
       <DependentUpon>pg3Lesson1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultipleChoice.resx">
@@ -190,7 +205,7 @@
     <EmbeddedResource Include="ShootingStars.resx">
       <DependentUpon>ShootingStars.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lessons.resx">
+    <EmbeddedResource Include="Lessons\Lessons.resx">
       <DependentUpon>Lessons.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
