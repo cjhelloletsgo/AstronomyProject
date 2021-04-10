@@ -5,7 +5,7 @@
         Home.Show()
         Me.Dispose()
     End Sub
-    Private Sub MultipleChoiceButton_Click(sender As Object, e As EventArgs) 
+    Private Sub MultipleChoiceButton_Click(sender As Object, e As EventArgs)
         MultipleChoice.Show()
         Me.Dispose()
     End Sub

@@ -22,9 +22,18 @@ Partial Class pg5Lesson1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(pg5Lesson1))
+        Me.SuspendLayout()
+        '
+        'pg5Lesson1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "pg5Lesson1"
         Me.Text = "pg5Lesson1"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

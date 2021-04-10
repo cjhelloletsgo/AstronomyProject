@@ -49,10 +49,6 @@
         My.Computer.Audio.Stop()
         StartButton.FlatStyle = FlatStyle.Flat
         StartButton.FlatAppearance.BorderSize = 0
-        BackButton.FlatStyle = FlatStyle.Flat
-        BackButton.FlatAppearance.BorderSize = 0
-        HomeButton.FlatStyle = FlatStyle.Flat
-        HomeButton.FlatAppearance.BorderSize = 0
         ButtonA.FlatStyle = FlatStyle.Flat
         ButtonA.FlatAppearance.BorderSize = 0
         ButtonB.FlatStyle = FlatStyle.Flat
@@ -61,8 +57,6 @@
         ButtonC.FlatAppearance.BorderSize = 0
         ButtonD.FlatStyle = FlatStyle.Flat
         ButtonD.FlatAppearance.BorderSize = 0
-        quitButton.FlatStyle = FlatStyle.Flat
-        quitButton.FlatAppearance.BorderSize = 0
         launch = False
         QuestionLabel.Visible = False
         fireworksPictureBox.Visible = False
@@ -170,12 +164,12 @@
             'MsgBox("Game Over")
         End If
     End Sub
-    Private Sub Home_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
+    Private Sub Home_Click(sender As Object, e As EventArgs)
         Home.Show()
         My.Computer.Audio.Stop()
         Me.Dispose()
     End Sub
-    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
+    Private Sub BackButton_Click(sender As Object, e As EventArgs)
         Me.Dispose()
         Quizzes.Show()
     End Sub
@@ -199,7 +193,7 @@
         handleSelection()
     End Sub
 
-    Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
+    Private Sub quitButton_Click(sender As Object, e As EventArgs)
         Application.Exit()
     End Sub
     Dim wait As Integer

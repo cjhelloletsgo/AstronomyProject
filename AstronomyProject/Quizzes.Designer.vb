@@ -22,6 +22,7 @@ Partial Class Quizzes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Quizzes))
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.ShootingStarsButton = New System.Windows.Forms.Button()
         Me.QuizzesLabel = New System.Windows.Forms.Label()
@@ -105,7 +106,7 @@ Partial Class Quizzes
         Me.quitButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
-        Me.quitButton.Location = New System.Drawing.Point(1515, 796)
+        Me.quitButton.Location = New System.Drawing.Point(1513, 795)
         Me.quitButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(157, 47)
@@ -124,6 +125,7 @@ Partial Class Quizzes
         Me.Controls.Add(Me.QuizzesLabel)
         Me.Controls.Add(Me.ShootingStarsButton)
         Me.Controls.Add(Me.HomeButton)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Quizzes"
         Me.Text = "Quizzes"

@@ -181,6 +181,9 @@
     <EmbeddedResource Include="Lessons\Lesson1\pg4Lesson1.resx">
       <DependentUpon>pg4Lesson1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lessons\Lesson1\pg5Lesson1.resx">
+      <DependentUpon>pg5Lesson1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SnakeForm.resx">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </EmbeddedResource>
