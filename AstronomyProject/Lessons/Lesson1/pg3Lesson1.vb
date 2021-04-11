@@ -23,6 +23,7 @@
     End Sub
 
     Private Sub LessonsLabel_Click(sender As Object, e As EventArgs) Handles LessonsLabel.Click
-
+        pg4Lesson1.Show()
+        Me.Dispose()
     End Sub
 End Class

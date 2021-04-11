@@ -18,7 +18,7 @@
     End Sub
 
     Private Sub previousButton_Click(sender As Object, e As EventArgs) Handles previousButton.Click
-        pg1Lesson1.Show()
+        pg1_5Lesson1.Show()
         Me.Dispose()
     End Sub
 

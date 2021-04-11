@@ -5822,6 +5822,28 @@
         /z+WuzzK1CVXIgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>      Venus is the second planet from the sun, and roughly the same size
+ as Earth. Unlike Earth, however, Venus has a thick toxic atmosphere that
+ traps heat within it. As a result, temperatures on Venus can reach up to
+ 880 degrees Fahrenheit. That’s hot enough to melt lead!
+
+      Venus is the hottest planet in our solar system. With an atmosphere
+ that’s 96% carbon dioxide, dense clouds within Venus’ atmosphere are
+ composed of sulphuric acid and other corrosive compounds. 
+
+      Only two man-made spacecrafts have penetrated it’s atmosphere.
+ In fact, very few objects in general seem to be able to get through the
+ thick, acidic atmosphere- including asteroids and meteorites. Much of
+ Venus’ surface is marked with volcanoes and deep canyons. The 
+ biggest canyon is over 4,000 miles long! 
+
+      Much like Mercury, Venus doesn’t have a moon of its own. It takes
+ 225 Earth days to revolve around the Sun, and 116 Earth days for one
+ day on Venus. Venus is named after the Roman God of love, and the
+ only planet in our solar system to have been named after a woman.
+ You may also know the God of love by her Greek name, Aphrodite.</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAGAAoIAMAFgAAACgAAAAAAQAAAAIAAAEAGAAAAAAAKCADAAAAAAAAAAAAAAAAAAAA
