@@ -42,7 +42,7 @@ Partial Class pg5Lesson1
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(614, 542)
         Me.RichTextBox1.TabIndex = 36
-        Me.RichTextBox1.Text = ""
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'PictureBox1
         '
@@ -135,7 +135,7 @@ Partial Class pg5Lesson1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LessonsLabel)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "pg5Lesson1"
         Me.Text = "pg5Lesson1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
