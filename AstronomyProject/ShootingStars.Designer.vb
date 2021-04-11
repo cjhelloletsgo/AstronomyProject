@@ -86,7 +86,7 @@ Partial Class ShootingStars
         Me.StartButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.StartButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.StartButton.ForeColor = System.Drawing.Color.White
-        Me.StartButton.Location = New System.Drawing.Point(11, 796)
+        Me.StartButton.Location = New System.Drawing.Point(11, 811)
         Me.StartButton.Margin = New System.Windows.Forms.Padding(2)
         Me.StartButton.Name = "StartButton"
         Me.StartButton.Size = New System.Drawing.Size(158, 48)

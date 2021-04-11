@@ -101,7 +101,7 @@ Partial Class Lessons
         Me.quitButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
-        Me.quitButton.Location = New System.Drawing.Point(1515, 796)
+        Me.quitButton.Location = New System.Drawing.Point(1513, 795)
         Me.quitButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(157, 47)
