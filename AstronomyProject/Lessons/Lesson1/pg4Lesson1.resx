@@ -138,8 +138,8 @@
       While extra-terrestrial (or, alien) life has long been theorized, we
  have yet to discover any life past the planet Earth. Earth boasts several
  million species of life, living in habitats ranging from the bottom of the
- ocean to the highest mountains. Life outside of Earth is very possible
-, but as it stands, none have been found.</value>
+ ocean to the highest mountains. Life outside of Earth is very possible,
+ but as it stands, none have been found.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
