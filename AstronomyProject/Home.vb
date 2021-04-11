@@ -8,9 +8,7 @@
     Dim passwordAttempt As String
     Dim usernameAttempt As String
 
-    Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        rs.ResizeAllControls(Me)
-    End Sub
+
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
@@ -32,7 +30,9 @@
         LessonsButton.Enabled = False
         GamesButton.Enabled = False
     End Sub
-
+    Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        rs.ResizeAllControls(Me)
+    End Sub
     Private Sub QuizzesButton_Click(sender As Object, e As EventArgs) Handles QuizzesButton.Click
         Quizzes.Show()
         Me.Hide()
