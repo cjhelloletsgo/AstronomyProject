@@ -15,6 +15,8 @@
     Dim index As Integer
     Dim myds As New DataSet
     Dim rs As New Resizer
+    'Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}
+
     Private Sub handleSelection()
         ButtonA.Enabled = False
         ButtonB.Enabled = False
@@ -142,6 +144,10 @@
             'Add in rotation here
         Else
             Rocket.Top -= 3
+            If Rocket.Top + Rocket.Height < Me.Top Then
+            SnakeForm.Show()
+            Me.Hide()
+            End If
         End If
         'divisor Controls speed
         GoodPlanet.Left = a + Math.Cos(i / 12) * 50
