@@ -9611,13 +9611,8 @@
 </value>
   </data>
   <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>  To be considered a planet, three conditions must first be met:
-
-- The potential planet has to orbit around the nearest star
-
-- The size of the planet has to be large enough to force a spherical shape
-
-- The gravity has to be strong enough to clear all objects near its orbit</value>
+    <value>The four planets closest to the sun (Mercury, Venus, Earth and Mars) are often referred to as the ‘Inner Planets’ or the “Inner Circle’ because they orbit closest to the Sun. 
+These four planets have a few other similarities that we use to group them together. They’re rocky and composed mainly of metals, whereas the outer planets are ‘gas giants’. The inner circle is also grouped more closely together than the gas giants. In fact, the radius of the entire region is less than the distance between the orbits of Jupiter and Saturn!</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
