@@ -19,9 +19,9 @@ Public Class ShootingStars
     Dim rs As New Resizer
     'Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}
     Public questions = New Boolean() {False, False, False, False, False, False, False, False, False, False, False, False}
-    Private Sub saveResults()
-        questions(index) = 1
-    End Sub
+    'Private Sub saveResults()
+    '    questions(index) = 1
+    'End Sub
 
     Private Sub handleSelection()
         ButtonA.Enabled = False
@@ -29,6 +29,7 @@ Public Class ShootingStars
         ButtonC.Enabled = False
         ButtonD.Enabled = False
         If correctAns = clickedButton Then
+            questions(index) = True
             Label1.Text = "Right"
             If j > 30 Then
                 j = j - 30
@@ -36,9 +37,11 @@ Public Class ShootingStars
             End If
             score += 1
             ScoreLabel.Text = $"score: {score}"
-        Else Label1.Text = "Wrong"
+        Else
+            Label1.Text = "Wrong"
+            questions(index) = False
         End If
-        saveResults()
+        'saveResults()
         index += 1
         runGame()
     End Sub
@@ -142,16 +145,16 @@ Public Class ShootingStars
             Using command As New OleDb.OleDbCommand("INSERT INTO StudentQuestions (StudentID,1,2,3,4,5,6,7,8,9,10) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)", connection)
 
                 command.Parameters.AddWithValue("@StudentID", 10)
-                command.Parameters.AddWithValue("@1", True)
-                command.Parameters.AddWithValue("@2", True)
-                command.Parameters.AddWithValue("@3", True)
-                command.Parameters.AddWithValue("@4", True)
-                command.Parameters.AddWithValue("@5", True)
-                command.Parameters.AddWithValue("@6", True)
-                command.Parameters.AddWithValue("@7", True)
-                command.Parameters.AddWithValue("@8", True)
-                command.Parameters.AddWithValue("@9", True)
-                command.Parameters.AddWithValue("@10", True)
+                command.Parameters.AddWithValue("@1", questions(0))
+                command.Parameters.AddWithValue("@2", questions(1))
+                command.Parameters.AddWithValue("@3", questions(2))
+                command.Parameters.AddWithValue("@4", questions(3))
+                command.Parameters.AddWithValue("@5", questions(4))
+                command.Parameters.AddWithValue("@6", questions(5))
+                command.Parameters.AddWithValue("@7", questions(6))
+                command.Parameters.AddWithValue("@8", questions(7))
+                command.Parameters.AddWithValue("@9", questions(8))
+                command.Parameters.AddWithValue("@10", questions(9))
                 'connection.Open()
                 command.ExecuteNonQuery()
             End Using
