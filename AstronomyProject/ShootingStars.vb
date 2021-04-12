@@ -1,4 +1,6 @@
-﻿Public Class ShootingStars
+﻿Imports System.Data.OleDb
+
+Public Class ShootingStars
     Dim score As Integer
     Dim x As Integer
     Dim y As Integer
@@ -16,6 +18,10 @@
     Dim myds As New DataSet
     Dim rs As New Resizer
     'Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}
+    Public questions = New Boolean() {False, False, False, False, False, False, False, False, False, False, False, False}
+    Private Sub saveResults()
+        questions(index) = 1
+    End Sub
 
     Private Sub handleSelection()
         ButtonA.Enabled = False
@@ -32,6 +38,7 @@
             ScoreLabel.Text = $"score: {score}"
         Else Label1.Text = "Wrong"
         End If
+        saveResults()
         index += 1
         runGame()
     End Sub
@@ -71,7 +78,7 @@
     Private Sub ShootingStars_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         rs.ResizeAllControls(Me)
     End Sub
-    Private Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
+    Public Sub StartButton_Click(sender As Object, e As EventArgs) Handles StartButton.Click
         StartButton.Visible = False
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
         datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
@@ -109,10 +116,48 @@
         ButtonC.Enabled = True
         ButtonD.Enabled = True
         index = 0
+        mycon.Close()
         runGame()
     End Sub
     Private Sub endGame()
-        If score / myds.Tables("MyQuestions").Rows.Count >= 0.8 Then
+        Dim myds As New DataSet
+        Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
+        datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
+        Using connection As New OleDb.OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = {datalocation};
+                                      Persist Security Info=False;")
+            Dim myda As New OleDb.OleDbDataAdapter
+            Dim sql As String
+            sql = "Select * From StudentQuestions"
+
+            myda = New OleDb.OleDbDataAdapter(sql, connection)
+            myda.Fill(myds, "StudentQuestions")
+
+            Using command As New OleDb.OleDbCommand("Delete From StudentQuestions where StudentID = @StudentID", connection)
+                command.Parameters.AddWithValue("@StudentID", 10)
+                connection.Open()
+                command.ExecuteNonQuery()
+            End Using
+
+            Using command As New OleDb.OleDbCommand("INSERT INTO StudentQuestions (StudentID,1,2,3,4,5,6,7,8,9,10) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)", connection)
+
+                command.Parameters.AddWithValue("@StudentID", 10)
+                command.Parameters.AddWithValue("@1", True)
+                command.Parameters.AddWithValue("@2", True)
+                command.Parameters.AddWithValue("@3", True)
+                command.Parameters.AddWithValue("@4", True)
+                command.Parameters.AddWithValue("@5", True)
+                command.Parameters.AddWithValue("@6", True)
+                command.Parameters.AddWithValue("@7", True)
+                command.Parameters.AddWithValue("@8", True)
+                command.Parameters.AddWithValue("@9", True)
+                command.Parameters.AddWithValue("@10", True)
+                'connection.Open()
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+
+        If score / maxnum >= 0.8 Then
             launch = True
             fireworksPictureBox.Visible = True
         End If
@@ -120,7 +165,7 @@
     End Sub
     Private Sub runGame()
         QuestionLabel.Visible = True
-        If index >= myds.Tables("MyQuestions").Rows.Count Then
+        If index >= maxnum Then
             endGame()
         Else
             QuestionLabel.Text = myds.Tables("MyQuestions").Rows(index).Item(0)
@@ -145,8 +190,8 @@
         Else
             Rocket.Top -= 3
             If Rocket.Top + Rocket.Height < Me.Top Then
-            SnakeForm.Show()
-            Me.Hide()
+                SnakeForm.Show()
+                Me.Hide()
             End If
         End If
         'divisor Controls speed
