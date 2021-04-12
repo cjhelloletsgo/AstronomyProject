@@ -17,7 +17,7 @@ Public Class ShootingStars
     Dim index As Integer
     Dim myds As New DataSet
     Dim rs As New Resizer
-    Public questions = New Boolean() {False, False, False, False, False, False, False, False, False, False, False, False}
+    Public questions = New Boolean() {False, False, False, False, False, False, False, False, False, False, False, False, False, False, False}
 
     Private Sub handleSelection()
         ButtonA.Enabled = False
@@ -120,6 +120,8 @@ Public Class ShootingStars
     End Sub
     Private Sub endGame()
         Dim myds As New DataSet
+        Dim percent As Double
+        percent = score / maxnum
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
         datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
         Using connection As New OleDb.OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0; 
@@ -149,7 +151,8 @@ Public Class ShootingStars
                 command.ExecuteNonQuery()
             End Using
 
-            Using command As New OleDb.OleDbCommand($"INSERT INTO {table} (StudentID,1,2,3,4,5,6,7,8,9,10) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)", connection)
+            Using command As New OleDb.OleDbCommand($"INSERT INTO {table} (StudentID,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,Score) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12,
+                                                                           @13, @14, @15, @Score)", connection)
 
                 command.Parameters.AddWithValue("@StudentID", Home.currentuser)
                 command.Parameters.AddWithValue("@1", questions(0))
@@ -162,6 +165,12 @@ Public Class ShootingStars
                 command.Parameters.AddWithValue("@8", questions(7))
                 command.Parameters.AddWithValue("@9", questions(8))
                 command.Parameters.AddWithValue("@10", questions(9))
+                command.Parameters.AddWithValue("@11", questions(10))
+                command.Parameters.AddWithValue("@12", questions(11))
+                command.Parameters.AddWithValue("@13", questions(12))
+                command.Parameters.AddWithValue("@14", questions(13))
+                command.Parameters.AddWithValue("@15", questions(14))
+                command.Parameters.AddWithValue("@Score", score)
                 'connection.Open()
                 command.ExecuteNonQuery()
             End Using
