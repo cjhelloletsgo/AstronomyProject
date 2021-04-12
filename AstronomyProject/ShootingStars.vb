@@ -17,11 +17,7 @@ Public Class ShootingStars
     Dim index As Integer
     Dim myds As New DataSet
     Dim rs As New Resizer
-    'Dim matrix = New Integer(3, 2) {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}, {4, 5, 6}}
     Public questions = New Boolean() {False, False, False, False, False, False, False, False, False, False, False, False}
-    'Private Sub saveResults()
-    '    questions(index) = 1
-    'End Sub
 
     Private Sub handleSelection()
         ButtonA.Enabled = False
@@ -130,19 +126,30 @@ Public Class ShootingStars
                                       Data Source = {datalocation};
                                       Persist Security Info=False;")
             Dim myda As New OleDb.OleDbDataAdapter
-            Dim sql As String
-            sql = "Select * From StudentQuestions"
+            Dim sql, table As String
+            sql = ""
+            table = ""
+            If Quizzes.chapter = 1 Then
+                sql = "Select * From StudentQuestions1"
+                table = "StudentQuestions1"
+            ElseIf Quizzes.chapter = 2 Then
+                sql = "Select * From StudentQuestions2"
+                table = "StudentQuestions2"
+            ElseIf Quizzes.chapter = 3 Then
+                sql = "Select * From StudentQuestions3"
+                table = "StudentQuestions3"
+            End If
 
             myda = New OleDb.OleDbDataAdapter(sql, connection)
             myda.Fill(myds, "StudentQuestions")
 
-            Using command As New OleDb.OleDbCommand("Delete From StudentQuestions where StudentID = @StudentID", connection)
+            Using command As New OleDb.OleDbCommand($"Delete From {table} where StudentID = @StudentID", connection)
                 command.Parameters.AddWithValue("@StudentID", Home.currentuser)
                 connection.Open()
                 command.ExecuteNonQuery()
             End Using
 
-            Using command As New OleDb.OleDbCommand("INSERT INTO StudentQuestions (StudentID,1,2,3,4,5,6,7,8,9,10) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)", connection)
+            Using command As New OleDb.OleDbCommand($"INSERT INTO {table} (StudentID,1,2,3,4,5,6,7,8,9,10) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)", connection)
 
                 command.Parameters.AddWithValue("@StudentID", Home.currentuser)
                 command.Parameters.AddWithValue("@1", questions(0))
