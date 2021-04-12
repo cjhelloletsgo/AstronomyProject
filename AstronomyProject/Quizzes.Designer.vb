@@ -38,7 +38,7 @@ Partial Class Quizzes
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.HomeButton.ForeColor = System.Drawing.Color.White
         Me.HomeButton.Location = New System.Drawing.Point(9, 647)
-        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2)
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(118, 38)
         Me.HomeButton.TabIndex = 0
@@ -52,7 +52,7 @@ Partial Class Quizzes
         Me.ShootingStarsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ShootingStarsButton.ForeColor = System.Drawing.Color.White
         Me.ShootingStarsButton.Location = New System.Drawing.Point(296, 171)
-        Me.ShootingStarsButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ShootingStarsButton.Margin = New System.Windows.Forms.Padding(2)
         Me.ShootingStarsButton.Name = "ShootingStarsButton"
         Me.ShootingStarsButton.Size = New System.Drawing.Size(208, 61)
         Me.ShootingStarsButton.TabIndex = 1
@@ -80,7 +80,7 @@ Partial Class Quizzes
         Me.Chapter2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Chapter2.ForeColor = System.Drawing.Color.White
         Me.Chapter2.Location = New System.Drawing.Point(527, 171)
-        Me.Chapter2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Chapter2.Margin = New System.Windows.Forms.Padding(2)
         Me.Chapter2.Name = "Chapter2"
         Me.Chapter2.Size = New System.Drawing.Size(208, 61)
         Me.Chapter2.TabIndex = 4
@@ -89,12 +89,13 @@ Partial Class Quizzes
         '
         'Chapter3
         '
-        Me.Chapter3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Chapter3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Chapter3.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Chapter3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Chapter3.ForeColor = System.Drawing.Color.White
         Me.Chapter3.Location = New System.Drawing.Point(756, 171)
-        Me.Chapter3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Chapter3.Margin = New System.Windows.Forms.Padding(2)
         Me.Chapter3.Name = "Chapter3"
         Me.Chapter3.Size = New System.Drawing.Size(208, 61)
         Me.Chapter3.TabIndex = 5
@@ -108,7 +109,7 @@ Partial Class Quizzes
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
         Me.quitButton.Location = New System.Drawing.Point(1135, 646)
-        Me.quitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.quitButton.Margin = New System.Windows.Forms.Padding(2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(118, 38)
         Me.quitButton.TabIndex = 17
@@ -127,7 +128,7 @@ Partial Class Quizzes
         Me.Controls.Add(Me.ShootingStarsButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Quizzes"
         Me.Text = "Quizzes"
         Me.ResumeLayout(False)

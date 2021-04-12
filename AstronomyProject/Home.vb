@@ -2,8 +2,7 @@
     Dim datalocation As String
     Dim maxnum As Integer
     Public savelocation As String
-    Public userScore As Double
-    Public currentuser As String
+    Public currentuser As Integer
     Dim rs As New Resizer
     Dim passwordAttempt As String
     Dim usernameAttempt As String
@@ -84,7 +83,7 @@
                         QuizzesButton.Enabled = True
                         LessonsButton.Enabled = True
                         GamesButton.Enabled = True
-                        currentuser = myds.Tables("MyStudents").Rows(index).Item(0)
+                        currentuser = myds.Tables("MyStudents").Rows(index).Item(2)
                         mycon.Close()
                     Else
                         MsgBox("Login Failed, please try again")

@@ -137,14 +137,14 @@ Public Class ShootingStars
             myda.Fill(myds, "StudentQuestions")
 
             Using command As New OleDb.OleDbCommand("Delete From StudentQuestions where StudentID = @StudentID", connection)
-                command.Parameters.AddWithValue("@StudentID", 10)
+                command.Parameters.AddWithValue("@StudentID", Home.currentuser)
                 connection.Open()
                 command.ExecuteNonQuery()
             End Using
 
             Using command As New OleDb.OleDbCommand("INSERT INTO StudentQuestions (StudentID,1,2,3,4,5,6,7,8,9,10) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10)", connection)
 
-                command.Parameters.AddWithValue("@StudentID", 10)
+                command.Parameters.AddWithValue("@StudentID", Home.currentuser)
                 command.Parameters.AddWithValue("@1", questions(0))
                 command.Parameters.AddWithValue("@2", questions(1))
                 command.Parameters.AddWithValue("@3", questions(2))
