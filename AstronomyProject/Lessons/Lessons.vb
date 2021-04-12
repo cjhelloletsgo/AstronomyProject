@@ -24,4 +24,9 @@
         Me.Dispose()
     End Sub
 
+    Private Sub Lesson2Button_Click(sender As Object, e As EventArgs) Handles Lesson2Button.Click
+        pg1Lesson2.Show()
+        Me.Dispose()
+    End Sub
+
 End Class

@@ -29,6 +29,10 @@ Partial Class Lessons
         Me.Lesson2Button = New System.Windows.Forms.Button()
         Me.Lesson3Button = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
+        Me.Lesson4Button = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HomeButton
@@ -36,10 +40,10 @@ Partial Class Lessons
         Me.HomeButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.HomeButton.ForeColor = System.Drawing.Color.White
-        Me.HomeButton.Location = New System.Drawing.Point(15, 795)
-        Me.HomeButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.HomeButton.Location = New System.Drawing.Point(11, 646)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(157, 47)
+        Me.HomeButton.Size = New System.Drawing.Size(118, 38)
         Me.HomeButton.TabIndex = 0
         Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = False
@@ -49,9 +53,10 @@ Partial Class Lessons
         Me.LessonsLabel.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LessonsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.0!)
         Me.LessonsLabel.ForeColor = System.Drawing.Color.White
-        Me.LessonsLabel.Location = New System.Drawing.Point(-8, -1)
+        Me.LessonsLabel.Location = New System.Drawing.Point(-6, -1)
+        Me.LessonsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LessonsLabel.Name = "LessonsLabel"
-        Me.LessonsLabel.Size = New System.Drawing.Size(1703, 60)
+        Me.LessonsLabel.Size = New System.Drawing.Size(1277, 49)
         Me.LessonsLabel.TabIndex = 1
         Me.LessonsLabel.Text = "Lessons"
         Me.LessonsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -61,12 +66,12 @@ Partial Class Lessons
         Me.Lesson1Button.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Lesson1Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lesson1Button.ForeColor = System.Drawing.Color.White
-        Me.Lesson1Button.Location = New System.Drawing.Point(283, 305)
-        Me.Lesson1Button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Lesson1Button.Location = New System.Drawing.Point(219, 134)
+        Me.Lesson1Button.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Lesson1Button.Name = "Lesson1Button"
-        Me.Lesson1Button.Size = New System.Drawing.Size(315, 44)
+        Me.Lesson1Button.Size = New System.Drawing.Size(243, 36)
         Me.Lesson1Button.TabIndex = 2
-        Me.Lesson1Button.Text = "Lesson 1: The Inner Ring"
+        Me.Lesson1Button.Text = "Lesson 1: The Inner Circle"
         Me.Lesson1Button.UseVisualStyleBackColor = False
         '
         'Lesson2Button
@@ -74,10 +79,10 @@ Partial Class Lessons
         Me.Lesson2Button.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Lesson2Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lesson2Button.ForeColor = System.Drawing.Color.White
-        Me.Lesson2Button.Location = New System.Drawing.Point(692, 305)
-        Me.Lesson2Button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Lesson2Button.Location = New System.Drawing.Point(219, 271)
+        Me.Lesson2Button.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Lesson2Button.Name = "Lesson2Button"
-        Me.Lesson2Button.Size = New System.Drawing.Size(315, 44)
+        Me.Lesson2Button.Size = New System.Drawing.Size(243, 36)
         Me.Lesson2Button.TabIndex = 3
         Me.Lesson2Button.Text = "Lesson 2: The Gas Giants"
         Me.Lesson2Button.UseVisualStyleBackColor = False
@@ -87,10 +92,10 @@ Partial Class Lessons
         Me.Lesson3Button.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Lesson3Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lesson3Button.ForeColor = System.Drawing.Color.White
-        Me.Lesson3Button.Location = New System.Drawing.Point(1095, 305)
-        Me.Lesson3Button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Lesson3Button.Location = New System.Drawing.Point(219, 401)
+        Me.Lesson3Button.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Lesson3Button.Name = "Lesson3Button"
-        Me.Lesson3Button.Size = New System.Drawing.Size(315, 44)
+        Me.Lesson3Button.Size = New System.Drawing.Size(243, 36)
         Me.Lesson3Button.TabIndex = 4
         Me.Lesson3Button.Text = "Lesson 3: Cosmic Bodies"
         Me.Lesson3Button.UseVisualStyleBackColor = False
@@ -101,19 +106,58 @@ Partial Class Lessons
         Me.quitButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
-        Me.quitButton.Location = New System.Drawing.Point(1513, 795)
-        Me.quitButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.quitButton.Location = New System.Drawing.Point(1371, 732)
+        Me.quitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.quitButton.Name = "quitButton"
-        Me.quitButton.Size = New System.Drawing.Size(157, 47)
+        Me.quitButton.Size = New System.Drawing.Size(118, 38)
         Me.quitButton.TabIndex = 18
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '
+        'Lesson4Button
+        '
+        Me.Lesson4Button.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Lesson4Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lesson4Button.ForeColor = System.Drawing.Color.White
+        Me.Lesson4Button.Location = New System.Drawing.Point(219, 531)
+        Me.Lesson4Button.Margin = New System.Windows.Forms.Padding(2)
+        Me.Lesson4Button.Name = "Lesson4Button"
+        Me.Lesson4Button.Size = New System.Drawing.Size(243, 36)
+        Me.Lesson4Button.TabIndex = 19
+        Me.Lesson4Button.Text = "Lesson 4: Constellations"
+        Me.Lesson4Button.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(1135, 646)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 38)
+        Me.Button1.TabIndex = 39
+        Me.Button1.Text = "Quit"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(680, 68)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(572, 564)
+        Me.PictureBox1.TabIndex = 40
+        Me.PictureBox1.TabStop = False
+        '
         'Lessons
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1685, 855)
+        Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Lesson4Button)
         Me.Controls.Add(Me.quitButton)
         Me.Controls.Add(Me.Lesson3Button)
         Me.Controls.Add(Me.Lesson2Button)
@@ -121,9 +165,10 @@ Partial Class Lessons
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.HomeButton)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Lessons"
         Me.Text = "Lessons"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -134,4 +179,7 @@ Partial Class Lessons
     Friend WithEvents Lesson2Button As Button
     Friend WithEvents Lesson3Button As Button
     Friend WithEvents quitButton As Button
+    Friend WithEvents Lesson4Button As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

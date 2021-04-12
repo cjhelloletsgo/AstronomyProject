@@ -97,6 +97,12 @@
     <Compile Include="Lessons\Lesson1\pg6Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Lessons\Lesson2\pg1Lesson2.Designer.vb">
+      <DependentUpon>pg1Lesson2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson2\pg1Lesson2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SnakeForm.Designer.vb">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </Compile>
@@ -193,6 +199,9 @@
     <EmbeddedResource Include="Lessons\Lesson1\pg6Lesson1.resx">
       <DependentUpon>pg6Lesson1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lessons\Lesson2\pg1Lesson2.resx">
+      <DependentUpon>pg1Lesson2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SnakeForm.resx">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -249,5 +258,6 @@
   <ItemGroup>
     <Content Include="Icon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
