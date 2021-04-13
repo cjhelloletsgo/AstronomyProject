@@ -151,8 +151,8 @@ Public Class ShootingStars
                 command.ExecuteNonQuery()
             End Using
 
-            Using command As New OleDb.OleDbCommand($"INSERT INTO {table} (StudentID,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,Score) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12,
-                                                                           @13, @14, @15, @Score)", connection)
+            Using command As New OleDb.OleDbCommand($"INSERT INTO {table} (StudentID,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,Score,Grade) VALUES (@StudentID, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12,
+                                                                           @13, @14, @15, @Score, @Grade)", connection)
 
                 command.Parameters.AddWithValue("@StudentID", Home.currentuser)
                 command.Parameters.AddWithValue("@1", questions(0))
@@ -171,6 +171,7 @@ Public Class ShootingStars
                 command.Parameters.AddWithValue("@14", questions(13))
                 command.Parameters.AddWithValue("@15", questions(14))
                 command.Parameters.AddWithValue("@Score", score)
+                command.Parameters.AddWithValue("@Grade", percent)
                 'connection.Open()
                 command.ExecuteNonQuery()
             End Using
