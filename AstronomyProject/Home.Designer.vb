@@ -38,6 +38,8 @@ Partial Class Home
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AstronoMeLabel
@@ -178,10 +180,21 @@ Partial Class Home
         Me.GamesButton.Text = "Games"
         Me.GamesButton.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, 51)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1688, 843)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 19
+        Me.PictureBox1.TabStop = False
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1685, 855)
         Me.Controls.Add(Me.GamesButton)
         Me.Controls.Add(Me.quitButton)
@@ -194,10 +207,12 @@ Partial Class Home
         Me.Controls.Add(Me.LessonsButton)
         Me.Controls.Add(Me.QuizzesButton)
         Me.Controls.Add(Me.AstronoMeLabel)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Home"
         Me.Text = "AstronoMe"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -216,4 +231,5 @@ Partial Class Home
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents ToolTip2 As ToolTip
     Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

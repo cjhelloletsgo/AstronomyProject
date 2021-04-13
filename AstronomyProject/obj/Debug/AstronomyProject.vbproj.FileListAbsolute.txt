@@ -31,7 +31,6 @@ C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.exe
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.xml
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
-C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.SnakeForm.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg1Lesson1.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg2Lesson1.resources
@@ -54,3 +53,4 @@ C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg2Lesson2.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg3Lesson2.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg4Lesson2.resources
+C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
