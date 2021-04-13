@@ -22,6 +22,7 @@ Partial Class Quizzes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Quizzes))
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.ShootingStarsButton = New System.Windows.Forms.Button()
@@ -29,6 +30,9 @@ Partial Class Quizzes
         Me.Chapter2 = New System.Windows.Forms.Button()
         Me.Chapter3 = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'HomeButton
@@ -141,4 +145,7 @@ Partial Class Quizzes
     Friend WithEvents Chapter2 As Button
     Friend WithEvents Chapter3 As Button
     Friend WithEvents quitButton As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
 End Class

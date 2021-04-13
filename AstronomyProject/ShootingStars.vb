@@ -1,6 +1,4 @@
-﻿Imports System.Data.OleDb
-
-Public Class ShootingStars
+﻿Public Class ShootingStars
     Dim score As Integer
     Dim x As Integer
     Dim y As Integer
@@ -37,7 +35,6 @@ Public Class ShootingStars
             Label1.Text = "Wrong"
             questions(index) = False
         End If
-        'saveResults()
         index += 1
         runGame()
     End Sub
@@ -180,8 +177,11 @@ Public Class ShootingStars
         If score / maxnum >= 0.8 Then
             launch = True
             fireworksPictureBox.Visible = True
+        Else
+            MsgBox("You didn't pass with at least an 80%! Go back to the lessons and try again when you dare!")
+            Lessons.Show()
+            Me.Hide()
         End If
-        MsgBox("game over")
     End Sub
     Private Sub runGame()
         QuestionLabel.Visible = True

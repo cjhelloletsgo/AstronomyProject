@@ -22,6 +22,7 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.AstronoMeLabel = New System.Windows.Forms.Label()
         Me.QuizzesButton = New System.Windows.Forms.Button()
@@ -34,6 +35,9 @@ Partial Class Home
         Me.skip = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
         Me.GamesButton = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'AstronoMeLabel
@@ -155,7 +159,7 @@ Partial Class Home
         Me.quitButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
-        Me.quitButton.Location = New System.Drawing.Point(1091, 577)
+        Me.quitButton.Location = New System.Drawing.Point(1135, 646)
         Me.quitButton.Margin = New System.Windows.Forms.Padding(2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(118, 38)
@@ -212,4 +216,7 @@ Partial Class Home
     Friend WithEvents skip As Button
     Friend WithEvents quitButton As Button
     Friend WithEvents GamesButton As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
 End Class

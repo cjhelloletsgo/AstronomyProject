@@ -105,8 +105,17 @@
     Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
         Application.Exit()
     End Sub
-
-    Private Sub quiButton_Click(sender As Object, e As EventArgs)
-
+    Private Sub QuizzesButton_MouseHover(sender As Object, e As EventArgs) Handles QuizzesButton.MouseHover
+        ToolTip1.SetToolTip(QuizzesButton, "Check your knowledge!")
     End Sub
+
+    Private Sub LessonsButton_MouseHover(sender As Object, e As EventArgs) Handles LessonsButton.MouseHover
+        ToolTip2.SetToolTip(LessonsButton, "Learn about the subjects!")
+    End Sub
+
+    Private Sub GamesButton_MouseHover(sender As Object, e As EventArgs) Handles GamesButton.MouseHover
+        ToolTip3.SetToolTip(GamesButton, "Skip to the fun part!")
+    End Sub
+
+
 End Class
