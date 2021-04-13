@@ -105,4 +105,8 @@
     Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
         Application.Exit()
     End Sub
+
+    Private Sub quiButton_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
