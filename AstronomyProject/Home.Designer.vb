@@ -46,10 +46,9 @@ Partial Class Home
         Me.AstronoMeLabel.BackColor = System.Drawing.Color.DarkSlateGray
         Me.AstronoMeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.0!)
         Me.AstronoMeLabel.ForeColor = System.Drawing.Color.White
-        Me.AstronoMeLabel.Location = New System.Drawing.Point(529, 90)
-        Me.AstronoMeLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.AstronoMeLabel.Location = New System.Drawing.Point(-8, -1)
         Me.AstronoMeLabel.Name = "AstronoMeLabel"
-        Me.AstronoMeLabel.Size = New System.Drawing.Size(206, 49)
+        Me.AstronoMeLabel.Size = New System.Drawing.Size(1703, 60)
         Me.AstronoMeLabel.TabIndex = 3
         Me.AstronoMeLabel.Text = "AstronoMe"
         Me.AstronoMeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -60,10 +59,10 @@ Partial Class Home
         Me.QuizzesButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.QuizzesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.QuizzesButton.ForeColor = System.Drawing.Color.White
-        Me.QuizzesButton.Location = New System.Drawing.Point(485, 549)
+        Me.QuizzesButton.Location = New System.Drawing.Point(647, 676)
         Me.QuizzesButton.Margin = New System.Windows.Forms.Padding(0)
         Me.QuizzesButton.Name = "QuizzesButton"
-        Me.QuizzesButton.Size = New System.Drawing.Size(294, 70)
+        Me.QuizzesButton.Size = New System.Drawing.Size(392, 86)
         Me.QuizzesButton.TabIndex = 6
         Me.QuizzesButton.Text = "Quizzes"
         Me.QuizzesButton.UseVisualStyleBackColor = False
@@ -74,10 +73,10 @@ Partial Class Home
         Me.LessonsButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LessonsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.LessonsButton.ForeColor = System.Drawing.Color.White
-        Me.LessonsButton.Location = New System.Drawing.Point(165, 549)
-        Me.LessonsButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.LessonsButton.Location = New System.Drawing.Point(220, 676)
+        Me.LessonsButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LessonsButton.Name = "LessonsButton"
-        Me.LessonsButton.Size = New System.Drawing.Size(294, 70)
+        Me.LessonsButton.Size = New System.Drawing.Size(392, 86)
         Me.LessonsButton.TabIndex = 7
         Me.LessonsButton.Text = "Lessons"
         Me.LessonsButton.UseVisualStyleBackColor = False
@@ -88,10 +87,9 @@ Partial Class Home
         Me.Label5.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(831, 232)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(1108, 286)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(154, 29)
+        Me.Label5.Size = New System.Drawing.Size(205, 36)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Password"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -101,10 +99,9 @@ Partial Class Home
         Me.Label4.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(279, 232)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(372, 286)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(154, 29)
+        Me.Label4.Size = New System.Drawing.Size(205, 36)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Username"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -113,19 +110,19 @@ Partial Class Home
         '
         Me.passwordTextbox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.passwordTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.passwordTextbox.Location = New System.Drawing.Point(830, 288)
-        Me.passwordTextbox.Margin = New System.Windows.Forms.Padding(2)
+        Me.passwordTextbox.Location = New System.Drawing.Point(1107, 354)
+        Me.passwordTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.passwordTextbox.Name = "passwordTextbox"
-        Me.passwordTextbox.Size = New System.Drawing.Size(155, 26)
+        Me.passwordTextbox.Size = New System.Drawing.Size(205, 26)
         Me.passwordTextbox.TabIndex = 11
         '
         'usernameTextbox
         '
         Me.usernameTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.usernameTextbox.Location = New System.Drawing.Point(279, 288)
-        Me.usernameTextbox.Margin = New System.Windows.Forms.Padding(2)
+        Me.usernameTextbox.Location = New System.Drawing.Point(372, 354)
+        Me.usernameTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.usernameTextbox.Name = "usernameTextbox"
-        Me.usernameTextbox.Size = New System.Drawing.Size(155, 26)
+        Me.usernameTextbox.Size = New System.Drawing.Size(205, 26)
         Me.usernameTextbox.TabIndex = 10
         '
         'LoginButton
@@ -134,10 +131,10 @@ Partial Class Home
         Me.LoginButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.LoginButton.ForeColor = System.Drawing.Color.White
-        Me.LoginButton.Location = New System.Drawing.Point(579, 351)
-        Me.LoginButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.LoginButton.Location = New System.Drawing.Point(772, 432)
+        Me.LoginButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LoginButton.Name = "LoginButton"
-        Me.LoginButton.Size = New System.Drawing.Size(112, 32)
+        Me.LoginButton.Size = New System.Drawing.Size(149, 39)
         Me.LoginButton.TabIndex = 9
         Me.LoginButton.Text = "Login"
         Me.LoginButton.UseVisualStyleBackColor = False
@@ -145,10 +142,10 @@ Partial Class Home
         'skip
         '
         Me.skip.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.skip.Location = New System.Drawing.Point(585, 428)
-        Me.skip.Margin = New System.Windows.Forms.Padding(2)
+        Me.skip.Location = New System.Drawing.Point(780, 527)
+        Me.skip.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.skip.Name = "skip"
-        Me.skip.Size = New System.Drawing.Size(56, 19)
+        Me.skip.Size = New System.Drawing.Size(75, 23)
         Me.skip.TabIndex = 14
         Me.skip.Text = "Skip"
         Me.skip.UseVisualStyleBackColor = True
@@ -159,10 +156,10 @@ Partial Class Home
         Me.quitButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
-        Me.quitButton.Location = New System.Drawing.Point(1135, 646)
-        Me.quitButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.quitButton.Location = New System.Drawing.Point(1513, 795)
+        Me.quitButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.quitButton.Name = "quitButton"
-        Me.quitButton.Size = New System.Drawing.Size(118, 38)
+        Me.quitButton.Size = New System.Drawing.Size(157, 47)
         Me.quitButton.TabIndex = 17
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
@@ -173,19 +170,19 @@ Partial Class Home
         Me.GamesButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.GamesButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.GamesButton.ForeColor = System.Drawing.Color.White
-        Me.GamesButton.Location = New System.Drawing.Point(805, 549)
-        Me.GamesButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.GamesButton.Location = New System.Drawing.Point(1073, 676)
+        Me.GamesButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GamesButton.Name = "GamesButton"
-        Me.GamesButton.Size = New System.Drawing.Size(294, 70)
+        Me.GamesButton.Size = New System.Drawing.Size(392, 86)
         Me.GamesButton.TabIndex = 18
         Me.GamesButton.Text = "Games"
         Me.GamesButton.UseVisualStyleBackColor = False
         '
         'Home
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.ClientSize = New System.Drawing.Size(1685, 855)
         Me.Controls.Add(Me.GamesButton)
         Me.Controls.Add(Me.quitButton)
         Me.Controls.Add(Me.skip)
@@ -198,7 +195,7 @@ Partial Class Home
         Me.Controls.Add(Me.QuizzesButton)
         Me.Controls.Add(Me.AstronoMeLabel)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Home"
         Me.Text = "AstronoMe"
         Me.ResumeLayout(False)
