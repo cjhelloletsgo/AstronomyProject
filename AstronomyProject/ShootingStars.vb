@@ -180,7 +180,7 @@
         Else
             MsgBox("You didn't pass with at least an 80%! Go back to the lessons and try again when you dare!")
             Lessons.Show()
-            Me.Hide()
+            Me.Dispose()
         End If
     End Sub
     Private Sub runGame()
@@ -208,10 +208,10 @@
             Rocket.Top = -15 * Math.Sqrt(j) + y
             'Add in rotation here
         Else
-            Rocket.Top -= 3
+            Rocket.Top -= 7
             If Rocket.Top + Rocket.Height < Me.Top Then
                 SnakeForm.Show()
-                Me.Hide()
+                Me.Dispose()
             End If
         End If
         'divisor Controls speed
@@ -267,5 +267,4 @@
     Private Sub quitButton_Click(sender As Object, e As EventArgs)
         Application.Exit()
     End Sub
-    Dim wait As Integer
 End Class
