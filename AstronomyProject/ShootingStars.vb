@@ -22,11 +22,13 @@
         ButtonB.Enabled = False
         ButtonC.Enabled = False
         ButtonD.Enabled = False
+        My.Computer.Audio.Play(Savelocation + "click2.wav")
         If correctAns = clickedButton Then
+            My.Computer.Audio.Play(Savelocation + "whoosh.wav")
             questions(index) = True
             Label1.Text = "Right"
-            If j > 30 Then
-                j = j - 30
+            If j > 50 Then
+                j = j - 50
             Else j = 0
             End If
             score += 1
@@ -49,7 +51,8 @@
         a = GoodPlanet.Location.X()
         b = GoodPlanet.Location.Y()
         i = 1
-        j = 1
+        'j contols rocket speed
+        j = 3
         Rocket.Enabled = False
         My.Computer.Audio.Stop()
         StartButton.FlatStyle = FlatStyle.Flat
@@ -176,6 +179,7 @@
 
         If score / maxnum >= 0.8 Then
             launch = True
+            My.Computer.Audio.Play(Savelocation + "rocketSound2.wav")
             fireworksPictureBox.Visible = True
         Else
             MsgBox("You didn't pass with at least an 80%! Go back to the lessons and try again when you dare!")
