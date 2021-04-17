@@ -54,3 +54,5 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\Astrono
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg3Lesson2.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg4Lesson2.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg3Lesson2.resources
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg4Lesson2.resources

@@ -22,6 +22,7 @@ Partial Class pg2Lesson2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(pg2Lesson2))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LessonsLabel = New System.Windows.Forms.Label()
         Me.previousButton = New System.Windows.Forms.Button()
@@ -34,6 +35,7 @@ Partial Class pg2Lesson2
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(681, 76)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(572, 542)
@@ -118,7 +120,7 @@ Partial Class pg2Lesson2
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(614, 542)
         Me.RichTextBox1.TabIndex = 37
-        Me.RichTextBox1.Text = ""
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'pg2Lesson2
         '
