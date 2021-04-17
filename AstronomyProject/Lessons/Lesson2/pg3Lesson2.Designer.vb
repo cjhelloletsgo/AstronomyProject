@@ -22,6 +22,7 @@ Partial Class pg3Lesson2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(pg3Lesson2))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.LessonsLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -39,9 +40,9 @@ Partial Class pg3Lesson2
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox1.Location = New System.Drawing.Point(37, 76)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(614, 542)
+        Me.RichTextBox1.Size = New System.Drawing.Size(614, 591)
         Me.RichTextBox1.TabIndex = 40
-        Me.RichTextBox1.Text = ""
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'LessonsLabel
         '
@@ -59,6 +60,7 @@ Partial Class pg3Lesson2
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(683, 76)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(572, 542)
