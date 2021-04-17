@@ -117,31 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>      Saturn is the second largest planet, and the sixth planet from the
- Sun. It’s also the farthest planet from Earth still visible to the naked
- human eye. Saturn's most well known feature, however, are it’s
- rings. The other gas giants in the solar system also have rings,
- but Saturn's rings are the most prominent. These magnificent rings
- are made almost entirely of a mixture of water-ice chunks and rocks.
- They can be as large as a house, or as small as a grain of sugar. 
- These rings are believed to be leftover debris from comets, asteroids
- or shattered moons. It's been theorized that these rings could also
- be the leftover debris from other dwarf planets similar in size to Pluto.
-      Despite its size, Saturn is the least dense of all the planets. In fact, if
- you were able to put the entire planet in a pool of water, it’d float. The
- atmosphere of Saturn is mostly made up of hydrogen and helium. This
- kind of atmosphere makes life as we know it impossible to exist, but
- some of Saturns moons have been theorized to be able to support life.
- Saturn currently has 53 known moons, with 29 moons awaiting 
- confirmation. That's 82 moons!
-      It takes 29 years for Saturn to orbit earth, and its day cycle lasts a
- short 10.5 hours. In fact, the planet’s high-speed spin causes Saturn to
- bulge at its equator and flatten at its poles. Saturn was named after
- the Roman god of agriculture and wealth, who was also the father of
- Jupiter.
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2828,5 +2803,29 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPyw/+tH/A96s9qjx
         ENe/AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>      Saturn is the second largest planet, and the sixth planet from the
+ Sun. It’s also the farthest planet from Earth still visible to the naked
+ human eye. Saturn's most well known feature, however, are it’s
+ rings. The other gas giants in the solar system also have rings,
+ but Saturn's rings are the most prominent. These magnificent rings
+ are made almost entirely of a mixture of water-ice chunks and rocks.
+ They can be as large as a house, or as small as a grain of sugar. 
+ These rings are believed to be leftover debris from comets, asteroids
+ or shattered moons. 
+
+      Despite its size, Saturn is the least dense of all the planets. In fact, if
+ you were able to put the entire planet in a pool of water, it’d float. The
+ atmosphere of Saturn is mostly made up of hydrogen and helium. This
+ kind of atmosphere makes life as we know it impossible to exist, but
+ some of Saturns moons have been theorized to be able to support life.
+ Saturn currently has 53 known moons, with 29 moons awaiting 
+ confirmation. That's 82 moons!
+
+      It takes 29 years for Saturn to orbit earth, and its day cycle lasts a
+ short 10.5 hours. In fact, the planet’s high-speed spin causes Saturn to
+ bulge at its equator and flatten at its poles. Saturn was named after
+ the Roman god of agriculture and wealth.</value>
   </data>
 </root>

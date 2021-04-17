@@ -12094,7 +12094,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
+  <data name="Label1.Text" xml:space="preserve">
     <value>      As the planet closest to the sun, Mercury tends to get a lot of heat.
  In fact, surface temperatures on Mercury can reach a blistering 840
  degrees Fahrenheit! This means that the planet is hot enough to melt
@@ -12115,7 +12115,8 @@ surface is pockmarked with craters.
 
       Mercury is named after the Roman God Mercury, who was the god
  of financial gain, commerce, eloquence, messages, travelers, luck,
- trickery and thievery. His Greek name is Hermes, the messenger god.</value>
+ trickery and thievery. His Greek name is Hermes, the messenger god.
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

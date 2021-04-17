@@ -29,7 +29,7 @@ Partial Class pg1Lesson1
         Me.previousButton = New System.Windows.Forms.Button()
         Me.LessonsLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -40,7 +40,7 @@ Partial Class pg1Lesson1
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.quitButton.ForeColor = System.Drawing.Color.White
         Me.quitButton.Location = New System.Drawing.Point(1135, 646)
-        Me.quitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.quitButton.Margin = New System.Windows.Forms.Padding(2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(118, 38)
         Me.quitButton.TabIndex = 19
@@ -53,7 +53,7 @@ Partial Class pg1Lesson1
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HomeButton.ForeColor = System.Drawing.Color.White
         Me.HomeButton.Location = New System.Drawing.Point(11, 646)
-        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2)
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(118, 38)
         Me.HomeButton.TabIndex = 20
@@ -67,7 +67,7 @@ Partial Class pg1Lesson1
         Me.nextButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nextButton.ForeColor = System.Drawing.Color.White
         Me.nextButton.Location = New System.Drawing.Point(647, 646)
-        Me.nextButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.nextButton.Margin = New System.Windows.Forms.Padding(2)
         Me.nextButton.Name = "nextButton"
         Me.nextButton.Size = New System.Drawing.Size(118, 38)
         Me.nextButton.TabIndex = 23
@@ -81,7 +81,7 @@ Partial Class pg1Lesson1
         Me.previousButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.previousButton.ForeColor = System.Drawing.Color.White
         Me.previousButton.Location = New System.Drawing.Point(498, 646)
-        Me.previousButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.previousButton.Margin = New System.Windows.Forms.Padding(2)
         Me.previousButton.Name = "previousButton"
         Me.previousButton.Size = New System.Drawing.Size(118, 38)
         Me.previousButton.TabIndex = 25
@@ -111,16 +111,14 @@ Partial Class pg1Lesson1
         Me.PictureBox1.TabIndex = 35
         Me.PictureBox1.TabStop = False
         '
-        'RichTextBox1
+        'Label1
         '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(292, 441)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(688, 179)
-        Me.RichTextBox1.TabIndex = 34
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(339, 440)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(620, 179)
+        Me.Label1.TabIndex = 36
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'pg1Lesson1
         '
@@ -129,12 +127,12 @@ Partial Class pg1Lesson1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1264, 695)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.previousButton)
         Me.Controls.Add(Me.nextButton)
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.quitButton)
+        Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg1Lesson1"
         Me.Text = "Lesson1"
@@ -149,5 +147,5 @@ Partial Class pg1Lesson1
     Friend WithEvents previousButton As Button
     Friend WithEvents LessonsLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label1 As Label
 End Class

@@ -117,30 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>      The third planet from the sun, Earth, is the largest of the Inner circle.
- The only planet known to currently contain liquid water, Earth’s
- atmosphere protects the planet from dangerous radiation and helps
- keep the sunlight and warmth in. It’s proximity from the Sun (not too
- far or too close) keeps Earth from becoming overheated, or from
- becoming too cold. Like the other planets of the Inner circle, Earth has
- a rocky surface with mountains and canyons, along with a heavy metal
- core. Earth’s atmosphere contains water vapor, which helps moderate
- it’s temperatures. Earth’s moon is comprised of various rocks and
- minerals
-
-      Water covers roughly 71% of the Earth’s surface, and most of that is
- salt water. The air in Earth’s atmosphere is approximately 78% nitrogen
- and 21% oxygen. Nowhere else in the solar system is there an
- atmosphere loaded with free oxygen, which is vital to one of the most
- unique features of the planet Earth: life. 
-
-      While extra-terrestrial (or, alien) life has long been theorized, we
- have yet to discover any life past the planet Earth. Earth boasts several
- million species of life, living in habitats ranging from the bottom of the
- ocean to the highest mountains. Life outside of Earth is very possible,
- but as it stands, none have been found.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -11831,6 +11807,31 @@
         WbqcIHJmAbF2eNo4DTQPClu8f1tJL73mYYekxNNhjpbjiD818kde/qqf43VSYufAP0Oin4P7AfeS3Ej7
         mxI/8jdy5a/j4qBEpkDBx+d49vcuYmX4bDDmosxpfTaPTI/UTel+Acpm0ht779zDORJoOLcgb3HA+xLD
         3ujmQ5tHZ1L7cUXWJ21n1jBOXPnj7ff/Az0XczADGKfOAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>      The third planet from the sun, Earth, is the largest of the Inner circle.
+ The only planet known to currently contain liquid water, Earth’s
+ atmosphere protects the planet from dangerous radiation and helps
+ keep the sunlight and warmth in. It’s proximity from the Sun (not too
+ far or too close) keeps Earth from becoming overheated, or from
+ becoming too cold. Like the other planets of the Inner circle, Earth has
+ a rocky surface with mountains and canyons, along with a heavy metal
+ core. Earth’s atmosphere contains water vapor, which helps moderate
+ it’s temperatures. Earth’s moon is comprised of various rocks and
+ minerals
+
+      Water covers roughly 71% of the Earth’s surface, and most of that is
+ salt water. The air in Earth’s atmosphere is approximately 78% nitrogen
+ and 21% oxygen. Nowhere else in the solar system is there an
+ atmosphere loaded with free oxygen, which is vital to one of the most
+ unique features of the planet Earth: life. 
+
+      While extra-terrestrial (or, alien) life has long been theorized, we
+ have yet to discover any life past the planet Earth. Earth boasts several
+ million species of life, living in habitats ranging from the bottom of the
+ ocean to the highest mountains. Life outside of Earth is very possible,
+ but as it stands, none have been found.
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

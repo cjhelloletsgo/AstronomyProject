@@ -117,28 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>      Mars is the fourth planet from the Sun. Due to its iron-rich minerals,
- Mars is known for its bright red appearance. According to NASA, the
- iron minerals oxidize, or rust, causing the soil to look red.
-
-      Mars is much colder than Earth, due to its greater distance from
- the sun. The average temperature is negative 80 degrees Fahrenheit,
- but it can get as high as 70 degrees Fahrenheit. The cold and thin
- atmosphere means liquid water likely can’t exist on the Martian
- surface. Mars is also home to both the highest mountains and the
- deepest, longest valleys in the solar system. Olympus Mons, the
- largest mountain, is roughly 17 miles high. That’s three times taller
- than Mount Everest! The Valles Marineris system of valleys reaches
- as deep as 6 miles and runs for 2,500 miles. 
-
-      Currently, Mars is inhabited solely by robots. Five rovers have
- successfully been sent to Mars. Of these five,onlt two are still active. 
- It takes 687 Earth days for Mars to revolve around the sun. With a day
- cycle of 24 hours, 37 minutes and 22 seconds, the day cycle of Mars
- is only slightly longer than Earth's. Mars was named after the Roman god
- of war. The god Mars is also known by his Greek name, Ares.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5523,6 +5501,29 @@
         wsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC
         wsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLC
         wsLCwsLCwsLyz0Na2v8Hki2V2o7u/QEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>      Mars is the fourth planet from the Sun. Due to its iron-rich minerals,
+ Mars is known for its bright red appearance. According to NASA, the
+ iron minerals oxidize, or rust, causing the soil to look red.
+
+      Mars is much colder than Earth, due to its greater distance from
+ the sun. The average temperature is negative 80 degrees Fahrenheit,
+ but it can get as high as 70 degrees Fahrenheit. The cold and thin
+ atmosphere means liquid water likely can’t exist on the Martian
+ surface. Mars is also home to both the highest mountains and the
+ deepest, longest valleys in the solar system. Olympus Mons, the
+ largest mountain, is roughly 17 miles high. That’s three times taller
+ than Mount Everest! The Valles Marineris system of valleys reaches
+ as deep as 6 miles and runs for 2,500 miles. 
+
+      Currently, Mars is inhabited solely by robots. Five rovers have
+ successfully been sent to Mars. Of these five,onlt two are still active. 
+ It takes 687 Earth days for Mars to revolve around the sun. With a day
+ cycle of 24 hours, 37 minutes and 22 seconds, the day cycle of Mars
+ is only slightly longer than Earth's. Mars was named after the Roman god
+ of war. The god Mars is also known by his Greek name, Ares.
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

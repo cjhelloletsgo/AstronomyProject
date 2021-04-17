@@ -1,5 +1,6 @@
 ﻿Public Class pg2Lesson1
     Dim rs As New Resizer
+
     Private Sub pg2Lesson1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized

@@ -3806,28 +3806,29 @@
         YII=
 </value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
+  <data name="Label1.Text" xml:space="preserve">
     <value>      Jupiter is the largest planet in our solar system, by far. In fact, it's
  more than twice as massive as all the other planets combined! If
  Jupiter was the size of a basketball, Earth would be about the size
- of a grape. 
-      Currently, what makes up Jupiter’s dense core is unknown.
- We do know that Jupiter’s atmosphere resembles that of the sun,
+ of a grape. It's unknown what Jupiters dense core is made of, 
+ but we do know that Jupiter’s atmosphere resembles that of the sun,
  being made up mostly of helium and hydrogen. The white clouds
- seen from afar are made of crystals of frozen ammonia, while the
- composition of the dark clouds is still unknown. These colorful
+ ringing the planet are made of crystals of frozen ammonia, while
+ the composition of the dark clouds is still unknown. These colorful
  light and dark bands that surround Jupiter are created by strong
  east to west winds, traveling more than 335 miles per hour. Inside
  the atmosphere, diamond rain may fill the skies.
+
       One of the most noticeable features of Jupiter is the Great Red
  Spot, seen on its surface. This is a giant hurricane-like storm that's
  lasted more than 300 years. At its widest, the Great Red Spot is
- roughly twice the size of Earth. The edges of it spin counterclockwise
- at speeds of 270 to 425 mph.
-      Jupiter spins faster than any other planet, taking a under ten hours
+ roughly twice the size of Earth. 
+
+      Jupiter spins faster than any other planet, taking under ten hours
  to complete a turn on its axis. The orbit of Jupiter is comparatively
  slow- it takes twelve years to orbit around the sun. Jupiter is named
  after the Roman king of the gods and ruler of the skies. His Greek
- counterpart is Zeus, god of the sky.</value>
+ counterpart is Zeus, god of the sky.
+</value>
   </data>
 </root>

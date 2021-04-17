@@ -29,7 +29,7 @@ Partial Class pg2Lesson2
         Me.nextButton = New System.Windows.Forms.Button()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -111,29 +111,27 @@ Partial Class pg2Lesson2
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '
-        'RichTextBox1
+        'Label1
         '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(35, 76)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(614, 565)
-        Me.RichTextBox1.TabIndex = 37
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(35, 76)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(614, 568)
+        Me.Label1.TabIndex = 38
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'pg2Lesson2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 695)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.previousButton)
         Me.Controls.Add(Me.nextButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.quitButton)
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "pg2Lesson2"
         Me.Text = "pg2Lesson2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -147,5 +145,5 @@ Partial Class pg2Lesson2
     Friend WithEvents nextButton As Button
     Friend WithEvents HomeButton As Button
     Friend WithEvents quitButton As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label1 As Label
 End Class

@@ -22,26 +22,16 @@ Partial Class pg4Lesson2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(pg4Lesson2))
         Me.LessonsLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.previousButton = New System.Windows.Forms.Button()
         Me.nextButton = New System.Windows.Forms.Button()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(37, 76)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(614, 542)
-        Me.RichTextBox1.TabIndex = 43
-        Me.RichTextBox1.Text = ""
         '
         'LessonsLabel
         '
@@ -54,11 +44,12 @@ Partial Class pg4Lesson2
         Me.LessonsLabel.Name = "LessonsLabel"
         Me.LessonsLabel.Size = New System.Drawing.Size(1277, 55)
         Me.LessonsLabel.TabIndex = 42
-        Me.LessonsLabel.Text = "Saturn"
+        Me.LessonsLabel.Text = "Uranus"
         Me.LessonsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(683, 76)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(572, 542)
@@ -120,6 +111,15 @@ Partial Class pg4Lesson2
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(37, 76)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(640, 568)
+        Me.Label1.TabIndex = 49
+        Me.Label1.Text = resources.GetString("Label1.Text")
+        '
         'pg4Lesson2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,21 +129,20 @@ Partial Class pg4Lesson2
         Me.Controls.Add(Me.nextButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.quitButton)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "pg4Lesson2"
         Me.Text = "pg4Lesson2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents LessonsLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents previousButton As Button
     Friend WithEvents nextButton As Button
     Friend WithEvents HomeButton As Button
     Friend WithEvents quitButton As Button
+    Friend WithEvents Label1 As Label
 End Class

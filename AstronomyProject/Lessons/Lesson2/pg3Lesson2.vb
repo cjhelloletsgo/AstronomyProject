@@ -8,9 +8,7 @@
         rs.ResizeAllControls(Me)
     End Sub
 
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
 
     Private Sub quitButton_Click(sender As Object, e As EventArgs) Handles quitButton.Click
         Application.Exit()

@@ -5822,7 +5822,7 @@
         /z+WuzzK1CVXIgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
+  <data name="Label1.Text" xml:space="preserve">
     <value>      Venus is the second planet from the sun, and roughly the same size
  as Earth. Unlike Earth, however, Venus has a thick toxic atmosphere that
  traps heat within it. As a result, temperatures on Venus can reach up to
@@ -5842,7 +5842,8 @@
  225 Earth days to revolve around the Sun, and 116 Earth days for one
  day on Venus. Venus is named after the Roman God of love, and the
  only planet in our solar system to have been named after a woman.
- You may also know the God of love by her Greek name, Aphrodite.</value>
+ You may also know the God of love by her Greek name, Aphrodite.
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
