@@ -127,6 +127,18 @@
     <Compile Include="Lessons\Lesson2\pg5Lesson2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Lessons\Lesson3\pg1lesson3.Designer.vb">
+      <DependentUpon>pg1lesson3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\pg1lesson3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\pg2Lesson3.Designer.vb">
+      <DependentUpon>pg2Lesson3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\pg2Lesson3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SnakeForm.Designer.vb">
       <DependentUpon>SnakeForm.vb</DependentUpon>
     </Compile>
@@ -237,6 +249,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lessons\Lesson2\pg5Lesson2.resx">
       <DependentUpon>pg5Lesson2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lessons\Lesson3\pg1lesson3.resx">
+      <DependentUpon>pg1lesson3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lessons\Lesson3\pg2Lesson3.resx">
+      <DependentUpon>pg2Lesson3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SnakeForm.resx">
       <DependentUpon>SnakeForm.vb</DependentUpon>
