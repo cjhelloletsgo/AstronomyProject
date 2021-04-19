@@ -7,7 +7,6 @@
     Dim passwordAttempt As String
     Dim usernameAttempt As String
 
-
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
