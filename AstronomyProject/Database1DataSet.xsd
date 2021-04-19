@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Database1DataSet" targetNamespace="http://tempuri.org/Database1DataSet.xsd" xmlns:mstns="http://tempuri.org/Database1DataSet.xsd" xmlns="http://tempuri.org/Database1DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (MySettings)" PropertyReference="ApplicationSettings.AstronomyProject.My.MySettings.GlobalReference.Default.Database1ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Query1TableAdapter" GeneratorDataComponentClassName="Query1TableAdapter" Name="Query1" UserDataComponentName="Query1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database1ConnectionString (MySettings)" DbObjectName="Query1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Expr1000, Expr1001, Expr1002, Expr1003, Expr1004, Expr1005, Expr1006, Expr1007, Expr1008, Expr1009, Expr1010, Expr1011, Expr1012, Expr1013, Expr1014, Expr1015 FROM Query1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Expr1000" DataSetColumn="Expr1000" />
+              <Mapping SourceColumn="Expr1001" DataSetColumn="Expr1001" />
+              <Mapping SourceColumn="Expr1002" DataSetColumn="Expr1002" />
+              <Mapping SourceColumn="Expr1003" DataSetColumn="Expr1003" />
+              <Mapping SourceColumn="Expr1004" DataSetColumn="Expr1004" />
+              <Mapping SourceColumn="Expr1005" DataSetColumn="Expr1005" />
+              <Mapping SourceColumn="Expr1006" DataSetColumn="Expr1006" />
+              <Mapping SourceColumn="Expr1007" DataSetColumn="Expr1007" />
+              <Mapping SourceColumn="Expr1008" DataSetColumn="Expr1008" />
+              <Mapping SourceColumn="Expr1009" DataSetColumn="Expr1009" />
+              <Mapping SourceColumn="Expr1010" DataSetColumn="Expr1010" />
+              <Mapping SourceColumn="Expr1011" DataSetColumn="Expr1011" />
+              <Mapping SourceColumn="Expr1012" DataSetColumn="Expr1012" />
+              <Mapping SourceColumn="Expr1013" DataSetColumn="Expr1013" />
+              <Mapping SourceColumn="Expr1014" DataSetColumn="Expr1014" />
+              <Mapping SourceColumn="Expr1015" DataSetColumn="Expr1015" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Database1ConnectionString (MySettings)" DbObjectName="Query1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Expr1000, Expr1001, Expr1002, Expr1003, Expr1004, Expr1005, Expr1006, Expr1007, Expr1008, Expr1009, Expr1010, Expr1011, Expr1012, Expr1013, Expr1014, Expr1015 FROM Query1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Database1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database1DataSet" msprop:Generator_UserDSName="Database1DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Query1" msprop:Generator_TableClassName="Query1DataTable" msprop:Generator_TableVarName="tableQuery1" msprop:Generator_RowChangedName="Query1RowChanged" msprop:Generator_TablePropName="Query1" msprop:Generator_RowDeletingName="Query1RowDeleting" msprop:Generator_RowChangingName="Query1RowChanging" msprop:Generator_RowEvHandlerName="Query1RowChangeEventHandler" msprop:Generator_RowDeletedName="Query1RowDeleted" msprop:Generator_RowClassName="Query1Row" msprop:Generator_UserTableName="Query1" msprop:Generator_RowEvArgName="Query1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1000" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1000" msprop:Generator_ColumnPropNameInRow="Expr1000" msprop:Generator_ColumnPropNameInTable="Expr1000Column" msprop:Generator_UserColumnName="Expr1000" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1001" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1001" msprop:Generator_ColumnPropNameInRow="Expr1001" msprop:Generator_ColumnPropNameInTable="Expr1001Column" msprop:Generator_UserColumnName="Expr1001" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1002" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1002" msprop:Generator_ColumnPropNameInRow="Expr1002" msprop:Generator_ColumnPropNameInTable="Expr1002Column" msprop:Generator_UserColumnName="Expr1002" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1003" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1003" msprop:Generator_ColumnPropNameInRow="Expr1003" msprop:Generator_ColumnPropNameInTable="Expr1003Column" msprop:Generator_UserColumnName="Expr1003" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1004" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1004" msprop:Generator_ColumnPropNameInRow="Expr1004" msprop:Generator_ColumnPropNameInTable="Expr1004Column" msprop:Generator_UserColumnName="Expr1004" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1005" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1005" msprop:Generator_ColumnPropNameInRow="Expr1005" msprop:Generator_ColumnPropNameInTable="Expr1005Column" msprop:Generator_UserColumnName="Expr1005" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1006" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1006" msprop:Generator_ColumnPropNameInRow="Expr1006" msprop:Generator_ColumnPropNameInTable="Expr1006Column" msprop:Generator_UserColumnName="Expr1006" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1007" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1007" msprop:Generator_ColumnPropNameInRow="Expr1007" msprop:Generator_ColumnPropNameInTable="Expr1007Column" msprop:Generator_UserColumnName="Expr1007" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1008" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1008" msprop:Generator_ColumnPropNameInRow="Expr1008" msprop:Generator_ColumnPropNameInTable="Expr1008Column" msprop:Generator_UserColumnName="Expr1008" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1009" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1009" msprop:Generator_ColumnPropNameInRow="Expr1009" msprop:Generator_ColumnPropNameInTable="Expr1009Column" msprop:Generator_UserColumnName="Expr1009" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1010" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1010" msprop:Generator_ColumnPropNameInRow="Expr1010" msprop:Generator_ColumnPropNameInTable="Expr1010Column" msprop:Generator_UserColumnName="Expr1010" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1011" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1011" msprop:Generator_ColumnPropNameInRow="Expr1011" msprop:Generator_ColumnPropNameInTable="Expr1011Column" msprop:Generator_UserColumnName="Expr1011" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1012" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1012" msprop:Generator_ColumnPropNameInRow="Expr1012" msprop:Generator_ColumnPropNameInTable="Expr1012Column" msprop:Generator_UserColumnName="Expr1012" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1013" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1013" msprop:Generator_ColumnPropNameInRow="Expr1013" msprop:Generator_ColumnPropNameInTable="Expr1013Column" msprop:Generator_UserColumnName="Expr1013" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1014" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1014" msprop:Generator_ColumnPropNameInRow="Expr1014" msprop:Generator_ColumnPropNameInTable="Expr1014Column" msprop:Generator_UserColumnName="Expr1014" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1015" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1015" msprop:Generator_ColumnPropNameInRow="Expr1015" msprop:Generator_ColumnPropNameInTable="Expr1015Column" msprop:Generator_UserColumnName="Expr1015" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
