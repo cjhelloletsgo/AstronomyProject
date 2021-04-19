@@ -39,6 +39,7 @@ Partial Class Home
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.teacherModeButton = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -194,12 +195,27 @@ Partial Class Home
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
         '
+        'teacherModeButton
+        '
+        Me.teacherModeButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.teacherModeButton.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.teacherModeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.teacherModeButton.ForeColor = System.Drawing.Color.White
+        Me.teacherModeButton.Location = New System.Drawing.Point(1068, 312)
+        Me.teacherModeButton.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.teacherModeButton.Name = "teacherModeButton"
+        Me.teacherModeButton.Size = New System.Drawing.Size(154, 29)
+        Me.teacherModeButton.TabIndex = 20
+        Me.teacherModeButton.Text = "Teacher Mode"
+        Me.teacherModeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.Controls.Add(Me.teacherModeButton)
         Me.Controls.Add(Me.GamesButton)
         Me.Controls.Add(Me.quitButton)
         Me.Controls.Add(Me.skip)
@@ -236,4 +252,5 @@ Partial Class Home
     Friend WithEvents ToolTip2 As ToolTip
     Friend WithEvents ToolTip3 As ToolTip
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents teacherModeButton As Label
 End Class

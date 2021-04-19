@@ -117,5 +117,8 @@
         ToolTip3.SetToolTip(GamesButton, "Skip to the fun part!")
     End Sub
 
-
+    Private Sub teacherModeButton_Click(sender As Object, e As EventArgs) Handles teacherModeButton.Click
+        Teacher.Show()
+        Me.Hide()
+    End Sub
 End Class
