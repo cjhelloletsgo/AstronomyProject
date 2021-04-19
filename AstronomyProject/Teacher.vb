@@ -20,6 +20,15 @@
 
         sql = "Select * From lesson1Questions"
 
+        ''For eace student
+        'sql = "Select Distinct Case S1.StudentID, S1.Grade As quiz1Grade, S2.Grade As quiz2Grade, S3.Grade As quiz3Grade
+        'From StudentQuestions1 As S1, StudentQuestions2 As S2, StudentQuestions3 As S3"
+
+        'Average score per question
+        sql = "Select Case Abs((Avg(Q1))), Abs(Avg(Q2)), Abs((Avg(Q3))), Abs((Avg(Q3))), Abs((Avg(Q4))), Abs((Avg(Q5))),  Abs((Avg(Q6))),  Abs((Avg(Q7))),  Abs((Avg(Q8))),  Abs((Avg(Q9))),  Abs((Avg(Q10))),  Abs((Avg(Q11))),  Abs((Avg(Q12))),  Abs((Avg(Q13))),  Abs((Avg(Q14))), Abs((Avg(Q15)))
+        From StudentQuestions1"
+
+
 
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "MyQuestions")
