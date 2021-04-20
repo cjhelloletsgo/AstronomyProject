@@ -28,6 +28,10 @@
         pg1Lesson2.Show()
         Me.Dispose()
     End Sub
+    Private Sub Lesson3Button_Click(sender As Object, e As EventArgs) Handles Lesson3Button.Click
+        pg1lesson3.Show()
+        Me.Dispose()
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Application.Exit()

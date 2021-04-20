@@ -97,7 +97,7 @@ Partial Class Lessons
         Me.Lesson3Button.Name = "Lesson3Button"
         Me.Lesson3Button.Size = New System.Drawing.Size(243, 36)
         Me.Lesson3Button.TabIndex = 4
-        Me.Lesson3Button.Text = "Lesson 3: Cosmic Bodies"
+        Me.Lesson3Button.Text = "Lesson 3: Constellations"
         Me.Lesson3Button.UseVisualStyleBackColor = False
         '
         'quitButton
@@ -124,7 +124,7 @@ Partial Class Lessons
         Me.Lesson4Button.Name = "Lesson4Button"
         Me.Lesson4Button.Size = New System.Drawing.Size(243, 36)
         Me.Lesson4Button.TabIndex = 19
-        Me.Lesson4Button.Text = "Lesson 4: Constellations"
+        Me.Lesson4Button.Text = "Lesson 4: Cosmic Bodies"
         Me.Lesson4Button.UseVisualStyleBackColor = False
         '
         'Button1

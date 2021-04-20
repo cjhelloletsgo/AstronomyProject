@@ -22,11 +22,15 @@ Partial Class pg2Lesson3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(pg2Lesson3))
         Me.LessonsLabel = New System.Windows.Forms.Label()
         Me.previousButton = New System.Windows.Forms.Button()
         Me.nextButton = New System.Windows.Forms.Button()
         Me.HomeButton = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LessonsLabel
@@ -40,7 +44,7 @@ Partial Class pg2Lesson3
         Me.LessonsLabel.Name = "LessonsLabel"
         Me.LessonsLabel.Size = New System.Drawing.Size(1277, 55)
         Me.LessonsLabel.TabIndex = 61
-        Me.LessonsLabel.Text = "Constellations"
+        Me.LessonsLabel.Text = "Orion"
         Me.LessonsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'previousButton
@@ -98,11 +102,30 @@ Partial Class pg2Lesson3
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(669, 91)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(572, 507)
+        Me.PictureBox1.TabIndex = 66
+        Me.PictureBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(24, 76)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(628, 542)
+        Me.Label1.TabIndex = 67
+        '
         'pg2Lesson3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.previousButton)
         Me.Controls.Add(Me.nextButton)
         Me.Controls.Add(Me.HomeButton)
@@ -110,6 +133,7 @@ Partial Class pg2Lesson3
         Me.Controls.Add(Me.LessonsLabel)
         Me.Name = "pg2Lesson3"
         Me.Text = "pg2Lesson3"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -118,4 +142,6 @@ Partial Class pg2Lesson3
     Friend WithEvents nextButton As Button
     Friend WithEvents HomeButton As Button
     Friend WithEvents quitButton As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Label
 End Class
