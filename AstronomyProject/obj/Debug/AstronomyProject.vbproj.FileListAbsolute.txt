@@ -92,3 +92,4 @@ C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject
 C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Teacher.resources
 C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Chapter1.resources
 C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Chapter2.resources
+C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Chapter3.resources

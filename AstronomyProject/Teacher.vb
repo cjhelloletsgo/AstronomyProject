@@ -1,7 +1,13 @@
 ﻿Public Class Teacher
     Dim datalocation As String
     Dim myds As New DataSet
+    Dim rs As New Resizer
+    Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        rs.ResizeAllControls(Me)
+    End Sub
     Private Sub Teacher_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        rs.FindAllControls(Me)
+        Me.WindowState = FormWindowState.Maximized
         'TODO: This line of code loads data into the 'Database1DataSet1.Query3' table. You can move, or remove it, as needed.
 
         'TODO: This line of code loads data into the 'Database1DataSet1.Query2' table. You can move, or remove it, as needed.
@@ -48,6 +54,11 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Chapter2.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Chapter3.Show()
         Me.Hide()
     End Sub
 End Class

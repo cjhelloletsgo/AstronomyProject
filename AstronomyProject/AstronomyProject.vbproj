@@ -91,6 +91,12 @@
     <Compile Include="Chapter2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Chapter3.Designer.vb">
+      <DependentUpon>Chapter3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Database1DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chapter2.resx">
       <DependentUpon>Chapter2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter3.resx">
+      <DependentUpon>Chapter3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lessons\Lesson1\pg4Lesson1.resx">
       <DependentUpon>pg4Lesson1.vb</DependentUpon>
