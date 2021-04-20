@@ -5844,6 +5844,29 @@
         qngtpAWa3EYZqjdpVTna8/8BAlxejeZgTo8AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>      Ursa Major (also known as the Great Bear) is a constellation in the
+ northern sky, and visible throughout the year from most of the northern
+ hemisphere. Within the constellation, the Big Dipper can be found. It’s
+ made up of the tail of the Great Bear, along with the lower torso, creating
+ the ‘bowl’ of the Big Dipper. The Big Dipper is one of the most
+ well-known constellations in the world, and is often used for navigation.
+
+      In Roman mythology, Jupiter (king of the gods, known by the Greek
+ name ‘Zeus’) seeks the attention of a young woman named Callisto, a
+ nymph. Jupiters jealous wife, Juno, discovers that Callisto has a son
+ named Arcas and assumes that his father is Jupiter. Juno decides to
+ punish Callisto, and transforms her into a bear so she no longer attracts
+ the attention of Jupiter. Years later, the bear form of Callisto encounters
+ her son Arcas. Arcas nearly kills the bear, who unbeknownst to him is
+ his mother. Jupiter decides to turn Arcas into a bear as well, and puts
+ them both into the sky. Callisto forms Ursa Major, and Arcas is Ursa Minor.
+
+      Much like Orion’s Belt, it’s currently theorized by Astronomers that Ursa
+ Major’s stars likely contain exoplanets. In fact, one of the stars (referred to
+ as ‘Chalawan’, Thai for crocodile) is currently being investigated on the
+ possibility of hosting three exoplanets.</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAGAAoIAMAFgAAACgAAAAAAQAAAAIAAAEAGAAAAAAAKCADAAAAAAAAAAAAAAAAAAAA

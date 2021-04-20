@@ -63,6 +63,7 @@ Partial Class pg3Lesson3
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(628, 542)
         Me.Label1.TabIndex = 34
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'previousButton
         '
