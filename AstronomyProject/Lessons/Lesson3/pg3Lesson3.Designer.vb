@@ -43,7 +43,7 @@ Partial Class pg3Lesson3
         Me.LessonsLabel.Name = "LessonsLabel"
         Me.LessonsLabel.Size = New System.Drawing.Size(1277, 55)
         Me.LessonsLabel.TabIndex = 23
-        Me.LessonsLabel.Text = "Ursa (The big and little dipper)"
+        Me.LessonsLabel.Text = "Ursa Major (The Big Dipper)"
         Me.LessonsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
