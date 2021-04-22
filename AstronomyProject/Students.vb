@@ -51,6 +51,7 @@
     End Sub
 
     Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
+        Teacher.Dispose()
         Me.Dispose()
         Home.Show()
     End Sub
