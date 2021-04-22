@@ -104,3 +104,8 @@ C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Teacher.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg6Lesson3.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg7Lesson3.resources
+C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg3Lesson3.resources
+C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg4Lesson3.resources
+C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg5Lesson3.resources
+C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg6Lesson3.resources
+C:\Users\Colton\source\repos\AstronomyProject2\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg7Lesson3.resources
