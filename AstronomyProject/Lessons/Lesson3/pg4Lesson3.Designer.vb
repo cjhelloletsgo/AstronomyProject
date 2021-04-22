@@ -35,6 +35,7 @@ Partial Class pg4Lesson3
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(678, 75)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(572, 542)
@@ -60,8 +61,9 @@ Partial Class pg4Lesson3
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(33, 75)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(628, 542)
+        Me.Label1.Size = New System.Drawing.Size(628, 569)
         Me.Label1.TabIndex = 35
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'previousButton
         '
