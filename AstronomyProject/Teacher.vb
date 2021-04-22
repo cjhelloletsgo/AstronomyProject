@@ -2,6 +2,7 @@
     Dim datalocation As String
     Dim myds As New DataSet
     Dim rs As New Resizer
+    Dim chapter As Integer
     Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         rs.ResizeAllControls(Me)
     End Sub
@@ -9,6 +10,10 @@
         rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
 
+
+    End Sub
+
+    Private Sub getdata()
         Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
         datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
         Dim mycon As New OleDb.OleDbConnection
@@ -30,8 +35,18 @@
         'From StudentQuestions1 As S1, StudentQuestions2 As S2, StudentQuestions3 As S3"
 
         'Average score per question
-        sql = "Select Abs((Avg(Q1))), Abs(Avg(Q2)), Abs((Avg(Q3))), Abs((Avg(Q3))), Abs((Avg(Q4))), Abs((Avg(Q5))),  Abs((Avg(Q6))),  Abs((Avg(Q7))),  Abs((Avg(Q8))),  Abs((Avg(Q9))),  Abs((Avg(Q10))),  Abs((Avg(Q11))),  Abs((Avg(Q12))),  Abs((Avg(Q13))),  Abs((Avg(Q14))), Abs((Avg(Q15)))
+        sql = ""
+        If chapter = 1 Then
+            sql = "Select Abs((Avg(Q1))), Abs(Avg(Q2)), Abs((Avg(Q3))), Abs((Avg(Q3))), Abs((Avg(Q4))), Abs((Avg(Q5))),  Abs((Avg(Q6))),  Abs((Avg(Q7))),  Abs((Avg(Q8))),  Abs((Avg(Q9))),  Abs((Avg(Q10))),  Abs((Avg(Q11))),  Abs((Avg(Q12))),  Abs((Avg(Q13))),  Abs((Avg(Q14))), Abs((Avg(Q15)))
         From StudentQuestions1"
+        ElseIf chapter = 2 Then
+            sql = "Select Abs((Avg(Q1))), Abs(Avg(Q2)), Abs((Avg(Q3))), Abs((Avg(Q3))), Abs((Avg(Q4))), Abs((Avg(Q5))),  Abs((Avg(Q6))),  Abs((Avg(Q7))),  Abs((Avg(Q8))),  Abs((Avg(Q9))),  Abs((Avg(Q10))),  Abs((Avg(Q11))),  Abs((Avg(Q12))),  Abs((Avg(Q13))),  Abs((Avg(Q14))), Abs((Avg(Q15)))
+        From StudentQuestions2"
+        ElseIf chapter = 3 Then
+            sql = "Select Abs((Avg(Q1))), Abs(Avg(Q2)), Abs((Avg(Q3))), Abs((Avg(Q3))), Abs((Avg(Q4))), Abs((Avg(Q5))),  Abs((Avg(Q6))),  Abs((Avg(Q7))),  Abs((Avg(Q8))),  Abs((Avg(Q9))),  Abs((Avg(Q10))),  Abs((Avg(Q11))),  Abs((Avg(Q12))),  Abs((Avg(Q13))),  Abs((Avg(Q14))), Abs((Avg(Q15)))
+        From StudentQuestions3"
+        End If
+
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "Teacher")
 
@@ -53,20 +68,19 @@
 
         mycon.Close()
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Chapter1.Show()
-        Me.Hide()
+        chapter = 1
+        getdata()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Chapter2.Show()
-        Me.Hide()
+        chapter = 2
+        getdata()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Chapter3.Show()
-        Me.Hide()
+        chapter = 3
+        getdata()
     End Sub
 
     Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
