@@ -35,9 +35,21 @@
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "Teacher")
 
-        Label1.Text = $" Question 1: {myds.Tables("Teacher").Rows(0).Item(0)}"
-        Label2.Text = myds.Tables("Teacher").Rows(0).Item(1)
-        Label3.Text = myds.Tables("Teacher").Rows(0).Item(2)
+        Label1.Text = $" Question 1: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(0), 2)) * 100 }%"
+        Label2.Text = $" Question 2: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(1), 2)) * 100 }%"
+        Label3.Text = $" Question 3: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(2), 2)) * 100 }%"
+        Label4.Text = $" Question 4: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(3), 2)) * 100 }%"
+        Label5.Text = $" Question 5: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(4), 2)) * 100 }%"
+        Label6.Text = $" Question 6: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(5), 2)) * 100 }%"
+        Label7.Text = $" Question 7: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(6), 2)) * 100 }%"
+        Label8.Text = $" Question 8: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(7), 2)) * 100 }%"
+        Label9.Text = $" Question 9: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(8), 2)) * 100 }%"
+        Label10.Text = $" Question 10: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(9), 2)) * 100 }%"
+        Label11.Text = $" Question 11: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(10), 2)) * 100 }%"
+        Label12.Text = $" Question 12: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(11), 2)) * 100 }%"
+        Label13.Text = $" Question 13: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(12), 2)) * 100 }%"
+        Label14.Text = $" Question 14: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(13), 2)) * 100 }%"
+        Label15.Text = $" Question 15: {(Math.Round(myds.Tables("Teacher").Rows(0).Item(14), 2)) * 100 }%"
 
         mycon.Close()
     End Sub
