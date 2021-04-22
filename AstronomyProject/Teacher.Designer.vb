@@ -31,21 +31,21 @@ Partial Class Teacher
         Me.Query2TableAdapter = New AstronomyProject.Database1DataSet1TableAdapters.Query2TableAdapter()
         Me.Query3TableAdapter = New AstronomyProject.Database1DataSet1TableAdapters.Query3TableAdapter()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.StudentIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quiz1GradeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quiz2GradeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Quiz3GradeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Query2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet1 = New AstronomyProject.Database1DataSet1()
         Me.Query3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.HomeButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Query2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -95,47 +95,12 @@ Partial Class Teacher
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(543, 201)
+        Me.Button4.Location = New System.Drawing.Point(676, 157)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 15
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.StudentIDDataGridViewTextBoxColumn, Me.Quiz1GradeDataGridViewTextBoxColumn, Me.Quiz2GradeDataGridViewTextBoxColumn, Me.Quiz3GradeDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.Query2BindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(289, 321)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(445, 150)
-        Me.DataGridView1.TabIndex = 16
-        '
-        'StudentIDDataGridViewTextBoxColumn
-        '
-        Me.StudentIDDataGridViewTextBoxColumn.DataPropertyName = "StudentID"
-        Me.StudentIDDataGridViewTextBoxColumn.HeaderText = "StudentID"
-        Me.StudentIDDataGridViewTextBoxColumn.Name = "StudentIDDataGridViewTextBoxColumn"
-        '
-        'Quiz1GradeDataGridViewTextBoxColumn
-        '
-        Me.Quiz1GradeDataGridViewTextBoxColumn.DataPropertyName = "quiz1Grade"
-        Me.Quiz1GradeDataGridViewTextBoxColumn.HeaderText = "quiz1Grade"
-        Me.Quiz1GradeDataGridViewTextBoxColumn.Name = "Quiz1GradeDataGridViewTextBoxColumn"
-        '
-        'Quiz2GradeDataGridViewTextBoxColumn
-        '
-        Me.Quiz2GradeDataGridViewTextBoxColumn.DataPropertyName = "quiz2Grade"
-        Me.Quiz2GradeDataGridViewTextBoxColumn.HeaderText = "quiz2Grade"
-        Me.Quiz2GradeDataGridViewTextBoxColumn.Name = "Quiz2GradeDataGridViewTextBoxColumn"
-        '
-        'Quiz3GradeDataGridViewTextBoxColumn
-        '
-        Me.Quiz3GradeDataGridViewTextBoxColumn.DataPropertyName = "quiz3Grade"
-        Me.Quiz3GradeDataGridViewTextBoxColumn.HeaderText = "quiz3Grade"
-        Me.Quiz3GradeDataGridViewTextBoxColumn.Name = "Quiz3GradeDataGridViewTextBoxColumn"
         '
         'Query2BindingSource
         '
@@ -152,13 +117,68 @@ Partial Class Teacher
         Me.Database1DataSet1.DataSetName = "Database1DataSet1"
         Me.Database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(11, 10)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(11, 23)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "Label2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(11, 36)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Label3"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Location = New System.Drawing.Point(662, 295)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(217, 198)
+        Me.Panel1.TabIndex = 19
+        '
+        'HomeButton
+        '
+        Me.HomeButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.HomeButton.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.HomeButton.ForeColor = System.Drawing.Color.White
+        Me.HomeButton.Location = New System.Drawing.Point(1157, 487)
+        Me.HomeButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(118, 38)
+        Me.HomeButton.TabIndex = 20
+        Me.HomeButton.Text = "Home"
+        Me.HomeButton.UseVisualStyleBackColor = False
+        '
         'Teacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1361, 646)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.HomeButton)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button3)
@@ -167,11 +187,12 @@ Partial Class Teacher
         Me.Name = "Teacher"
         Me.Text = "Teacher"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Query2BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Database1DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -183,12 +204,12 @@ Partial Class Teacher
     Friend WithEvents Query3BindingSource As BindingSource
     Friend WithEvents Query3TableAdapter As Database1DataSet1TableAdapters.Query3TableAdapter
     Friend WithEvents Button4 As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents StudentIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Quiz1GradeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Quiz2GradeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Quiz3GradeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents Query2BindingSource As BindingSource
     Friend WithEvents Database1DataSet1BindingSource As BindingSource
     Friend WithEvents Database1DataSet1 As Database1DataSet1
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents HomeButton As Button
 End Class
