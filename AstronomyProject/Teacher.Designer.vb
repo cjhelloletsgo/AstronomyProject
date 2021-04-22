@@ -30,7 +30,6 @@ Partial Class Teacher
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Query2TableAdapter = New AstronomyProject.Database1DataSet1TableAdapters.Query2TableAdapter()
         Me.Query3TableAdapter = New AstronomyProject.Database1DataSet1TableAdapters.Query3TableAdapter()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Query2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet1 = New AstronomyProject.Database1DataSet1()
@@ -51,6 +50,8 @@ Partial Class Teacher
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Query2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,15 +103,6 @@ Partial Class Teacher
         'Query3TableAdapter
         '
         Me.Query3TableAdapter.ClearBeforeFill = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(800, 83)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 15
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Query2BindingSource
         '
@@ -291,12 +283,33 @@ Partial Class Teacher
         Me.Label4.TabIndex = 34
         Me.Label4.Text = "Label4"
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(658, 129)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(82, 13)
+        Me.Label16.TabIndex = 46
+        Me.Label16.Text = "Score/Question"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(189, 496)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 47
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Teacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1361, 646)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
@@ -313,7 +326,6 @@ Partial Class Teacher
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.HomeButton)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -336,7 +348,6 @@ Partial Class Teacher
     Friend WithEvents Query2TableAdapter As Database1DataSet1TableAdapters.Query2TableAdapter
     Friend WithEvents Query3BindingSource As BindingSource
     Friend WithEvents Query3TableAdapter As Database1DataSet1TableAdapters.Query3TableAdapter
-    Friend WithEvents Button4 As Button
     Friend WithEvents Query2BindingSource As BindingSource
     Friend WithEvents Database1DataSet1BindingSource As BindingSource
     Friend WithEvents Database1DataSet1 As Database1DataSet1
@@ -356,4 +367,6 @@ Partial Class Teacher
     Friend WithEvents Label5 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Button4 As Button
 End Class

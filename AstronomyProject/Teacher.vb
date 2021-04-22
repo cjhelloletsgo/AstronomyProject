@@ -30,11 +30,6 @@
         'sql = "Select Distinct Case S1.StudentID, S1.Grade As quiz1Grade, S2.Grade As quiz2Grade, S3.Grade As quiz3Grade
         'From StudentQuestions1 As S1, StudentQuestions2 As S2, StudentQuestions3 As S3"
 
-        'Average score per question
-
-        '        sql = "Select Abs((Avg(SQ1.Q1))) AS Q1Begin, Abs(Avg(SQ1.Q2)), Abs((Avg(SQ1.Q3))), Abs((Avg(SQ1.Q3))), Abs((Avg(SQ1.Q4))), Abs((Avg(SQ1.Q5))),  Abs((Avg(SQ1.Q6))),  Abs((Avg(SQ1.Q7))),  Abs((Avg(SQ1.Q8))),  Abs((Avg(SQ1.Q9))),  Abs((Avg(SQ1.Q10))),  Abs((Avg(SQ1.Q11))),  Abs((Avg(SQ1.Q12))),  Abs((Avg(SQ1.Q13))),  Abs((Avg(SQ1.Q14))), Abs((Avg(SQ1.Q15))), Abs((Avg(SQ2.Q1))) AS Q2begin
-        'From StudentQuestions1 AS SQ1, StudentQuestions1 AS SQ2"
-
         sql = "SELECT Abs((Avg(SQ1.Q1))) AS SQ1Q1, Abs(Avg(SQ1.Q2)) AS SQ1Q2, Abs((Avg(SQ1.Q3))) AS SQ1Q3, Abs((Avg(SQ1.Q4))) AS SQ1Q4, Abs((Avg(SQ1.Q5))) AS SQ1Q5, Abs((Avg(SQ1.Q6))) AS SQ1Q6, Abs((Avg(SQ1.Q7))) AS SQ1Q7, Abs((Avg(SQ1.Q8))) AS SQ1Q8, Abs((Avg(SQ1.Q9))) AS SQ1Q9, Abs((Avg(SQ1.Q10))) AS SQ1Q10, Abs((Avg(SQ1.Q11))) AS SQ1Q11, Abs((Avg(SQ1.Q12))) AS SQ1Q12, Abs((Avg(SQ1.Q13))) AS SQ1Q13, Abs((Avg(SQ1.Q14))) AS SQ1Q14, Abs((Avg(SQ1.Q15))) AS SQ1Q15,
                       Abs((Avg(SQ2.Q1))) AS SQ2Q1, Abs(Avg(SQ2.Q2)) AS SQ2Q2, Abs((Avg(SQ2.Q3))) AS SQ2Q3, Abs((Avg(SQ2.Q4))) AS SQ2Q4, Abs((Avg(SQ2.Q5))) AS SQ2Q5, Abs((Avg(SQ2.Q6))) AS SQ2Q6, Abs((Avg(SQ2.Q7))) AS SQ2Q7, Abs((Avg(SQ2.Q8))) AS SQ2Q8, Abs((Avg(SQ2.Q9))) AS SQ2Q9, Abs((Avg(SQ2.Q10))) AS SQ2Q10, Abs((Avg(SQ2.Q11))) AS SQ2Q11, Abs((Avg(SQ2.Q12))) AS SQ2Q12, Abs((Avg(SQ2.Q13))) AS SQ2Q13, Abs((Avg(SQ2.Q14))) AS SQ2Q14, Abs((Avg(SQ2.Q15))) AS SQ2Q15, 
                       Abs((Avg(SQ3.Q1))) AS SQ3Q1, Abs(Avg(SQ3.Q2)) AS SQ3Q2, Abs((Avg(SQ3.Q3))) AS SQ3Q3, Abs((Avg(SQ3.Q4))) AS SQ3Q4, Abs((Avg(SQ3.Q5))) AS SQ3Q5, Abs((Avg(SQ3.Q6))) AS SQ3Q6, Abs((Avg(SQ3.Q7))) AS SQ3Q7, Abs((Avg(SQ3.Q8))) AS SQ3Q8, Abs((Avg(SQ3.Q9))) AS SQ3Q9, Abs((Avg(SQ3.Q10))) AS SQ3Q10, Abs((Avg(SQ3.Q11))) AS SQ3Q11, Abs((Avg(SQ3.Q12))) AS SQ3Q12, Abs((Avg(SQ3.Q13))) AS SQ3Q13, Abs((Avg(SQ3.Q14))) AS SQ3Q14, Abs((Avg(SQ3.Q15))) AS SQ3Q15
@@ -102,5 +97,10 @@
     Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
         Home.Show()
         Me.Dispose()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Students.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -282,6 +282,12 @@
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Students.Designer.vb">
+      <DependentUpon>Students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Students.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Teacher.Designer.vb">
       <DependentUpon>Teacher.vb</DependentUpon>
     </Compile>
@@ -382,6 +388,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.vb</DependentUpon>
