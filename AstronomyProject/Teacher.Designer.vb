@@ -299,7 +299,7 @@ Partial Class Teacher
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 47
-        Me.Button4.Text = "Button4"
+        Me.Button4.Text = "Students"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Teacher

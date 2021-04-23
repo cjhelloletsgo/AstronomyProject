@@ -38,12 +38,12 @@
         Label3.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(2), 2) * 100}%"
         Label4.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(3), 2) * 100}%"
 
-        Label9.Text = myds.Tables("Student").Rows(0).Item(0)
+        Label9.Text = myds.Tables("Student").Rows(1).Item(0)
         Label10.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(1), 2) * 100}%"
         Label11.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(2), 2) * 100}%"
         Label12.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(3), 2) * 100}%"
 
-        Label13.Text = myds.Tables("Student").Rows(0).Item(0)
+        Label13.Text = myds.Tables("Student").Rows(2).Item(0)
         Label14.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
         Label15.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
         Label16.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
