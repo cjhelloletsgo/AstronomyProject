@@ -58,7 +58,7 @@ Partial Class pg5Lesson2
         Me.nextButton.Name = "nextButton"
         Me.nextButton.Size = New System.Drawing.Size(118, 38)
         Me.nextButton.TabIndex = 51
-        Me.nextButton.Text = "Next"
+        Me.nextButton.Text = "Quiz!"
         Me.nextButton.UseVisualStyleBackColor = False
         '
         'HomeButton

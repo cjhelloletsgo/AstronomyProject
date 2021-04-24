@@ -151,3 +151,4 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.xml
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Students.resources
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Students.resources
