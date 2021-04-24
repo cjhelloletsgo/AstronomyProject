@@ -29,9 +29,11 @@ Public Class SnakeForm
     Private Sub SnakeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
         Me.WindowState = FormWindowState.Maximized
+
     End Sub
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles Me.Load
+        'Home.Hide()
         Me.Show()
         Me.Focus()
 
@@ -69,7 +71,8 @@ Public Class SnakeForm
 
             tickCounter()
         Loop
-        Me.Close()
+        'Home.Show()
+        'Me.Close()
     End Sub
 
     Private Sub DrawGraphics()
@@ -183,7 +186,9 @@ Public Class SnakeForm
             Case Keys.F1
                 restartGame()
             Case Keys.Escape
-                isRunning = False
+                Home.Show()
+                Me.Hide()
+
         End Select
     End Sub
 

@@ -41,8 +41,9 @@
     End Sub
 
     Private Sub GamesButton_Click(sender As Object, e As EventArgs) Handles GamesButton.Click
+        'Me.Hide()
         SnakeForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
 

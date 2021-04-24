@@ -120,7 +120,7 @@ Partial Class Home
         Me.passwordTextbox.Margin = New System.Windows.Forms.Padding(2)
         Me.passwordTextbox.Name = "passwordTextbox"
         Me.passwordTextbox.Size = New System.Drawing.Size(155, 26)
-        Me.passwordTextbox.TabIndex = 11
+        Me.passwordTextbox.TabIndex = 2
         '
         'usernameTextbox
         '
@@ -129,7 +129,7 @@ Partial Class Home
         Me.usernameTextbox.Margin = New System.Windows.Forms.Padding(2)
         Me.usernameTextbox.Name = "usernameTextbox"
         Me.usernameTextbox.Size = New System.Drawing.Size(155, 26)
-        Me.usernameTextbox.TabIndex = 10
+        Me.usernameTextbox.TabIndex = 1
         '
         'LoginButton
         '
@@ -141,7 +141,7 @@ Partial Class Home
         Me.LoginButton.Margin = New System.Windows.Forms.Padding(2)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(112, 33)
-        Me.LoginButton.TabIndex = 9
+        Me.LoginButton.TabIndex = 3
         Me.LoginButton.Text = "Login"
         Me.LoginButton.UseVisualStyleBackColor = False
         '
@@ -166,7 +166,7 @@ Partial Class Home
         Me.quitButton.Margin = New System.Windows.Forms.Padding(2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(118, 38)
-        Me.quitButton.TabIndex = 17
+        Me.quitButton.TabIndex = 4
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '

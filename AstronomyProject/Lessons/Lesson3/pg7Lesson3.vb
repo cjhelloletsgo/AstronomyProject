@@ -23,7 +23,7 @@
     End Sub
 
     Private Sub nextButton_Click(sender As Object, e As EventArgs) Handles nextButton.Click
-        'pg6Lesson3.Show()
+        Quizzes.Show()
         Me.Dispose()
     End Sub
 End Class
