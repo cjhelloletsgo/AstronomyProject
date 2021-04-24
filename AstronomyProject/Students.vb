@@ -32,21 +32,121 @@
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "Student")
         mycon.Close()
+        Dim maxnum As Integer
+        maxnum = myds.Tables("Student").Rows.Count
 
-        Label1.Text = myds.Tables("Student").Rows(0).Item(0)
-        Label2.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(1), 2) * 100}%"
-        Label3.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(2), 2) * 100}%"
-        Label4.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(3), 2) * 100}%"
+        Dim i As Integer
+        'This will 100% give you cancer, but I'm running out of time
 
-        Label9.Text = myds.Tables("Student").Rows(1).Item(0)
-        Label10.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(1), 2) * 100}%"
-        Label11.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(2), 2) * 100}%"
-        Label12.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(3), 2) * 100}%"
+        Try
+            i = 0
+            Label1.Text = myds.Tables("Student").Rows(0).Item(0)
+            Label2.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(1), 2) * 100}%"
+            Label3.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(2), 2) * 100}%"
+            Label4.Text = $"{Math.Round(myds.Tables("Student").Rows(0).Item(3), 2) * 100}%"
 
-        Label13.Text = myds.Tables("Student").Rows(2).Item(0)
-        Label14.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
-        Label15.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
-        Label16.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+            i = 1
+            Label9.Text = myds.Tables("Student").Rows(1).Item(0)
+            Label10.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(1), 2) * 100}%"
+            Label11.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(2), 2) * 100}%"
+            Label12.Text = $"{Math.Round(myds.Tables("Student").Rows(1).Item(3), 2) * 100}%"
+
+            i = 2
+            Label13.Text = myds.Tables("Student").Rows(2).Item(0)
+            Label14.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
+            Label15.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
+            Label16.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+
+            i = 3
+            Label17.Text = myds.Tables("Student").Rows(3).Item(0)
+            Label18.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
+            Label19.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
+            Label20.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+
+            i = 4
+            Label21.Text = myds.Tables("Student").Rows(2).Item(0)
+            Label22.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
+            Label23.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
+            Label24.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+
+            i = 5
+            Label25.Text = myds.Tables("Student").Rows(2).Item(0)
+            Label26.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
+            Label27.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
+            Label28.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+
+            i = 6
+            Label29.Text = myds.Tables("Student").Rows(2).Item(0)
+            Label30.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
+            Label31.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
+            Label32.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+
+            i = 7
+        Catch ex As Exception
+
+        End Try
+
+
+        If i = 3 Then
+            Label17.Text = ""
+            Label18.Text = ""
+            Label19.Text = ""
+            Label20.Text = ""
+
+            Label21.Text = ""
+            Label22.Text = ""
+            Label23.Text = ""
+            Label24.Text = ""
+
+            Label25.Text = ""
+            Label26.Text = ""
+            Label27.Text = ""
+            Label28.Text = ""
+
+            Label29.Text = ""
+            Label30.Text = ""
+            Label31.Text = ""
+            Label32.Text = ""
+        End If
+
+        If i = 4 Then
+
+            Label21.Text = ""
+            Label22.Text = ""
+            Label23.Text = ""
+            Label24.Text = ""
+
+            Label25.Text = ""
+            Label26.Text = ""
+            Label27.Text = ""
+            Label28.Text = ""
+
+            Label29.Text = ""
+            Label30.Text = ""
+            Label31.Text = ""
+            Label32.Text = ""
+        End If
+
+        If i = 5 Then
+
+            Label25.Text = ""
+            Label26.Text = ""
+            Label27.Text = ""
+            Label28.Text = ""
+
+            Label29.Text = ""
+            Label30.Text = ""
+            Label31.Text = ""
+            Label32.Text = ""
+        End If
+
+        If i = 6 Then
+            Label29.Text = ""
+            Label30.Text = ""
+            Label31.Text = ""
+            Label32.Text = ""
+        End If
+
 
     End Sub
 
