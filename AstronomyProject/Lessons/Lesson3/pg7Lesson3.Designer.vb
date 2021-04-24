@@ -22,6 +22,7 @@ Partial Class pg7Lesson3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(pg7Lesson3))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LessonsLabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,6 +35,7 @@ Partial Class pg7Lesson3
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(678, 77)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(572, 542)
@@ -57,10 +59,11 @@ Partial Class pg7Lesson3
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 77)
+        Me.Label1.Location = New System.Drawing.Point(33, 97)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(628, 542)
+        Me.Label1.Size = New System.Drawing.Size(628, 495)
         Me.Label1.TabIndex = 38
+        Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'previousButton
         '
