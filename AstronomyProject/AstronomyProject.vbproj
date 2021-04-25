@@ -58,6 +58,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -195,6 +196,18 @@
       <DependentUpon>pg7Lesson3.vb</DependentUpon>
     </Compile>
     <Compile Include="Lessons\Lesson3\pg7Lesson3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUser.Designer.vb">
+      <DependentUpon>NewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassCheck.Designer.vb">
+      <DependentUpon>PassCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassCheck.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SnakeForm.Designer.vb">
@@ -349,6 +362,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lessons\Lesson3\pg7Lesson3.resx">
       <DependentUpon>pg7Lesson3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUser.resx">
+      <DependentUpon>NewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassCheck.resx">
+      <DependentUpon>PassCheck.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SnakeForm.resx">
       <DependentUpon>SnakeForm.vb</DependentUpon>

@@ -28,8 +28,8 @@
         LoginButton.FlatAppearance.BorderSize = 0
         GamesButton.FlatStyle = FlatStyle.Flat
         GamesButton.FlatAppearance.BorderSize = 0
-        AddUserButton.FlatStyle = FlatStyle.Flat
-        AddUserButton.FlatAppearance.BorderSize = 0
+        NewUserButton.FlatStyle = FlatStyle.Flat
+        NewUserButton.FlatAppearance.BorderSize = 0
         quitButton.FlatStyle = FlatStyle.Flat
         quitButton.FlatAppearance.BorderSize = 0
         QuizzesButton.Enabled = False
@@ -127,30 +127,12 @@
         Me.Hide()
     End Sub
 
-    Private Sub AddUserButton_Click(sender As Object, e As EventArgs) Handles AddUserButton.Click
-        Dim myds As New DataSet
-        Dim sql As String
-        Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
-        datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
-        Using connection As New OleDb.OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0; 
-                                      Data Source = {datalocation};
-                                      Persist Security Info=False;")
-            Dim myda As New OleDb.OleDbDataAdapter
-            Sql = "Select * From Students"
+    Private Sub AddUserButton_Click(sender As Object, e As EventArgs) Handles NewUserButton.Click
+        'Dim p As String
+        'p = InputBox("Please confirm password")
 
-            myda = New OleDb.OleDbDataAdapter(sql, connection)
-            myda.Fill(myds, "StudentQuestions")
+        NewUser.Show()
 
-            Using command As New OleDb.OleDbCommand($"INSERT INTO Students (username,pass,studentid) VALUES (@username,@pass,@studentid)", connection)
 
-                command.Parameters.AddWithValue("@username", usernameTextbox.Text)
-                command.Parameters.AddWithValue("@pass", passwordTextbox.Text)
-                command.Parameters.AddWithValue("@studentid", CLng(TextBox1.Text))
-
-                connection.Open()
-                command.ExecuteNonQuery()
-                MsgBox("a user has been added")
-            End Using
-        End Using
     End Sub
 End Class

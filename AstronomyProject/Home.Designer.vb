@@ -27,10 +27,6 @@ Partial Class Home
         Me.AstronoMeLabel = New System.Windows.Forms.Label()
         Me.QuizzesButton = New System.Windows.Forms.Button()
         Me.LessonsButton = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.passwordTextbox = New System.Windows.Forms.TextBox()
-        Me.usernameTextbox = New System.Windows.Forms.TextBox()
         Me.LoginButton = New System.Windows.Forms.Button()
         Me.skip = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
@@ -40,8 +36,11 @@ Partial Class Home
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.teacherModeButton = New System.Windows.Forms.Label()
-        Me.AddUserButton = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.NewUserButton = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.passwordTextbox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.usernameTextbox = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,60 +86,13 @@ Partial Class Home
         Me.LessonsButton.Text = "Lessons"
         Me.LessonsButton.UseVisualStyleBackColor = False
         '
-        'Label5
-        '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.BackColor = System.Drawing.Color.DarkSlateGray
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(707, 232)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(154, 29)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Password"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.DarkSlateGray
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(396, 232)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(154, 29)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Username"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'passwordTextbox
-        '
-        Me.passwordTextbox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.passwordTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.passwordTextbox.Location = New System.Drawing.Point(706, 288)
-        Me.passwordTextbox.Margin = New System.Windows.Forms.Padding(2)
-        Me.passwordTextbox.Name = "passwordTextbox"
-        Me.passwordTextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passwordTextbox.Size = New System.Drawing.Size(155, 26)
-        Me.passwordTextbox.TabIndex = 2
-        '
-        'usernameTextbox
-        '
-        Me.usernameTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.usernameTextbox.Location = New System.Drawing.Point(395, 288)
-        Me.usernameTextbox.Margin = New System.Windows.Forms.Padding(2)
-        Me.usernameTextbox.Name = "usernameTextbox"
-        Me.usernameTextbox.Size = New System.Drawing.Size(155, 26)
-        Me.usernameTextbox.TabIndex = 1
-        '
         'LoginButton
         '
         Me.LoginButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.LoginButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.LoginButton.ForeColor = System.Drawing.Color.White
-        Me.LoginButton.Location = New System.Drawing.Point(570, 388)
+        Me.LoginButton.Location = New System.Drawing.Point(506, 388)
         Me.LoginButton.Margin = New System.Windows.Forms.Padding(2)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(112, 33)
@@ -212,28 +164,66 @@ Partial Class Home
         Me.teacherModeButton.Text = "Teacher Mode"
         Me.teacherModeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'AddUserButton
+        'NewUserButton
         '
-        Me.AddUserButton.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.AddUserButton.BackColor = System.Drawing.Color.DarkSlateGray
-        Me.AddUserButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.AddUserButton.ForeColor = System.Drawing.Color.White
-        Me.AddUserButton.Location = New System.Drawing.Point(864, 408)
-        Me.AddUserButton.Margin = New System.Windows.Forms.Padding(2)
-        Me.AddUserButton.Name = "AddUserButton"
-        Me.AddUserButton.Size = New System.Drawing.Size(112, 33)
-        Me.AddUserButton.TabIndex = 21
-        Me.AddUserButton.Text = "Add User"
-        Me.AddUserButton.UseVisualStyleBackColor = False
+        Me.NewUserButton.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.NewUserButton.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.NewUserButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.NewUserButton.ForeColor = System.Drawing.Color.White
+        Me.NewUserButton.Location = New System.Drawing.Point(647, 388)
+        Me.NewUserButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.NewUserButton.Name = "NewUserButton"
+        Me.NewUserButton.Size = New System.Drawing.Size(112, 33)
+        Me.NewUserButton.TabIndex = 21
+        Me.NewUserButton.Text = "New User"
+        Me.NewUserButton.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'Label4
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TextBox1.Location = New System.Drawing.Point(285, 415)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(155, 26)
-        Me.TextBox1.TabIndex = 22
+        Me.Label4.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(396, 232)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(154, 29)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Username"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'passwordTextbox
+        '
+        Me.passwordTextbox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.passwordTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.passwordTextbox.Location = New System.Drawing.Point(706, 288)
+        Me.passwordTextbox.Margin = New System.Windows.Forms.Padding(2)
+        Me.passwordTextbox.Name = "passwordTextbox"
+        Me.passwordTextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordTextbox.Size = New System.Drawing.Size(155, 26)
+        Me.passwordTextbox.TabIndex = 2
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(707, 232)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(154, 29)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Password"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'usernameTextbox
+        '
+        Me.usernameTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.usernameTextbox.Location = New System.Drawing.Point(395, 288)
+        Me.usernameTextbox.Margin = New System.Windows.Forms.Padding(2)
+        Me.usernameTextbox.Name = "usernameTextbox"
+        Me.usernameTextbox.Size = New System.Drawing.Size(155, 26)
+        Me.usernameTextbox.TabIndex = 1
         '
         'Home
         '
@@ -241,8 +231,7 @@ Partial Class Home
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1264, 695)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.AddUserButton)
+        Me.Controls.Add(Me.NewUserButton)
         Me.Controls.Add(Me.teacherModeButton)
         Me.Controls.Add(Me.GamesButton)
         Me.Controls.Add(Me.quitButton)
@@ -268,10 +257,6 @@ Partial Class Home
     Friend WithEvents AstronoMeLabel As Label
     Friend WithEvents QuizzesButton As Button
     Friend WithEvents LessonsButton As Button
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents passwordTextbox As TextBox
-    Friend WithEvents usernameTextbox As TextBox
     Friend WithEvents LoginButton As Button
     Friend WithEvents skip As Button
     Friend WithEvents quitButton As Button
@@ -281,6 +266,9 @@ Partial Class Home
     Friend WithEvents ToolTip3 As ToolTip
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents teacherModeButton As Label
-    Friend WithEvents AddUserButton As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents NewUserButton As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents passwordTextbox As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents usernameTextbox As TextBox
 End Class

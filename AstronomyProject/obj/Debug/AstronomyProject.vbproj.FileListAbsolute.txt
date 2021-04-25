@@ -194,3 +194,5 @@ C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\As
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.exe
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.xml
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
+C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.PassCheck.resources
+C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.NewUser.resources
