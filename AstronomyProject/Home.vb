@@ -100,7 +100,7 @@
         End Try
     End Sub
 
-    Private Sub skip_Click(sender As Object, e As EventArgs) Handles skip.Click
+    Private Sub skip_Click(sender As Object, e As EventArgs)
         Me.Hide()
         usernameAttempt = "colton"
         passwordAttempt = "1234"

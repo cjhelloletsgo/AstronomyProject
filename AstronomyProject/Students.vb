@@ -64,22 +64,22 @@
             Label20.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
 
             i = 4
-            Label21.Text = myds.Tables("Student").Rows(2).Item(0)
-            Label22.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
-            Label23.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
-            Label24.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+            Label21.Text = myds.Tables("Student").Rows(4).Item(0)
+            Label22.Text = $"{Math.Round(myds.Tables("Student").Rows(4).Item(1), 2) * 100}%"
+            Label23.Text = $"{Math.Round(myds.Tables("Student").Rows(4).Item(2), 2) * 100}%"
+            Label24.Text = $"{Math.Round(myds.Tables("Student").Rows(4).Item(3), 2) * 100}%"
 
             i = 5
-            Label25.Text = myds.Tables("Student").Rows(2).Item(0)
-            Label26.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
-            Label27.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
-            Label28.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+            Label25.Text = myds.Tables("Student").Rows(5).Item(0)
+            Label26.Text = $"{Math.Round(myds.Tables("Student").Rows(5).Item(1), 2) * 100}%"
+            Label27.Text = $"{Math.Round(myds.Tables("Student").Rows(5).Item(2), 2) * 100}%"
+            Label28.Text = $"{Math.Round(myds.Tables("Student").Rows(5).Item(3), 2) * 100}%"
 
             i = 6
-            Label29.Text = myds.Tables("Student").Rows(2).Item(0)
-            Label30.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
-            Label31.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
-            Label32.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+            Label29.Text = myds.Tables("Student").Rows(6).Item(0)
+            Label30.Text = $"{Math.Round(myds.Tables("Student").Rows(6).Item(1), 2) * 100}%"
+            Label31.Text = $"{Math.Round(myds.Tables("Student").Rows(6).Item(2), 2) * 100}%"
+            Label32.Text = $"{Math.Round(myds.Tables("Student").Rows(6).Item(3), 2) * 100}%"
 
             i = 7
         Catch ex As Exception
@@ -88,6 +88,7 @@
 
 
         If i = 3 Then
+
             Label17.Text = ""
             Label18.Text = ""
             Label19.Text = ""

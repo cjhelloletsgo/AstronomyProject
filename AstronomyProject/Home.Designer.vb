@@ -28,7 +28,6 @@ Partial Class Home
         Me.QuizzesButton = New System.Windows.Forms.Button()
         Me.LessonsButton = New System.Windows.Forms.Button()
         Me.LoginButton = New System.Windows.Forms.Button()
-        Me.skip = New System.Windows.Forms.Button()
         Me.quitButton = New System.Windows.Forms.Button()
         Me.GamesButton = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -99,17 +98,6 @@ Partial Class Home
         Me.LoginButton.TabIndex = 3
         Me.LoginButton.Text = "Login"
         Me.LoginButton.UseVisualStyleBackColor = False
-        '
-        'skip
-        '
-        Me.skip.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.skip.Location = New System.Drawing.Point(23, 188)
-        Me.skip.Margin = New System.Windows.Forms.Padding(2)
-        Me.skip.Name = "skip"
-        Me.skip.Size = New System.Drawing.Size(56, 20)
-        Me.skip.TabIndex = 14
-        Me.skip.Text = "Skip"
-        Me.skip.UseVisualStyleBackColor = True
         '
         'quitButton
         '
@@ -235,7 +223,6 @@ Partial Class Home
         Me.Controls.Add(Me.teacherModeButton)
         Me.Controls.Add(Me.GamesButton)
         Me.Controls.Add(Me.quitButton)
-        Me.Controls.Add(Me.skip)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.passwordTextbox)
@@ -258,7 +245,6 @@ Partial Class Home
     Friend WithEvents QuizzesButton As Button
     Friend WithEvents LessonsButton As Button
     Friend WithEvents LoginButton As Button
-    Friend WithEvents skip As Button
     Friend WithEvents quitButton As Button
     Friend WithEvents GamesButton As Button
     Friend WithEvents ToolTip1 As ToolTip
