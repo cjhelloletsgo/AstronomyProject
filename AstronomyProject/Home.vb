@@ -12,7 +12,7 @@
         Me.WindowState = FormWindowState.Maximized
         Dim information = My.Computer.FileSystem.GetFileInfo("AstronomyProject\sounds\space1.wav")
         savelocation = information.FullName.Substring(0, information.FullName.Length - 61) + "sounds\"
-        My.Computer.Audio.Play(savelocation + "space1.wav")
+        'My.Computer.Audio.Play(savelocation + "space1.wav")
         QuizzesButton.Visible = False
         LessonsButton.Visible = False
         GamesButton.Visible = False
