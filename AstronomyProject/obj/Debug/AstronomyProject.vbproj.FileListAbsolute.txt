@@ -196,3 +196,5 @@ C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\As
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pdb
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.PassCheck.resources
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.NewUser.resources
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.NewUser.resources
+C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.PassCheck.resources

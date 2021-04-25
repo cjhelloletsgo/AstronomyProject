@@ -19,22 +19,22 @@
         'My.Computer.Audio.Play(savelocation + "space1.wav")
         QuizzesButton.Visible = False
         LessonsButton.Visible = False
-        GamesButton.Visible = False
+        '  GamesButton.Visible = False
         QuizzesButton.FlatStyle = FlatStyle.Flat
         QuizzesButton.FlatAppearance.BorderSize = 0
         LessonsButton.FlatStyle = FlatStyle.Flat
         LessonsButton.FlatAppearance.BorderSize = 0
         LoginButton.FlatStyle = FlatStyle.Flat
         LoginButton.FlatAppearance.BorderSize = 0
-        GamesButton.FlatStyle = FlatStyle.Flat
-        GamesButton.FlatAppearance.BorderSize = 0
+        '  GamesButton.FlatStyle = FlatStyle.Flat
+        '   GamesButton.FlatAppearance.BorderSize = 0
         NewUserButton.FlatStyle = FlatStyle.Flat
         NewUserButton.FlatAppearance.BorderSize = 0
         quitButton.FlatStyle = FlatStyle.Flat
         quitButton.FlatAppearance.BorderSize = 0
         QuizzesButton.Enabled = False
         LessonsButton.Enabled = False
-        GamesButton.Enabled = False
+        '   GamesButton.Enabled = False
     End Sub
     Private Sub StartingForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         rs.ResizeAllControls(Me)
@@ -48,7 +48,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub GamesButton_Click(sender As Object, e As EventArgs) Handles GamesButton.Click
+    Private Sub GamesButton_Click(sender As Object, e As EventArgs)
         'Me.Hide()
         SnakeForm.Show()
         Me.Close()
@@ -82,12 +82,14 @@
                         LoginButton.Visible = False
                         usernameTextbox.Visible = False
                         passwordTextbox.Visible = False
+                        NewUserButton.Visible = False
                         QuizzesButton.Visible = True
                         LessonsButton.Visible = True
-                        GamesButton.Visible = True
+                        '  GamesButton.Visible = True
                         QuizzesButton.Enabled = True
                         LessonsButton.Enabled = True
-                        GamesButton.Enabled = True
+                        ' GamesButton.Enabled = True
+
                         currentuser = myds.Tables("MyStudents").Rows(index).Item(2)
                         mycon.Close()
                     Else
@@ -118,11 +120,11 @@
         ToolTip2.SetToolTip(LessonsButton, "Learn about the subjects!")
     End Sub
 
-    Private Sub GamesButton_MouseHover(sender As Object, e As EventArgs) Handles GamesButton.MouseHover
-        ToolTip3.SetToolTip(GamesButton, "Skip to the fun part!")
-    End Sub
+    '  Private Sub GamesButton_MouseHover(sender As Object, e As EventArgs)
+    '      ToolTip3.SetToolTip(GamesButton, "Skip to the fun part!")
+    ' End Sub
 
-    Private Sub teacherModeButton_Click(sender As Object, e As EventArgs) Handles teacherModeButton.Click
+    Private Sub teacherModeButton_Click(sender As Object, e As EventArgs)
         Teacher.Show()
         Me.Hide()
     End Sub
