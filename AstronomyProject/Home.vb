@@ -6,6 +6,10 @@
     Dim rs As New Resizer
     Dim passwordAttempt As String
     Dim usernameAttempt As String
+    Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
+    Dim dblocation As String
+    Dim mycon As New OleDb.OleDbConnection
+    Dim myds As New DataSet
 
     Private Sub StartingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         rs.FindAllControls(Me)
@@ -48,14 +52,11 @@
 
 
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
-        Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
-        datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
-        Dim mycon As New OleDb.OleDbConnection
-        Dim myds As New DataSet
 
+        dblocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
         Try
             mycon.ConnectionString = $"Provider=Microsoft.ACE.OLEDB.12.0; 
-                                      Data Source = {datalocation};
+                                      Data Source = {dblocation};
                                       Persist Security Info=False;"
             mycon.Open()
             Dim myda As New OleDb.OleDbDataAdapter
@@ -124,5 +125,46 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
+    End Sub
+
+    Private Sub AddUserButton_Click(sender As Object, e As EventArgs) Handles AddUserButton.Click
+        Dim myds As New DataSet
+        Dim sql As String
+        Dim information = My.Computer.FileSystem.GetFileInfo("Database1.mdb")
+        datalocation = information.FullName.Substring(0, information.FullName.Length - 40) + "Database1.mdb"
+        Using connection As New OleDb.OleDbConnection($"Provider=Microsoft.ACE.OLEDB.12.0; 
+                                      Data Source = {datalocation};
+                                      Persist Security Info=False;")
+            Dim myda As New OleDb.OleDbDataAdapter
+            Sql = "Select * From Students"
+
+            myda = New OleDb.OleDbDataAdapter(sql, connection)
+            myda.Fill(myds, "StudentQuestions")
+
+            'Using command As New OleDb.OleDbCommand($"INSERT INTO Students (username,password) VALUES (@username,@password)", connection)
+
+            '    command.Parameters.AddWithValue("@username", usernameTextbox.Text)
+            '    command.Parameters.AddWithValue("@password", passwordTextbox.Text)
+
+
+            '    connection.Open()
+            '    command.ExecuteNonQuery()
+            '    MsgBox("a user has been added")
+            'End Using
+
+            Using command As New OleDb.OleDbCommand($"INSERT INTO Students (username,studentid,test) VALUES (@username,@studentid,@test)", connection)
+
+                command.Parameters.AddWithValue("@username", usernameTextbox.Text)
+                'command.Parameters.AddWithValue("@password", passwordTextbox.Text)
+                command.Parameters.AddWithValue("@studentid", CLng(TextBox1.Text))
+                command.Parameters.AddWithValue("@test", passwordTextbox.Text)
+
+
+
+                connection.Open()
+                command.ExecuteNonQuery()
+                MsgBox("a user has been added")
+            End Using
+        End Using
     End Sub
 End Class

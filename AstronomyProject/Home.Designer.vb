@@ -40,6 +40,8 @@ Partial Class Home
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.teacherModeButton = New System.Windows.Forms.Label()
+        Me.AddUserButton = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -209,12 +211,37 @@ Partial Class Home
         Me.teacherModeButton.Text = "Teacher Mode"
         Me.teacherModeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'AddUserButton
+        '
+        Me.AddUserButton.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.AddUserButton.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.AddUserButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.AddUserButton.ForeColor = System.Drawing.Color.White
+        Me.AddUserButton.Location = New System.Drawing.Point(864, 408)
+        Me.AddUserButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.AddUserButton.Name = "AddUserButton"
+        Me.AddUserButton.Size = New System.Drawing.Size(112, 33)
+        Me.AddUserButton.TabIndex = 21
+        Me.AddUserButton.Text = "Add User"
+        Me.AddUserButton.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.TextBox1.Location = New System.Drawing.Point(285, 415)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(155, 26)
+        Me.TextBox1.TabIndex = 22
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.AddUserButton)
         Me.Controls.Add(Me.teacherModeButton)
         Me.Controls.Add(Me.GamesButton)
         Me.Controls.Add(Me.quitButton)
@@ -253,4 +280,6 @@ Partial Class Home
     Friend WithEvents ToolTip3 As ToolTip
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents teacherModeButton As Label
+    Friend WithEvents AddUserButton As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
