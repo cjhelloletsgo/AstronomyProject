@@ -121,6 +121,7 @@ Partial Class Home
         Me.passwordTextbox.Location = New System.Drawing.Point(706, 288)
         Me.passwordTextbox.Margin = New System.Windows.Forms.Padding(2)
         Me.passwordTextbox.Name = "passwordTextbox"
+        Me.passwordTextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwordTextbox.Size = New System.Drawing.Size(155, 26)
         Me.passwordTextbox.TabIndex = 2
         '

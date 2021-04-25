@@ -28,6 +28,10 @@
         LoginButton.FlatAppearance.BorderSize = 0
         GamesButton.FlatStyle = FlatStyle.Flat
         GamesButton.FlatAppearance.BorderSize = 0
+        AddUserButton.FlatStyle = FlatStyle.Flat
+        AddUserButton.FlatAppearance.BorderSize = 0
+        quitButton.FlatStyle = FlatStyle.Flat
+        quitButton.FlatAppearance.BorderSize = 0
         QuizzesButton.Enabled = False
         LessonsButton.Enabled = False
         GamesButton.Enabled = False
@@ -123,10 +127,6 @@
         Me.Hide()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
     Private Sub AddUserButton_Click(sender As Object, e As EventArgs) Handles AddUserButton.Click
         Dim myds As New DataSet
         Dim sql As String
@@ -141,25 +141,11 @@
             myda = New OleDb.OleDbDataAdapter(sql, connection)
             myda.Fill(myds, "StudentQuestions")
 
-            'Using command As New OleDb.OleDbCommand($"INSERT INTO Students (username,password) VALUES (@username,@password)", connection)
-
-            '    command.Parameters.AddWithValue("@username", usernameTextbox.Text)
-            '    command.Parameters.AddWithValue("@password", passwordTextbox.Text)
-
-
-            '    connection.Open()
-            '    command.ExecuteNonQuery()
-            '    MsgBox("a user has been added")
-            'End Using
-
-            Using command As New OleDb.OleDbCommand($"INSERT INTO Students (username,studentid,test) VALUES (@username,@studentid,@test)", connection)
+            Using command As New OleDb.OleDbCommand($"INSERT INTO Students (username,pass,studentid) VALUES (@username,@pass,@studentid)", connection)
 
                 command.Parameters.AddWithValue("@username", usernameTextbox.Text)
-                'command.Parameters.AddWithValue("@password", passwordTextbox.Text)
+                command.Parameters.AddWithValue("@pass", passwordTextbox.Text)
                 command.Parameters.AddWithValue("@studentid", CLng(TextBox1.Text))
-                command.Parameters.AddWithValue("@test", passwordTextbox.Text)
-
-
 
                 connection.Open()
                 command.ExecuteNonQuery()
