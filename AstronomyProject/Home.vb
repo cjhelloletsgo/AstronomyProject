@@ -29,6 +29,8 @@
         NewUserButton.FlatAppearance.BorderSize = 0
         quitButton.FlatStyle = FlatStyle.Flat
         quitButton.FlatAppearance.BorderSize = 0
+        teacherModeButton.FlatStyle = FlatStyle.Flat
+        teacherModeButton.FlatAppearance.BorderSize = 0
         QuizzesButton.Enabled = False
         LessonsButton.Enabled = False
     End Sub
