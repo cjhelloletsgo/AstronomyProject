@@ -196,9 +196,8 @@ Partial Class ShootingStars
         Me.Label1.Location = New System.Drawing.Point(19, 87)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 20)
+        Me.Label1.Size = New System.Drawing.Size(0, 20)
         Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Label1"
         '
         'fireworksPictureBox
         '

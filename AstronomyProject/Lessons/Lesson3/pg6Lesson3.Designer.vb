@@ -132,8 +132,9 @@ Partial Class pg6Lesson3
         Me.Controls.Add(Me.nextButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.quitButton)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg6Lesson3"
-        Me.Text = "pg6Lesson3"
+        Me.Text = "Sagittarius"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

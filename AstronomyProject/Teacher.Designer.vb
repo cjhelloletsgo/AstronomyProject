@@ -345,6 +345,7 @@ Partial Class Teacher
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Teacher"
         Me.Text = "Teacher"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

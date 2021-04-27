@@ -46,7 +46,6 @@ C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\Astrono
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg5Lesson1.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg5Lesson1.resources
 C:\Users\Colton\source\repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg6Lesson1.resources
-C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg6Lesson1.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg1Lesson2.resources
 C:\Users\Colton\Source\Repos\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg1Lesson2.resources
 C:\Users\Bee\source\repos\AstronomyProject\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.pg2Lesson2.resources

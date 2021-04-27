@@ -135,7 +135,7 @@ Partial Class pg1Lesson1
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg1Lesson1"
-        Me.Text = "Lesson1"
+        Me.Text = "What makes a planet?"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
