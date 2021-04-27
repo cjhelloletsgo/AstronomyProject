@@ -57,7 +57,7 @@ Partial Class Quizzes
         Me.ShootingStarsButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.ShootingStarsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ShootingStarsButton.ForeColor = System.Drawing.Color.White
-        Me.ShootingStarsButton.Location = New System.Drawing.Point(109, 328)
+        Me.ShootingStarsButton.Location = New System.Drawing.Point(166, 146)
         Me.ShootingStarsButton.Margin = New System.Windows.Forms.Padding(2)
         Me.ShootingStarsButton.Name = "ShootingStarsButton"
         Me.ShootingStarsButton.Size = New System.Drawing.Size(302, 61)
@@ -85,7 +85,7 @@ Partial Class Quizzes
         Me.Chapter2.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Chapter2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Chapter2.ForeColor = System.Drawing.Color.White
-        Me.Chapter2.Location = New System.Drawing.Point(474, 328)
+        Me.Chapter2.Location = New System.Drawing.Point(166, 292)
         Me.Chapter2.Margin = New System.Windows.Forms.Padding(2)
         Me.Chapter2.Name = "Chapter2"
         Me.Chapter2.Size = New System.Drawing.Size(302, 61)
@@ -100,7 +100,7 @@ Partial Class Quizzes
         Me.Chapter3.BackColor = System.Drawing.Color.DarkSlateGray
         Me.Chapter3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.Chapter3.ForeColor = System.Drawing.Color.White
-        Me.Chapter3.Location = New System.Drawing.Point(835, 328)
+        Me.Chapter3.Location = New System.Drawing.Point(166, 447)
         Me.Chapter3.Margin = New System.Windows.Forms.Padding(2)
         Me.Chapter3.Name = "Chapter3"
         Me.Chapter3.Size = New System.Drawing.Size(302, 61)
@@ -125,12 +125,10 @@ Partial Class Quizzes
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-56, 11)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Location = New System.Drawing.Point(681, 65)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1377, 685)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.Size = New System.Drawing.Size(572, 564)
+        Me.PictureBox1.TabIndex = 41
         Me.PictureBox1.TabStop = False
         '
         'Quizzes
@@ -138,13 +136,13 @@ Partial Class Quizzes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.quitButton)
         Me.Controls.Add(Me.Chapter3)
         Me.Controls.Add(Me.Chapter2)
         Me.Controls.Add(Me.QuizzesLabel)
         Me.Controls.Add(Me.ShootingStarsButton)
         Me.Controls.Add(Me.HomeButton)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Quizzes"
