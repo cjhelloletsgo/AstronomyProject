@@ -90,7 +90,7 @@ Partial Class Home
         Me.LoginButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.LoginButton.ForeColor = System.Drawing.Color.White
-        Me.LoginButton.Location = New System.Drawing.Point(506, 388)
+        Me.LoginButton.Location = New System.Drawing.Point(498, 388)
         Me.LoginButton.Margin = New System.Windows.Forms.Padding(2)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(112, 33)

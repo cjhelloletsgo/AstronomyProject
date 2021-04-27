@@ -132,8 +132,9 @@ Partial Class pg5Lesson2
         Me.Controls.Add(Me.nextButton)
         Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.quitButton)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg5Lesson2"
-        Me.Text = "pg5Lesson2"
+        Me.Text = "Neptune"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

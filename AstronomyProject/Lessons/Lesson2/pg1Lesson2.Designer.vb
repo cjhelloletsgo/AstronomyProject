@@ -114,9 +114,9 @@ Partial Class pg1Lesson2
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(369, 468)
+        Me.Label1.Location = New System.Drawing.Point(363, 468)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(732, 173)
+        Me.Label1.Size = New System.Drawing.Size(712, 173)
         Me.Label1.TabIndex = 44
         Me.Label1.Text = resources.GetString("Label1.Text")
         '
@@ -132,8 +132,9 @@ Partial Class pg1Lesson2
         Me.Controls.Add(Me.quitButton)
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg1Lesson2"
-        Me.Text = "pg1Lesson2"
+        Me.Text = "The Gas Giants"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

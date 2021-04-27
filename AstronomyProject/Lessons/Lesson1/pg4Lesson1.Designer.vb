@@ -134,7 +134,7 @@ Partial Class pg4Lesson1
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg4Lesson1"
-        Me.Text = "pg4Lesson1"
+        Me.Text = "Earth"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

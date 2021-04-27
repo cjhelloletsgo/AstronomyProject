@@ -135,7 +135,7 @@ Partial Class pg5Lesson1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "pg5Lesson1"
-        Me.Text = "pg5Lesson1"
+        Me.Text = "Mars"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

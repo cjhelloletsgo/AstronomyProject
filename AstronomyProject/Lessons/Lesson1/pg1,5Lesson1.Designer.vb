@@ -135,7 +135,7 @@ Partial Class pg1_5Lesson1
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg1_5Lesson1"
-        Me.Text = "pg1_5Lesson1"
+        Me.Text = "The Inner Circle"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

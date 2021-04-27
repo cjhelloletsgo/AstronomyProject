@@ -32,7 +32,7 @@ Partial Class SnakeForm
         Me.ClientSize = New System.Drawing.Size(1028, 609)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SnakeForm"
-        Me.Text = "Main"
+        Me.Text = "Snake!"
         Me.ResumeLayout(False)
 
     End Sub

@@ -132,8 +132,9 @@ Partial Class pg2Lesson2
         Me.Controls.Add(Me.LessonsLabel)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "pg2Lesson2"
-        Me.Text = "pg2Lesson2"
+        Me.Text = "Jupiter"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

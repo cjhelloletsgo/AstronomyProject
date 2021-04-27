@@ -120,12 +120,6 @@
     <Compile Include="Lessons\Lesson1\pg5Lesson1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lessons\Lesson1\pg6Lesson1.Designer.vb">
-      <DependentUpon>pg6Lesson1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Lessons\Lesson1\pg6Lesson1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Lessons\Lesson2\pg1Lesson2.Designer.vb">
       <DependentUpon>pg1Lesson2.vb</DependentUpon>
     </Compile>
@@ -323,9 +317,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lessons\Lesson1\pg5Lesson1.resx">
       <DependentUpon>pg5Lesson1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Lessons\Lesson1\pg6Lesson1.resx">
-      <DependentUpon>pg6Lesson1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lessons\Lesson2\pg1Lesson2.resx">
       <DependentUpon>pg1Lesson2.vb</DependentUpon>
