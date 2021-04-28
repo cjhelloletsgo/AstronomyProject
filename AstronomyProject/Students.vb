@@ -26,8 +26,10 @@
         Dim sql As String
 
         'For each student
-        sql = "Select Distinct S1.StudentID, S1.Grade As quiz1Grade, S2.Grade As quiz2Grade, S3.Grade As quiz3Grade
-        From StudentQuestions1 As S1, StudentQuestions2 As S2, StudentQuestions3 As S3"
+        sql = "SELECT S1.StudentID, S1.Grade AS quiz1Grade, S2.Grade AS quiz2Grade, S3.Grade AS quiz3Grade
+FROM StudentQuestions1 AS S1, StudentQuestions2 AS S2, StudentQuestions3 AS S3
+WHERE S1.StudentID = S2.StudentID
+AND S2.StudentID = S3.StudentID"
 
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "Student")
@@ -59,9 +61,9 @@
 
             i = 3
             Label17.Text = myds.Tables("Student").Rows(3).Item(0)
-            Label18.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(1), 2) * 100}%"
-            Label19.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(2), 2) * 100}%"
-            Label20.Text = $"{Math.Round(myds.Tables("Student").Rows(2).Item(3), 2) * 100}%"
+            Label18.Text = $"{Math.Round(myds.Tables("Student").Rows(3).Item(1), 2) * 100}%"
+            Label19.Text = $"{Math.Round(myds.Tables("Student").Rows(3).Item(2), 2) * 100}%"
+            Label20.Text = $"{Math.Round(myds.Tables("Student").Rows(3).Item(3), 2) * 100}%"
 
             i = 4
             Label21.Text = myds.Tables("Student").Rows(4).Item(0)
