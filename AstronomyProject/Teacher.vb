@@ -55,6 +55,24 @@
         Label14.Text = $" Question 14: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q14"), 2)) * 100 }%"
         Label15.Text = $" Question 15: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q15"), 2)) * 100 }%"
         Panel1.Visible = True
+
+        'trying to make this with one text box, may be a better solution 
+        'Label17.Text =
+        '                    $"Question 1: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q1"), 2)) * 100 }%
+        '            Question 2: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q2"), 2)) * 100 }%
+        '            Question 3: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q3"), 2)) * 100 }%
+        '            Question 4: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q4"), 2)) * 100 }%
+        '            Question 5: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q5"), 2)) * 100 }%
+        '            Question 6: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q6"), 2)) * 100 }%
+        '            Question 7: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q7"), 2)) * 100 }%
+        '            Question 8: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q8"), 2)) * 100 }%
+        '            Question 9: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q9"), 2)) * 100 }%
+        '            Question 10: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q10"), 2)) * 100 }%
+        '            Question 11: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q11"), 2)) * 100 }%
+        '            Question 12: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q12"), 2)) * 100 }%
+        '            Question 13: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q13"), 2)) * 100 }%
+        '            Question 14: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q14"), 2)) * 100 }%
+        '            Question 15: {(Math.Round(myds.Tables("Teacher").Rows(0).Item("SQ1Q15"), 2)) * 100 }%"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

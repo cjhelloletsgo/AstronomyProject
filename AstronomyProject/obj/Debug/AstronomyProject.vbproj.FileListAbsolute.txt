@@ -155,7 +155,6 @@ C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\bin\Debug\As
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.exe
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.pdb
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\bin\Debug\AstronomyProject.xml
-C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.vbprojAssemblyReference.cache
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Chapter1.resources
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Chapter2.resources
 C:\Users\Colton\source\repos\work\AstronomyProject\AstronomyProject\obj\Debug\AstronomyProject.Chapter3.resources

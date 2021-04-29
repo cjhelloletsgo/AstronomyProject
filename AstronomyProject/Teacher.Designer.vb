@@ -105,7 +105,7 @@ Partial Class Teacher
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(130, 38)
         Me.HomeButton.TabIndex = 20
-        Me.HomeButton.Text = "Student Mode"
+        Me.HomeButton.Text = "Home"
         Me.HomeButton.UseVisualStyleBackColor = False
         '
         'Label15
