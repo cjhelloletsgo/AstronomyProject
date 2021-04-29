@@ -24,9 +24,6 @@ Partial Class Teacher
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Teacher))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Query2TableAdapter = New AstronomyProject.Database1DataSet1TableAdapters.Query2TableAdapter()
         Me.Query3TableAdapter = New AstronomyProject.Database1DataSet1TableAdapters.Query3TableAdapter()
@@ -51,8 +48,11 @@ Partial Class Teacher
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Query2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Database1DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,40 +61,10 @@ Partial Class Teacher
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(213, 329)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 31)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Chapter 1 Average"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button2.Location = New System.Drawing.Point(213, 376)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(160, 31)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Chapter 2 Average"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button3.Location = New System.Drawing.Point(213, 423)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(160, 31)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Chapter 3 Average"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1059, 23)
+        Me.PictureBox1.Location = New System.Drawing.Point(1014, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(238, 184)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -130,19 +100,19 @@ Partial Class Teacher
         Me.HomeButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.HomeButton.ForeColor = System.Drawing.Color.White
-        Me.HomeButton.Location = New System.Drawing.Point(1232, 597)
+        Me.HomeButton.Location = New System.Drawing.Point(11, 646)
         Me.HomeButton.Margin = New System.Windows.Forms.Padding(2)
         Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(118, 38)
+        Me.HomeButton.Size = New System.Drawing.Size(130, 38)
         Me.HomeButton.TabIndex = 20
-        Me.HomeButton.Text = "Home"
+        Me.HomeButton.Text = "Student Mode"
         Me.HomeButton.UseVisualStyleBackColor = False
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(3, 360)
+        Me.Label15.Location = New System.Drawing.Point(27, 360)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(66, 20)
         Me.Label15.TabIndex = 45
@@ -152,7 +122,7 @@ Partial Class Teacher
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(3, 338)
+        Me.Label14.Location = New System.Drawing.Point(27, 338)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(66, 20)
         Me.Label14.TabIndex = 44
@@ -162,7 +132,7 @@ Partial Class Teacher
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(3, 316)
+        Me.Label13.Location = New System.Drawing.Point(27, 316)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(66, 20)
         Me.Label13.TabIndex = 43
@@ -172,7 +142,7 @@ Partial Class Teacher
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(3, 294)
+        Me.Label12.Location = New System.Drawing.Point(27, 294)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(66, 20)
         Me.Label12.TabIndex = 42
@@ -182,7 +152,7 @@ Partial Class Teacher
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(3, 272)
+        Me.Label11.Location = New System.Drawing.Point(27, 272)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(66, 20)
         Me.Label11.TabIndex = 41
@@ -192,7 +162,7 @@ Partial Class Teacher
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(3, 250)
+        Me.Label10.Location = New System.Drawing.Point(27, 250)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(66, 20)
         Me.Label10.TabIndex = 40
@@ -202,7 +172,7 @@ Partial Class Teacher
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(3, 228)
+        Me.Label9.Location = New System.Drawing.Point(27, 228)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(57, 20)
         Me.Label9.TabIndex = 39
@@ -212,7 +182,7 @@ Partial Class Teacher
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(3, 206)
+        Me.Label8.Location = New System.Drawing.Point(27, 206)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(57, 20)
         Me.Label8.TabIndex = 38
@@ -222,7 +192,7 @@ Partial Class Teacher
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(3, 184)
+        Me.Label7.Location = New System.Drawing.Point(27, 184)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(57, 20)
         Me.Label7.TabIndex = 37
@@ -232,7 +202,7 @@ Partial Class Teacher
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(3, 74)
+        Me.Label2.Location = New System.Drawing.Point(27, 74)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 20)
         Me.Label2.TabIndex = 32
@@ -242,7 +212,7 @@ Partial Class Teacher
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(3, 162)
+        Me.Label6.Location = New System.Drawing.Point(27, 162)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(57, 20)
         Me.Label6.TabIndex = 36
@@ -252,7 +222,7 @@ Partial Class Teacher
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(3, 96)
+        Me.Label3.Location = New System.Drawing.Point(27, 96)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 20)
         Me.Label3.TabIndex = 33
@@ -262,7 +232,7 @@ Partial Class Teacher
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(3, 140)
+        Me.Label5.Location = New System.Drawing.Point(27, 140)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 35
@@ -272,7 +242,7 @@ Partial Class Teacher
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(3, 52)
+        Me.Label1.Location = New System.Drawing.Point(27, 52)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 20)
         Me.Label1.TabIndex = 31
@@ -282,7 +252,7 @@ Partial Class Teacher
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(3, 118)
+        Me.Label4.Location = New System.Drawing.Point(27, 118)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(57, 20)
         Me.Label4.TabIndex = 34
@@ -292,24 +262,16 @@ Partial Class Teacher
         '
         Me.Label16.AutoSize = True
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(3, 0)
+        Me.Label16.Location = New System.Drawing.Point(27, 12)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(119, 20)
         Me.Label16.TabIndex = 46
         Me.Label16.Text = "Score/Question"
         '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button4.Location = New System.Drawing.Point(213, 470)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(160, 31)
-        Me.Button4.TabIndex = 47
-        Me.Button4.Text = "Students"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.Label16)
         Me.Panel1.Controls.Add(Me.Label15)
         Me.Panel1.Controls.Add(Me.Label14)
@@ -327,17 +289,65 @@ Partial Class Teacher
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Panel1.Location = New System.Drawing.Point(502, 121)
+        Me.Panel1.Location = New System.Drawing.Point(628, 165)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(175, 398)
         Me.Panel1.TabIndex = 48
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button4.Location = New System.Drawing.Point(339, 463)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(160, 38)
+        Me.Button4.TabIndex = 47
+        Me.Button4.Text = "Students"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button3.Location = New System.Drawing.Point(339, 375)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(160, 38)
+        Me.Button3.TabIndex = 5
+        Me.Button3.Text = "Chapter 3 Average"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button2.Location = New System.Drawing.Point(339, 287)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(160, 38)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Chapter 2 Average"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button1.Location = New System.Drawing.Point(339, 199)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(160, 38)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Chapter 1 Average"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Teacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1361, 646)
+        Me.ClientSize = New System.Drawing.Size(1264, 695)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.HomeButton)
@@ -358,9 +368,6 @@ Partial Class Teacher
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Query2TableAdapter As Database1DataSet1TableAdapters.Query2TableAdapter
     Friend WithEvents Query3BindingSource As BindingSource
@@ -385,6 +392,9 @@ Partial Class Teacher
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class

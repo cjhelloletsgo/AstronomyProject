@@ -56,6 +56,7 @@ Partial Class Students
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
+        Me.AstronoMeLabel = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -65,7 +66,7 @@ Partial Class Students
         Me.HomeButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.HomeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.HomeButton.ForeColor = System.Drawing.Color.White
-        Me.HomeButton.Location = New System.Drawing.Point(587, 528)
+        Me.HomeButton.Location = New System.Drawing.Point(587, 577)
         Me.HomeButton.Margin = New System.Windows.Forms.Padding(2)
         Me.HomeButton.Name = "HomeButton"
         Me.HomeButton.Size = New System.Drawing.Size(118, 38)
@@ -75,6 +76,8 @@ Partial Class Students
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel1.ColumnCount = 4
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
@@ -113,7 +116,8 @@ Partial Class Students
         Me.TableLayoutPanel1.Controls.Add(Me.Label31, 2, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.Label32, 3, 7)
         Me.TableLayoutPanel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(324, 162)
+        Me.TableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(287, 143)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 10
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
@@ -132,7 +136,7 @@ Partial Class Students
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(477, 20)
+        Me.Label4.Location = New System.Drawing.Point(478, 22)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(57, 20)
         Me.Label4.TabIndex = 26
@@ -141,7 +145,7 @@ Partial Class Students
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 20)
+        Me.Label1.Location = New System.Drawing.Point(4, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 20)
         Me.Label1.TabIndex = 22
@@ -150,7 +154,7 @@ Partial Class Students
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(161, 20)
+        Me.Label2.Location = New System.Drawing.Point(162, 22)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 20)
         Me.Label2.TabIndex = 23
@@ -159,7 +163,7 @@ Partial Class Students
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(319, 20)
+        Me.Label3.Location = New System.Drawing.Point(320, 22)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 20)
         Me.Label3.TabIndex = 24
@@ -168,7 +172,7 @@ Partial Class Students
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(3, 0)
+        Me.Label5.Location = New System.Drawing.Point(4, 1)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(83, 20)
         Me.Label5.TabIndex = 27
@@ -177,7 +181,7 @@ Partial Class Students
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(161, 0)
+        Me.Label6.Location = New System.Drawing.Point(162, 1)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 20)
         Me.Label6.TabIndex = 28
@@ -186,7 +190,7 @@ Partial Class Students
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(319, 0)
+        Me.Label7.Location = New System.Drawing.Point(320, 1)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(50, 20)
         Me.Label7.TabIndex = 29
@@ -195,7 +199,7 @@ Partial Class Students
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(477, 0)
+        Me.Label8.Location = New System.Drawing.Point(478, 1)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(50, 20)
         Me.Label8.TabIndex = 30
@@ -204,7 +208,7 @@ Partial Class Students
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(3, 40)
+        Me.Label9.Location = New System.Drawing.Point(4, 43)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(57, 20)
         Me.Label9.TabIndex = 31
@@ -213,7 +217,7 @@ Partial Class Students
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(161, 40)
+        Me.Label10.Location = New System.Drawing.Point(162, 43)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(66, 20)
         Me.Label10.TabIndex = 32
@@ -222,7 +226,7 @@ Partial Class Students
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(319, 40)
+        Me.Label11.Location = New System.Drawing.Point(320, 43)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(66, 20)
         Me.Label11.TabIndex = 33
@@ -231,7 +235,7 @@ Partial Class Students
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(477, 40)
+        Me.Label12.Location = New System.Drawing.Point(478, 43)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(66, 20)
         Me.Label12.TabIndex = 34
@@ -240,7 +244,7 @@ Partial Class Students
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(3, 60)
+        Me.Label13.Location = New System.Drawing.Point(4, 64)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(66, 20)
         Me.Label13.TabIndex = 35
@@ -249,7 +253,7 @@ Partial Class Students
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(161, 60)
+        Me.Label14.Location = New System.Drawing.Point(162, 64)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(66, 20)
         Me.Label14.TabIndex = 36
@@ -258,7 +262,7 @@ Partial Class Students
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(319, 60)
+        Me.Label15.Location = New System.Drawing.Point(320, 64)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(66, 20)
         Me.Label15.TabIndex = 37
@@ -267,7 +271,7 @@ Partial Class Students
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(477, 60)
+        Me.Label16.Location = New System.Drawing.Point(478, 64)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(66, 20)
         Me.Label16.TabIndex = 38
@@ -276,7 +280,7 @@ Partial Class Students
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(3, 80)
+        Me.Label17.Location = New System.Drawing.Point(4, 85)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(66, 20)
         Me.Label17.TabIndex = 39
@@ -285,7 +289,7 @@ Partial Class Students
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(161, 80)
+        Me.Label18.Location = New System.Drawing.Point(162, 85)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(66, 20)
         Me.Label18.TabIndex = 40
@@ -294,7 +298,7 @@ Partial Class Students
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(319, 80)
+        Me.Label19.Location = New System.Drawing.Point(320, 85)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(66, 20)
         Me.Label19.TabIndex = 41
@@ -303,7 +307,7 @@ Partial Class Students
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(477, 80)
+        Me.Label20.Location = New System.Drawing.Point(478, 85)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(66, 20)
         Me.Label20.TabIndex = 42
@@ -312,7 +316,7 @@ Partial Class Students
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(3, 100)
+        Me.Label21.Location = New System.Drawing.Point(4, 106)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(66, 20)
         Me.Label21.TabIndex = 43
@@ -321,7 +325,7 @@ Partial Class Students
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(161, 100)
+        Me.Label22.Location = New System.Drawing.Point(162, 106)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(66, 20)
         Me.Label22.TabIndex = 44
@@ -330,7 +334,7 @@ Partial Class Students
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(319, 100)
+        Me.Label23.Location = New System.Drawing.Point(320, 106)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(66, 20)
         Me.Label23.TabIndex = 45
@@ -339,7 +343,7 @@ Partial Class Students
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(477, 100)
+        Me.Label24.Location = New System.Drawing.Point(478, 106)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(66, 20)
         Me.Label24.TabIndex = 46
@@ -348,7 +352,7 @@ Partial Class Students
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(3, 120)
+        Me.Label25.Location = New System.Drawing.Point(4, 127)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(66, 20)
         Me.Label25.TabIndex = 47
@@ -357,7 +361,7 @@ Partial Class Students
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(161, 120)
+        Me.Label26.Location = New System.Drawing.Point(162, 127)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(66, 20)
         Me.Label26.TabIndex = 48
@@ -366,7 +370,7 @@ Partial Class Students
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(319, 120)
+        Me.Label27.Location = New System.Drawing.Point(320, 127)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(66, 20)
         Me.Label27.TabIndex = 49
@@ -375,7 +379,7 @@ Partial Class Students
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(477, 120)
+        Me.Label28.Location = New System.Drawing.Point(478, 127)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(66, 20)
         Me.Label28.TabIndex = 50
@@ -384,7 +388,7 @@ Partial Class Students
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(3, 140)
+        Me.Label29.Location = New System.Drawing.Point(4, 148)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(66, 20)
         Me.Label29.TabIndex = 51
@@ -393,7 +397,7 @@ Partial Class Students
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(161, 140)
+        Me.Label30.Location = New System.Drawing.Point(162, 148)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(66, 20)
         Me.Label30.TabIndex = 52
@@ -402,7 +406,7 @@ Partial Class Students
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(319, 140)
+        Me.Label31.Location = New System.Drawing.Point(320, 148)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(66, 20)
         Me.Label31.TabIndex = 53
@@ -411,17 +415,33 @@ Partial Class Students
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(477, 140)
+        Me.Label32.Location = New System.Drawing.Point(478, 148)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(66, 20)
         Me.Label32.TabIndex = 54
         Me.Label32.Text = "Label32"
         '
+        'AstronoMeLabel
+        '
+        Me.AstronoMeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.AstronoMeLabel.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.AstronoMeLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.0!)
+        Me.AstronoMeLabel.ForeColor = System.Drawing.Color.White
+        Me.AstronoMeLabel.Location = New System.Drawing.Point(-8, -1)
+        Me.AstronoMeLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.AstronoMeLabel.Name = "AstronoMeLabel"
+        Me.AstronoMeLabel.Size = New System.Drawing.Size(1277, 49)
+        Me.AstronoMeLabel.TabIndex = 27
+        Me.AstronoMeLabel.Text = "Student Statistics"
+        Me.AstronoMeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Students
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1361, 646)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ClientSize = New System.Drawing.Size(1264, 695)
+        Me.Controls.Add(Me.AstronoMeLabel)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.HomeButton)
         Me.Name = "Students"
@@ -466,4 +486,5 @@ Partial Class Students
     Friend WithEvents Label30 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Label32 As Label
+    Friend WithEvents AstronoMeLabel As Label
 End Class
