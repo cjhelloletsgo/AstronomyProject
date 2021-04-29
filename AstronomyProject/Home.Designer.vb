@@ -104,11 +104,11 @@ Partial Class Home
         Me.quitButton.BackColor = System.Drawing.Color.DarkSlateGray
         Me.quitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.quitButton.ForeColor = System.Drawing.Color.White
-        Me.quitButton.Location = New System.Drawing.Point(1135, 646)
+        Me.quitButton.Location = New System.Drawing.Point(1120, 646)
         Me.quitButton.Margin = New System.Windows.Forms.Padding(2)
         Me.quitButton.Name = "quitButton"
         Me.quitButton.Size = New System.Drawing.Size(118, 38)
-        Me.quitButton.TabIndex = 5
+        Me.quitButton.TabIndex = 6
         Me.quitButton.Text = "Quit"
         Me.quitButton.UseVisualStyleBackColor = False
         '
@@ -194,7 +194,7 @@ Partial Class Home
         Me.teacherModeButton.Margin = New System.Windows.Forms.Padding(2)
         Me.teacherModeButton.Name = "teacherModeButton"
         Me.teacherModeButton.Size = New System.Drawing.Size(119, 38)
-        Me.teacherModeButton.TabIndex = 22
+        Me.teacherModeButton.TabIndex = 5
         Me.teacherModeButton.Text = "Teacher Mode"
         Me.teacherModeButton.UseVisualStyleBackColor = False
         '

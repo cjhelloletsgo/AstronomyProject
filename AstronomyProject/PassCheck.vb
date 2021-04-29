@@ -27,9 +27,6 @@
                         connection.Open()
                         command.ExecuteNonQuery()
                         newname = NewUser.usernameTextbox.Text
-                        MsgBox($"{newname} has been added successfully")
-
-
                     End Using
                 End Using
             Catch ex As Exception
@@ -166,6 +163,10 @@
                     command.Parameters.AddWithValue("@Grade", 0)
                     connection.Open()
                     command.ExecuteNonQuery()
+                    MsgBox($"{newname} has been added successfully")
+
+                    Home.usernameTextbox.Text = NewUser.usernameTextbox.Text
+                    Home.passwordTextbox.Text = NewUser.passwordTextbox.Text
                 End Using
             End Using
             NewUser.Dispose()
@@ -174,5 +175,9 @@
         End Try
 
         Me.Hide()
+    End Sub
+
+    Private Sub PassCheck_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

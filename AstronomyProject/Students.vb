@@ -27,9 +27,9 @@
 
         'For each student
         sql = "SELECT S1.StudentID, S1.Grade AS quiz1Grade, S2.Grade AS quiz2Grade, S3.Grade AS quiz3Grade
-FROM StudentQuestions1 AS S1, StudentQuestions2 AS S2, StudentQuestions3 AS S3
-WHERE S1.StudentID = S2.StudentID
-AND S2.StudentID = S3.StudentID"
+               FROM StudentQuestions1 AS S1, StudentQuestions2 AS S2, StudentQuestions3 AS S3
+               WHERE S1.StudentID = S2.StudentID
+               AND S2.StudentID = S3.StudentID"
 
         myda = New OleDb.OleDbDataAdapter(sql, mycon)
         myda.Fill(myds, "Student")

@@ -42,7 +42,7 @@ Partial Class NewUser
         Me.EnterButton.Margin = New System.Windows.Forms.Padding(2)
         Me.EnterButton.Name = "EnterButton"
         Me.EnterButton.Size = New System.Drawing.Size(112, 33)
-        Me.EnterButton.TabIndex = 22
+        Me.EnterButton.TabIndex = 4
         Me.EnterButton.Text = "Enter"
         Me.EnterButton.UseVisualStyleBackColor = False
         '
@@ -66,7 +66,7 @@ Partial Class NewUser
         Me.StudentIdTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.StudentIdTextBox.Name = "StudentIdTextBox"
         Me.StudentIdTextBox.Size = New System.Drawing.Size(155, 26)
-        Me.StudentIdTextBox.TabIndex = 28
+        Me.StudentIdTextBox.TabIndex = 1
         '
         'Label5
         '
@@ -104,7 +104,7 @@ Partial Class NewUser
         Me.passwordTextbox.Name = "passwordTextbox"
         Me.passwordTextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwordTextbox.Size = New System.Drawing.Size(155, 26)
-        Me.passwordTextbox.TabIndex = 25
+        Me.passwordTextbox.TabIndex = 3
         '
         'usernameTextbox
         '
@@ -113,7 +113,7 @@ Partial Class NewUser
         Me.usernameTextbox.Margin = New System.Windows.Forms.Padding(2)
         Me.usernameTextbox.Name = "usernameTextbox"
         Me.usernameTextbox.Size = New System.Drawing.Size(155, 26)
-        Me.usernameTextbox.TabIndex = 24
+        Me.usernameTextbox.TabIndex = 2
         '
         'NewUser
         '
