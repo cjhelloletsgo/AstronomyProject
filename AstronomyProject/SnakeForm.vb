@@ -78,8 +78,8 @@ Public Class SnakeForm
     Private Sub DrawGraphics()
         'draw blocks
         For x As Integer = 0 To 960 Step 30
-            For y As Integer = 0 To 960 Step 30
-                If x = 0 Or y = 0 Or x = 960 Or y = 960 Then
+            For y As Integer = 0 To 600 Step 30
+                If x = 0 Or y = 0 Or x = 960 Or y = 600 Then
                     G.FillRectangle(Brushes.Silver, x, y, ts, ts)
                 Else
                     G.FillRectangle(Brushes.LightGreen, x, y, ts, ts)
@@ -91,11 +91,11 @@ Public Class SnakeForm
         P1.Draw(G)
 
         G.FillRectangle(Brushes.OrangeRed, foodx, foody, ts, ts)
-        G.DrawString("Score: " & score.ToString, Me.Font, Brushes.Green, 550, 10)
+        G.DrawString("Score: " & score.ToString, Me.Font, Brushes.Green, 1154, 100)
         If isGameOver = True Then
 
-            G.DrawString("GAME OVER", Me.Font, Brushes.Red, 550, 40)
-            G.DrawString("Press F1 to restart game or Esc to quit", Me.Font, Brushes.Black, 550, 70)
+            G.DrawString("GAME OVER", Me.Font, Brushes.Red, 1140, 130)
+            G.DrawString("Press F1 to restart game or Esc to quit", Me.Font, Brushes.Black, 1080, 160)
         End If
         G = Graphics.FromImage(BB)
 
@@ -125,7 +125,7 @@ Public Class SnakeForm
             End If
         Next part
 
-        If P1.x < 20 Or P1.x > 960 Or P1.y < 20 Or P1.y > 960 Then
+        If P1.x < 20 Or P1.x > 960 Or P1.y < 20 Or P1.y > 600 Then
             isGameOver = True
         End If
 
